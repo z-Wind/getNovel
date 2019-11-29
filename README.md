@@ -5,6 +5,7 @@
 
 * [Installation](#installation)
 * [Examples](#examples)
+* [Support](#support)
 
 ## Installation
 
@@ -12,7 +13,7 @@ Please note that because of the goquery dependency, getNovel requires Go1.1+.
 
     $ go get github.com/z-Wind/getNovel
 
-To build:
+To build with two ways
 
     $ cd $GOPATH/src/github.com/z-Wind/getNovel
     $ make
