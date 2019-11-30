@@ -1,29 +1,26 @@
-package main
+package crawler
 
 import (
 	"context"
 	"fmt"
-
-	"github.com/z-Wind/getNovel/noveler"
-	"github.com/z-Wind/getNovel/util"
 )
 
 // ConcurrentEngine 負責處理對外與建立 worker
 type ConcurrentEngine struct {
 	Scheduler   Scheduler
 	WorkerCount int
-	ctx         context.Context
-	numTasks    int
+	Ctx         context.Context
+	NumTasks    int
 }
 
 // Run 開始運作
-func (e *ConcurrentEngine) Run(seeds ...Request) chan *noveler.NovelChapterHTML {
+func (e *ConcurrentEngine) Run(seeds ...Request) chan interface{} {
 	parseResultChan := make(chan ParseResult)
-	dataChan := make(chan *noveler.NovelChapterHTML)
+	dataChan := make(chan interface{})
 
 	e.Scheduler.Run()
-	e.numTasks = len(seeds)
-	fmt.Printf("tasks: %d\n", e.numTasks)
+	e.NumTasks = len(seeds)
+	fmt.Printf("tasks: %d\n", e.NumTasks)
 
 	for i := 0; i < e.WorkerCount; i++ {
 		e.createWorker(parseResultChan, e.Scheduler)
@@ -35,12 +32,12 @@ func (e *ConcurrentEngine) Run(seeds ...Request) chan *noveler.NovelChapterHTML 
 
 	go func() {
 		// 用 queue 先存起來，防止阻塞
-		var dataQ []*noveler.NovelChapterHTML
+		var dataQ []interface{}
 
 		for {
-			var activeData *noveler.NovelChapterHTML
+			var activeData interface{}
 			// channel 初值為 nil，並不會觸發 select，除非賦於值
-			var activeDataChan chan<- *noveler.NovelChapterHTML
+			var activeDataChan chan<- interface{}
 			if len(dataQ) > 0 {
 				activeData = dataQ[0]
 				activeDataChan = dataChan
@@ -51,17 +48,17 @@ func (e *ConcurrentEngine) Run(seeds ...Request) chan *noveler.NovelChapterHTML 
 				dataQ = dataQ[1:]
 			case parseResult := <-parseResultChan:
 				if parseResult.Item != nil {
-					fmt.Printf("Get %d: %s\n", parseResult.Item.Order, parseResult.Item.URL)
+					// fmt.Printf("Get %+v\n", parseResult.Item)
 					dataQ = append(dataQ, parseResult.Item)
 				}
-				e.numTasks -= parseResult.doneN
-				fmt.Printf("tasks: %d\n", e.numTasks)
+				e.NumTasks -= parseResult.DoneN
+				fmt.Printf("tasks: %d\n", e.NumTasks)
 
 				// 排入新增的 requests
 				for _, request := range parseResult.Requests {
 					e.Scheduler.Submit(request)
 				}
-			case <-e.ctx.Done():
+			case <-e.Ctx.Done():
 				fmt.Printf("ConcurrentEngine.Run.Done\n")
 				return
 			}
@@ -96,7 +93,7 @@ func (e *ConcurrentEngine) createWorker(parseResultChan chan<- ParseResult, s Sc
 				result := worker(request)
 				parseResultQ = append(parseResultQ, result)
 				s.WorkerReady(requestChan)
-			case <-e.ctx.Done():
+			case <-e.Ctx.Done():
 				fmt.Printf("ConcurrentEngine.createWorker.Done\n")
 				return
 			}
@@ -105,50 +102,15 @@ func (e *ConcurrentEngine) createWorker(parseResultChan chan<- ParseResult, s Sc
 }
 
 func worker(req Request) ParseResult {
-	// Request the HTML page
-	// Create a new context with a deadline
-	ctx := context.Background()
-	ctx, cancel := context.WithTimeout(ctx, noveler.Timeout)
-	defer cancel()
-
-	resp, err := util.HTTPGetwithContext(ctx, req.URL)
+	parseResult, err := req.ParseFunc(req)
 	if err != nil {
-		fmt.Printf("ParseResult: HTTPGetwithContext(%s): %s\n", req.URL, err)
+		fmt.Printf("ParseResult: req.ParseFunc: err:%s\n", err)
 		return ParseResult{
 			Item:     nil,
 			Requests: []Request{req},
-			doneN:    0,
-		}
-	}
-	defer resp.Body.Close()
-
-	if resp.StatusCode != 200 {
-		fmt.Printf("ParseResult: HTTPGetwithContext(%s): status code error: %d %s\n", req.URL, resp.StatusCode, resp.Status)
-		return ParseResult{
-			Item:     nil,
-			Requests: []Request{req},
-			doneN:    0,
+			DoneN:    0,
 		}
 	}
 
-	r, name, certain, err := util.ToUTF8Encoding(resp.Body)
-	if err != nil {
-		fmt.Printf("ParseResult: ToUTF8Encoding: name:%s, certain:%v err:%s\n", name, certain, err)
-		return ParseResult{
-			Item:     nil,
-			Requests: []Request{req},
-			doneN:    0,
-		}
-	}
-
-	return ParseResult{
-		Item: &noveler.NovelChapterHTML{
-			NovelChapter: &noveler.NovelChapter{
-				Order: req.Order,
-				URL:   req.URL,
-			},
-			HTML: r},
-		Requests: []Request{},
-		doneN:    1,
-	}
+	return parseResult
 }

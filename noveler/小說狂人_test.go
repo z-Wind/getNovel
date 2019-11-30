@@ -71,8 +71,9 @@ func TestCzbooksNoveler_MergeContent(t *testing.T) {
 	t.Skip()
 
 	type args struct {
-		fromPath string
-		toPath   string
+		fileNames []string
+		fromPath  string
+		toPath    string
 	}
 	tests := []struct {
 		name    string
@@ -81,11 +82,14 @@ func TestCzbooksNoveler_MergeContent(t *testing.T) {
 		wantErr bool
 	}{
 		// TODO: Add test cases.
-		{"Test", &CzbooksNoveler{title: "《原來我是妖二代》", author: "賣報小郎君", numPages: 10}, args{fromPath: "./temp", toPath: "./finish"}, false},
+		{"Test",
+			&CzbooksNoveler{title: "《原來我是妖二代》", author: "賣報小郎君", numPages: 10},
+			args{fileNames: []string{"1.txt", "2.txt"}, fromPath: "./temp", toPath: "./finish"},
+			false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if err := tt.n.MergeContent(tt.args.fromPath, tt.args.toPath); (err != nil) != tt.wantErr {
+			if err := tt.n.MergeContent(tt.args.fileNames, tt.args.fromPath, tt.args.toPath); (err != nil) != tt.wantErr {
 				t.Errorf("CzbooksNoveler.MergeContent() error = %v, wantErr %v", err, tt.wantErr)
 			}
 		})

@@ -5,6 +5,7 @@ import (
 	"net/http"
 	"testing"
 
+	"github.com/z-Wind/getNovel/crawler"
 	"github.com/z-Wind/getNovel/util"
 )
 
@@ -71,8 +72,9 @@ func TestWanbentxtNoveler_MergeContent(t *testing.T) {
 	t.Skip()
 
 	type args struct {
-		fromPath string
-		toPath   string
+		fileNames []string
+		fromPath  string
+		toPath    string
 	}
 	tests := []struct {
 		name    string
@@ -81,12 +83,57 @@ func TestWanbentxtNoveler_MergeContent(t *testing.T) {
 		wantErr bool
 	}{
 		// TODO: Add test cases.
-		{"Test", &WanbentxtNoveler{title: "瘟疫医生", author: "机器人瓦力", numPages: 10}, args{fromPath: "./temp", toPath: "./finish"}, false},
+		{"Test",
+			&WanbentxtNoveler{title: "瘟疫医生", author: "机器人瓦力", numPages: 10},
+			args{fileNames: []string{"1.txt", "2.txt"}, fromPath: "./temp", toPath: "./finish"},
+			false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			if err := tt.n.MergeContent(tt.args.fromPath, tt.args.toPath); (err != nil) != tt.wantErr {
+			if err := tt.n.MergeContent(tt.args.fileNames, tt.args.fromPath, tt.args.toPath); (err != nil) != tt.wantErr {
 				t.Errorf("WanbentxtNoveler.MergeContent() error = %v, wantErr %v", err, tt.wantErr)
+			}
+		})
+	}
+}
+
+func TestWanbentxtNoveler_GetNextPage(t *testing.T) {
+	type args struct {
+		html io.Reader
+		req  crawler.Request
+	}
+	tests := []struct {
+		name    string
+		n       *WanbentxtNoveler
+		url     string
+		args    args
+		want    []crawler.Request
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+		{
+			"test",
+			&WanbentxtNoveler{},
+			"https://www.wanbentxt.com/8895/5687694.html",
+			args{req: crawler.Request{Item: NovelChapter{Order: "0001"}}},
+			nil,
+			false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			resp, _ := http.Get(tt.url)
+			r, _, _, _ := util.ToUTF8Encoding(resp.Body)
+			resp.Body.Close()
+			tt.args.html = r
+
+			got, err := tt.n.GetNextPage(tt.args.html, tt.args.req)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("WanbentxtNoveler.GetNextPage() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if got[0].Item.(NovelChapter).Order != tt.args.req.Item.(NovelChapter).Order+"-1" {
+				t.Errorf("WanbentxtNoveler.GetNextPage() = %v, want %v", got, tt.want)
 			}
 		})
 	}

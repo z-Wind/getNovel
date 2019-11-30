@@ -20,7 +20,7 @@ import (
 func URLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
 	// Create a new context with a deadline
 	ctx := context.Background()
-	ctx, cancel := context.WithTimeout(ctx, 10*time.Second)
+	ctx, cancel := context.WithTimeout(ctx, 30*time.Second)
 	defer cancel()
 
 	resp, err := HTTPGetwithContext(ctx, URL)

@@ -1,4 +1,4 @@
-package main
+package crawler
 
 import (
 	"context"
@@ -9,14 +9,14 @@ import (
 type QueueScheduler struct {
 	workerChan  chan chan Request
 	requestChan chan Request
-	ctx         context.Context
+	Ctx         context.Context
 }
 
 // Submit 提交任務
 func (s *QueueScheduler) Submit(r Request) {
 	select {
 	case s.requestChan <- r:
-	case <-s.ctx.Done():
+	case <-s.Ctx.Done():
 		fmt.Printf("QueueScheduler.Submit.Done\n")
 	}
 }
@@ -25,7 +25,7 @@ func (s *QueueScheduler) Submit(r Request) {
 func (s *QueueScheduler) WorkerReady(w chan Request) {
 	select {
 	case s.workerChan <- w:
-	case <-s.ctx.Done():
+	case <-s.Ctx.Done():
 		fmt.Printf("QueueScheduler.WorkerReady.Done\n")
 	}
 }
@@ -57,7 +57,7 @@ func (s *QueueScheduler) Run() {
 				requestQ = append(requestQ, r)
 			case w := <-s.workerChan:
 				workerQ = append(workerQ, w)
-			case <-s.ctx.Done():
+			case <-s.Ctx.Done():
 				fmt.Printf("QueueScheduler.Run.Done\n")
 				return
 			}

@@ -9,8 +9,10 @@ import (
 	"net/url"
 	"os"
 	"path"
+	"sort"
 
 	"github.com/pkg/errors"
+	"github.com/z-Wind/getNovel/crawler"
 	"github.com/z-Wind/getNovel/noveler"
 )
 
@@ -91,10 +93,10 @@ func getNovel(novel Noveler) error {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
-	e := ConcurrentEngine{
-		Scheduler:   &QueueScheduler{ctx: ctx},
+	e := crawler.ConcurrentEngine{
+		Scheduler:   &crawler.QueueScheduler{Ctx: ctx},
 		WorkerCount: 10,
-		ctx:         ctx,
+		Ctx:         ctx,
 	}
 
 	// 取得章節網址
@@ -104,35 +106,37 @@ func getNovel(novel Noveler) error {
 		return errors.Wrap(err, "novel.GetChapterURLs")
 	}
 
-	var requests []Request
+	var requests []crawler.Request
 	for i := range novelPages {
-		fileName := fmt.Sprintf("temp/%d.txt", novelPages[i].Order)
-		if _, err := os.Stat(fileName); os.IsNotExist(err) {
-			requests = append(requests, Request{Order: novelPages[i].Order, URL: novelPages[i].URL})
-		}
+		requests = append(requests, crawler.Request{Item: novelPages[i], ParseFunc: novel.GetParseResult})
 	}
 
+	fileNames := []string{}
 	// 網址傳進 engine 抓取 HTML，並將小說內容存檔
 	dataChan := e.Run(requests...)
-	for e.numTasks != 0 {
+	for e.NumTasks != 0 {
 		data := <-dataChan
-		fileName := fmt.Sprintf("%d.txt", data.Order)
+		// 不加 .txt 以免檔名排序錯誤，導致合併出錯
+		fileName := fmt.Sprintf("%s", data.(noveler.NovelChapterHTML).Order)
+		fileNames = append(fileNames, fileName)
 		filePath := path.Join(tmpPath, fileName)
 
-		text, err := novel.GetText(data.HTML)
-		if err != nil {
-			fmt.Printf("novel.GetText Fail: %s\n", err)
+		if _, err := os.Stat(filePath); os.IsExist(err) {
+			continue
 		}
 
-		err = ioutil.WriteFile(filePath, []byte(text), 0666)
+		text := data.(noveler.NovelChapterHTML).Text
+		err = ioutil.WriteFile(filePath, []byte(text), os.ModePerm)
 		if err != nil {
 			fmt.Printf("ioutil.WriteFile Fail: %s\n", err)
 			return errors.Wrap(err, "ioutil.WriteFile")
 		}
+		fmt.Printf("write to %s\n", fileName)
 	}
 
 	// 合併暫存檔
-	if err := novel.MergeContent(tmpPath, resultPath); err != nil {
+	sort.Strings(fileNames)
+	if err := novel.MergeContent(fileNames, tmpPath, resultPath); err != nil {
 		return err
 	}
 

@@ -1,6 +1,7 @@
 package noveler
 
 import (
+	"bytes"
 	"context"
 	"fmt"
 	"io"
@@ -12,6 +13,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/pkg/errors"
+	"github.com/z-Wind/getNovel/crawler"
 	"github.com/z-Wind/getNovel/util"
 )
 
@@ -58,8 +60,8 @@ func (n *CzbooksNoveler) GetChapterURLs() ([]NovelChapter, error) {
 	dom.Find("ul.nav.chapter-list > li > a").Each(func(i int, s *goquery.Selection) {
 		if href, ok := s.Attr("href"); ok {
 			u.Opaque = href
-			chapters = append(chapters, NovelChapter{Order: i, URL: u.String()})
-			fmt.Printf("NovelPage %d: %s\n", i, u.String())
+			chapters = append(chapters, NovelChapter{Order: fmt.Sprintf("%010d", i), URL: u.String()})
+			fmt.Printf("NovelPage %010d: %s\n", i, u.String())
 		}
 	})
 
@@ -69,6 +71,89 @@ func (n *CzbooksNoveler) GetChapterURLs() ([]NovelChapter, error) {
 	n.numPages = len(chapters)
 
 	return chapters, nil
+}
+
+// 獲得 章節的內容 下一頁的連結
+func (n *CzbooksNoveler) GetParseResult(req crawler.Request) (crawler.ParseResult, error) {
+	// Request the HTML page
+	// Create a new context with a deadline
+	ctx := context.Background()
+	ctx, cancel := context.WithTimeout(ctx, Timeout)
+	defer cancel()
+
+	resp, err := util.HTTPGetwithContext(ctx, req.Item.(NovelChapter).URL)
+	if err != nil {
+		// fmt.Printf("ParseResult: HTTPGetwithContext(%s): %s\n", req.URL, err)
+		return crawler.ParseResult{
+			Item:     nil,
+			Requests: []crawler.Request{req},
+			DoneN:    0,
+		}, errors.Wrap(err, "util.HTTPGetwithContext")
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != 200 {
+		// fmt.Printf("ParseResult: HTTPGetwithContext(%s): status code error: %d %s\n", req.URL, resp.StatusCode, resp.Status)
+		return crawler.ParseResult{
+			Item:     nil,
+			Requests: []crawler.Request{req},
+			DoneN:    0,
+		}, fmt.Errorf("util.HTTPGetwithContext(%s): status code error: %d %s\n", req.Item.(NovelChapter).URL, resp.StatusCode, resp.Status)
+	}
+
+	r, name, certain, err := util.ToUTF8Encoding(resp.Body)
+	if err != nil {
+		fmt.Printf("GetParseResult: util.ToUTF8Encoding: name:%s, certain:%v err:%s\n", name, certain, err)
+		return crawler.ParseResult{
+			Item:     nil,
+			Requests: []crawler.Request{req},
+			DoneN:    0,
+		}, errors.Wrap(err, "util.ToUTF8Encoding")
+	}
+
+	b, err := ioutil.ReadAll(r)
+	if err != nil {
+		// fmt.Printf("ParseResult: ioutil.ReadAll: err:%s\n", err)
+		return crawler.ParseResult{
+			Item:     nil,
+			Requests: []crawler.Request{req},
+			DoneN:    0,
+		}, errors.Wrap(err, "ioutil.ReadAll")
+	}
+
+	requests, err := n.GetNextPage(bytes.NewReader(b))
+	if err != nil {
+		return crawler.ParseResult{
+			Item:     nil,
+			Requests: []crawler.Request{req},
+			DoneN:    0,
+		}, errors.Wrap(err, "GetNextPage")
+	}
+
+	text, err := n.GetText(bytes.NewReader(b))
+	if err != nil {
+		return crawler.ParseResult{
+			Item:     nil,
+			Requests: append(requests, req),
+			DoneN:    -len(requests),
+		}, errors.Wrap(err, "GetText")
+	}
+
+	return crawler.ParseResult{
+		Item: NovelChapterHTML{
+			NovelChapter: NovelChapter{
+				Order: req.Item.(NovelChapter).Order,
+				URL:   req.Item.(NovelChapter).URL,
+			},
+			Text: text},
+		Requests: requests,
+		DoneN:    -len(requests) + 1,
+	}, nil
+}
+
+// 獲得下一頁的連結
+func (n *CzbooksNoveler) GetNextPage(html io.Reader) ([]crawler.Request, error) {
+	return []crawler.Request{}, nil
 }
 
 // GetText 獲得章節的內容
@@ -85,7 +170,7 @@ func (n *CzbooksNoveler) GetText(html io.Reader) (string, error) {
 }
 
 // MergeContent 合併章節
-func (n *CzbooksNoveler) MergeContent(fromPath, toPath string) error {
+func (n *CzbooksNoveler) MergeContent(fileNames []string, fromPath, toPath string) error {
 	novelName := fmt.Sprintf("%s-作者：%s.txt", n.title, n.author)
 	savePath := path.Join(toPath, novelName)
 
@@ -97,8 +182,7 @@ func (n *CzbooksNoveler) MergeContent(fromPath, toPath string) error {
 
 	defer f.Close()
 
-	for i := 0; i < n.numPages; i++ {
-		fName := fmt.Sprintf("%d.txt", i)
+	for _, fName := range fileNames {
 		fPath := path.Join(fromPath, fName)
 
 		b, err := ioutil.ReadFile(fPath)
