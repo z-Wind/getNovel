@@ -26,6 +26,13 @@ type WanbentxtNoveler struct {
 	numPages int
 }
 
+func NewWanbentxtNoveler(url string) *WanbentxtNoveler {
+	var noveler WanbentxtNoveler
+	noveler.URL = url
+
+	return &noveler
+}
+
 // GetChapterURLs 獲得所有章節的網址
 func (n *WanbentxtNoveler) GetChapterURLs() ([]NovelChapter, error) {
 	// Create a new context with a deadline
@@ -192,7 +199,7 @@ func (n *WanbentxtNoveler) GetText(html io.Reader) (string, error) {
 	chapterTitle := dom.Find("div.readerTitle").Text()
 	text := dom.Find("div.readerCon").Text()
 
-	return fmt.Sprintf("%s\n\n%s", chapterTitle, text), nil
+	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
 }
 
 // MergeContent 合併章節

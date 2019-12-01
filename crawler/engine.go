@@ -7,10 +7,11 @@ import (
 
 // ConcurrentEngine 負責處理對外與建立 worker
 type ConcurrentEngine struct {
-	Scheduler   Scheduler
-	WorkerCount int
-	Ctx         context.Context
-	NumTasks    int
+	Scheduler       Scheduler
+	WorkerCount     int
+	Ctx             context.Context
+	NumTasks        int
+	CheckExistOrAdd func(interface{}) bool
 }
 
 // Run 開始運作
@@ -26,8 +27,8 @@ func (e *ConcurrentEngine) Run(seeds ...Request) chan interface{} {
 		e.createWorker(parseResultChan, e.Scheduler)
 	}
 
-	for _, r := range seeds {
-		e.Scheduler.Submit(r)
+	for _, req := range seeds {
+		e.Scheduler.Submit(req)
 	}
 
 	go func() {
@@ -46,18 +47,25 @@ func (e *ConcurrentEngine) Run(seeds ...Request) chan interface{} {
 			select {
 			case activeDataChan <- activeData:
 				dataQ = dataQ[1:]
+				if e.NumTasks == 0 && len(dataQ) == 0 {
+					close(dataChan)
+				}
 			case parseResult := <-parseResultChan:
 				if parseResult.Item != nil {
 					// fmt.Printf("Get %+v\n", parseResult.Item)
 					dataQ = append(dataQ, parseResult.Item)
 				}
 				e.NumTasks -= parseResult.DoneN
-				fmt.Printf("tasks: %d\n", e.NumTasks)
 
 				// 排入新增的 requests
-				for _, request := range parseResult.Requests {
-					e.Scheduler.Submit(request)
+				for _, req := range parseResult.Requests {
+					if !e.CheckExistOrAdd(req) {
+						e.Scheduler.Submit(req)
+					} else {
+						e.NumTasks--
+					}
 				}
+				fmt.Printf("tasks: %d\n", e.NumTasks)
 			case <-e.Ctx.Done():
 				fmt.Printf("ConcurrentEngine.Run.Done\n")
 				return

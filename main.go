@@ -70,9 +70,9 @@ func chooseNoveler(URLNovel string) (Noveler, error) {
 
 	switch u.Host {
 	case "www.wanbentxt.com": // 完本神站
-		return &noveler.WanbentxtNoveler{URL: URLNovel}, nil
+		return noveler.NewWanbentxtNoveler(URLNovel), nil
 	case "czbooks.net": // 小說狂人
-		return &noveler.CzbooksNoveler{URL: URLNovel}, nil
+		return noveler.NewCzbooksNoveler(URLNovel), nil
 	default:
 		return nil, fmt.Errorf("%s No useful interface", u.Host)
 	}
@@ -81,41 +81,62 @@ func chooseNoveler(URLNovel string) (Noveler, error) {
 // getNovel 取得小說內容
 func getNovel(novel Noveler) error {
 	tmpPath := "temp"
-	resultPath := "finish"
-
 	if _, err := os.Stat(tmpPath); os.IsNotExist(err) {
 		os.MkdirAll(tmpPath, os.ModePerm)
 	}
+
+	resultPath := "finish"
 	if _, err := os.Stat(resultPath); os.IsNotExist(err) {
 		os.MkdirAll(resultPath, os.ModePerm)
+	}
+
+	fileNames := []string{}
+	hisRecord := NewRecord()
+	novelPages, err := hisRecord.loadExist(tmpPath)
+	if err != nil {
+		return errors.Wrap(err, "loadExist")
+	}
+	var requests []crawler.Request
+	for i := range novelPages {
+		req := crawler.Request{Item: novelPages[i], ParseFunc: novel.GetParseResult}
+		if !hisRecord.checkDone(req) {
+			requests = append(requests, req)
+		} else {
+			fileNames = append(fileNames, novelPages[i].Order)
+		}
 	}
 
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
 	e := crawler.ConcurrentEngine{
-		Scheduler:   &crawler.QueueScheduler{Ctx: ctx},
-		WorkerCount: 10,
-		Ctx:         ctx,
+		Scheduler:       &crawler.QueueScheduler{Ctx: ctx},
+		WorkerCount:     10,
+		Ctx:             ctx,
+		CheckExistOrAdd: hisRecord.checkExistOrAdd,
 	}
 
 	// 取得章節網址
-	novelPages, err := novel.GetChapterURLs()
+	novelPages, err = novel.GetChapterURLs()
 	if err != nil {
 		fmt.Printf("novel.GetChapterURLs Fail: %s\n", err)
 		return errors.Wrap(err, "novel.GetChapterURLs")
 	}
 
-	var requests []crawler.Request
 	for i := range novelPages {
-		requests = append(requests, crawler.Request{Item: novelPages[i], ParseFunc: novel.GetParseResult})
+		req := crawler.Request{Item: novelPages[i], ParseFunc: novel.GetParseResult}
+		if !hisRecord.checkExistOrAdd(req) {
+			requests = append(requests, req)
+		}
 	}
 
-	fileNames := []string{}
 	// 網址傳進 engine 抓取 HTML，並將小說內容存檔
 	dataChan := e.Run(requests...)
-	for e.NumTasks != 0 {
-		data := <-dataChan
+	for {
+		data, more := <-dataChan
+		if !more {
+			break
+		}
 		// 不加 .txt 以免檔名排序錯誤，導致合併出錯
 		fileName := fmt.Sprintf("%s", data.(noveler.NovelChapterHTML).Order)
 		fileNames = append(fileNames, fileName)
@@ -132,6 +153,12 @@ func getNovel(novel Noveler) error {
 			return errors.Wrap(err, "ioutil.WriteFile")
 		}
 		fmt.Printf("write to %s\n", fileName)
+		hisRecord.done(data.(noveler.NovelChapterHTML).NovelChapter)
+
+		err = hisRecord.saveExist(tmpPath)
+		if err != nil {
+			return errors.Wrap(err, "hisRecord.saveExist")
+		}
 	}
 
 	// 合併暫存檔
@@ -141,9 +168,9 @@ func getNovel(novel Noveler) error {
 	}
 
 	// 移除暫存檔
-	if err := os.RemoveAll(tmpPath); err != nil {
-		return err
-	}
+	// if err := os.RemoveAll(tmpPath); err != nil {
+	// 	return err
+	// }
 
 	return nil
 }

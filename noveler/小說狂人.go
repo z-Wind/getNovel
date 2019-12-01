@@ -25,6 +25,13 @@ type CzbooksNoveler struct {
 	numPages int
 }
 
+func NewCzbooksNoveler(url string) *CzbooksNoveler {
+	var noveler CzbooksNoveler
+	noveler.URL = url
+
+	return &noveler
+}
+
 // GetChapterURLs 獲得所有章節的網址
 func (n *CzbooksNoveler) GetChapterURLs() ([]NovelChapter, error) {
 	// Create a new context with a deadline
@@ -166,7 +173,7 @@ func (n *CzbooksNoveler) GetText(html io.Reader) (string, error) {
 	chapterTitle := dom.Find("div.name").Text()
 	text := dom.Find("div.content").Text()
 
-	return fmt.Sprintf("%s\n\n%s", chapterTitle, text), nil
+	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
 }
 
 // MergeContent 合併章節
@@ -199,4 +206,9 @@ func (n *CzbooksNoveler) MergeContent(fileNames []string, fromPath, toPath strin
 	}
 
 	return nil
+}
+
+// 確認連結是否存在
+func (n *CzbooksNoveler) CheckExist(req interface{}) bool {
+	return false
 }
