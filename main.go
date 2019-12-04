@@ -62,7 +62,7 @@ func main() {
 }
 
 // chooseNoveler 選擇合適的 noveler
-func chooseNoveler(URLNovel string) (Noveler, error) {
+func chooseNoveler(URLNovel string) (noveler.Noveler, error) {
 	u, err := url.Parse(URLNovel)
 	if err != nil {
 		return nil, errors.Wrap(err, "url.Parse")
@@ -84,7 +84,7 @@ func chooseNoveler(URLNovel string) (Noveler, error) {
 }
 
 // getNovel 取得小說內容
-func getNovel(novel Noveler) error {
+func getNovel(novel noveler.Noveler) error {
 	tmpPath := "temp"
 	if _, err := os.Stat(tmpPath); os.IsNotExist(err) {
 		os.MkdirAll(tmpPath, os.ModePerm)
@@ -95,26 +95,10 @@ func getNovel(novel Noveler) error {
 		os.MkdirAll(resultPath, os.ModePerm)
 	}
 
-	fileNames := []string{}
-	hisRecord := newRecord()
-	novelPages, err := hisRecord.loadExist(tmpPath)
-	if err != nil {
-		return errors.Wrap(err, "loadExist")
-	}
-
-	var requests []crawler.Request
-	for i := range novelPages {
-		req := crawler.Request{Item: novelPages[i], ParseFunc: novel.GetParseResult}
-		if !hisRecord.checkDone(req) {
-			requests = append(requests, req)
-		} else {
-			fileNames = append(fileNames, novelPages[i].Order)
-		}
-	}
-
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
+	hisRecord := newRecord()
 	e := crawler.ConcurrentEngine{
 		Scheduler:       &crawler.QueueScheduler{Ctx: ctx},
 		WorkerCount:     10,
@@ -122,8 +106,31 @@ func getNovel(novel Noveler) error {
 		CheckExistOrAdd: hisRecord.checkExistOrAdd,
 	}
 
+	err := novel.GetInfo()
+	if err != nil {
+		return errors.Wrap(err, "novel.GetInfo")
+	}
+
+	// 讀取記錄
+	fileNames := []string{}
+	filePath := path.Join(tmpPath, fmt.Sprintf("%s-record.dat", novel.GetName()))
+	novelPagesRecord, err := hisRecord.loadExist(filePath)
+	if err != nil {
+		return errors.Wrap(err, "loadExist")
+	}
+
+	var requests []crawler.Request
+	for i := range novelPagesRecord {
+		req := crawler.Request{Item: novelPagesRecord[i], ParseFunc: novel.GetParseResult}
+		if !hisRecord.checkDone(req) {
+			requests = append(requests, req)
+		} else {
+			fileNames = append(fileNames, novelPagesRecord[i].Order)
+		}
+	}
+
 	// 取得章節網址
-	novelPages, err = novel.GetChapterURLs()
+	novelPages, err := novel.GetChapterURLs()
 	if err != nil {
 		fmt.Printf("novel.GetChapterURLs Fail: %s\n", err)
 		return errors.Wrap(err, "novel.GetChapterURLs")
@@ -161,7 +168,7 @@ func getNovel(novel Noveler) error {
 		fmt.Printf("write to %s\n", fileName)
 		hisRecord.done(data.(noveler.NovelChapterHTML).NovelChapter)
 
-		err = hisRecord.saveExist(tmpPath)
+		err = hisRecord.saveExist(path.Join(tmpPath, fmt.Sprintf("%s-record.dat", novel.GetName())))
 		if err != nil {
 			return errors.Wrap(err, "hisRecord.saveExist")
 		}
@@ -174,9 +181,15 @@ func getNovel(novel Noveler) error {
 	}
 
 	// 移除暫存檔
-	// if err := os.RemoveAll(tmpPath); err != nil {
-	// 	return err
-	// }
+	for _, fileName := range fileNames {
+		filePath := path.Join(tmpPath, fileName)
+		if err := os.Remove(filePath); err != nil {
+			return err
+		}
+	}
+	if err := os.Remove(path.Join(tmpPath, fmt.Sprintf("%s-record.dat", novel.GetName()))); err != nil {
+		return err
+	}
 
 	return nil
 }

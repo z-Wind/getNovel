@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
+	"path"
 	"testing"
 
 	"github.com/z-Wind/getNovel/crawler"
@@ -28,12 +29,12 @@ func Test_record(t *testing.T) {
 	if got := r.checkExistOrAdd(req); !got {
 		t.Errorf("r.checkExist() = %v, want %v", got, true)
 	}
-	if err := r.saveExist(tmpPath); err != nil {
+	if err := r.saveExist(path.Join(tmpPath, "temp-record.dat")); err != nil {
 		t.Errorf("r.saveExist() error = %v, wantErr %v", err, nil)
 	}
 
 	r = newRecord()
-	if _, err := r.loadExist(tmpPath); err != nil {
+	if _, err := r.loadExist(path.Join(tmpPath, "temp-record.dat")); err != nil {
 		t.Errorf("r.saveExist() error = %v, wantErr %v", err, nil)
 	}
 	req2 := crawler.Request{

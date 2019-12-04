@@ -10,7 +10,7 @@ func Test_getNovel(t *testing.T) {
 	t.Skip()
 
 	type args struct {
-		novel Noveler
+		novel noveler.Noveler
 	}
 	tests := []struct {
 		name    string

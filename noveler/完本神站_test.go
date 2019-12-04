@@ -9,6 +9,29 @@ import (
 	"github.com/z-Wind/getNovel/util"
 )
 
+func TestWanbentxtNoveler_GetInfo(t *testing.T) {
+	tests := []struct {
+		name    string
+		n       *WanbentxtNoveler
+		want    WanbentxtNoveler
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+		{"瘟疫医生", &WanbentxtNoveler{URL: "https://www.wanbentxt.com/18868/"}, WanbentxtNoveler{title: "瘟疫医生", author: "机器人瓦力"}, false},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			err := tt.n.GetInfo()
+			if (err != nil) != tt.wantErr {
+				t.Errorf("WanbentxtNoveler.getChapterURLs() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if tt.n.title != tt.want.title || tt.n.author != tt.want.author {
+				t.Errorf("WanbentxtNoveler = %v, want %v", tt.n, tt.want)
+			}
+		})
+	}
+}
 func TestWanbentxtNoveler_GetChapterURLs(t *testing.T) {
 	tests := []struct {
 		name    string
@@ -26,7 +49,7 @@ func TestWanbentxtNoveler_GetChapterURLs(t *testing.T) {
 				t.Errorf("WanbentxtNoveler.getChapterURLs() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if len(got) == 0 || tt.n.title != tt.want.title || tt.n.author != tt.want.author {
+			if len(got) == 0 {
 				t.Errorf("WanbentxtNoveler = %v, want %v", tt.n, tt.want)
 			} else {
 				t.Log(got)
@@ -35,7 +58,7 @@ func TestWanbentxtNoveler_GetChapterURLs(t *testing.T) {
 	}
 }
 
-func TestWanbentxtNoveler_GetText(t *testing.T) {
+func TestWanbentxtNoveler_getText(t *testing.T) {
 	type args struct {
 		html io.Reader
 	}
@@ -56,7 +79,7 @@ func TestWanbentxtNoveler_GetText(t *testing.T) {
 			resp.Body.Close()
 			tt.args.html = r
 
-			got, err := tt.n.GetText(tt.args.html)
+			got, err := tt.n.getText(tt.args.html)
 			if (err != nil) != tt.wantErr {
 				t.Errorf("WanbentxtNoveler.getText() error = %v, wantErr %v", err, tt.wantErr)
 				return
@@ -84,7 +107,7 @@ func TestWanbentxtNoveler_MergeContent(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{"Test",
-			&WanbentxtNoveler{title: "瘟疫医生", author: "机器人瓦力", numPages: 10},
+			&WanbentxtNoveler{title: "瘟疫医生", author: "机器人瓦力"},
 			args{fileNames: []string{"1.txt", "2.txt"}, fromPath: "./temp", toPath: "./finish"},
 			false},
 	}
@@ -97,7 +120,7 @@ func TestWanbentxtNoveler_MergeContent(t *testing.T) {
 	}
 }
 
-func TestWanbentxtNoveler_GetNextPage(t *testing.T) {
+func TestWanbentxtNoveler_getNextPage(t *testing.T) {
 	type args struct {
 		html io.Reader
 		req  crawler.Request
@@ -127,13 +150,13 @@ func TestWanbentxtNoveler_GetNextPage(t *testing.T) {
 			resp.Body.Close()
 			tt.args.html = r
 
-			got, err := tt.n.GetNextPage(tt.args.html, tt.args.req)
+			got, err := tt.n.getNextPage(tt.args.html, tt.args.req)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("WanbentxtNoveler.GetNextPage() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("WanbentxtNoveler.getNextPage() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if got[0].Item.(NovelChapter).Order != tt.args.req.Item.(NovelChapter).Order+"-1" {
-				t.Errorf("WanbentxtNoveler.GetNextPage() = %v, want %v", got, tt.want)
+				t.Errorf("WanbentxtNoveler.getNextPage() = %v, want %v", got, tt.want)
 			}
 		})
 	}

@@ -32,6 +32,10 @@ func (e *ConcurrentEngine) Run(seeds ...Request) chan interface{} {
 	}
 
 	go func() {
+		// 確認是否有任務
+		if e.NumTasks == 0 {
+			close(dataChan)
+		}
 		// 用 queue 先存起來，防止阻塞
 		var dataQ []interface{}
 
@@ -112,7 +116,7 @@ func (e *ConcurrentEngine) createWorker(parseResultChan chan<- ParseResult, s Sc
 func worker(req Request) ParseResult {
 	parseResult, err := req.ParseFunc(req)
 	if err != nil {
-		fmt.Printf("ParseResult: req.ParseFunc: err:%s\n", err)
+		fmt.Printf("worker: req.ParseFunc: err:%s\n", err)
 		return ParseResult{
 			Item:     nil,
 			Requests: []Request{req},

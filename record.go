@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"io/ioutil"
 	"os"
-	"path"
 	"sync"
 
 	"github.com/pkg/errors"
@@ -28,8 +27,7 @@ func newRecord() *record {
 }
 
 // loadExist 讀取記錄資料
-func (r *record) loadExist(dirPath string) ([]noveler.NovelChapter, error) {
-	filePath := path.Join(dirPath, "record.dat")
+func (r *record) loadExist(filePath string) ([]noveler.NovelChapter, error) {
 	if _, err := os.Stat(filePath); os.IsNotExist(err) {
 		return nil, nil
 	}
@@ -88,7 +86,7 @@ func (r *record) done(chapter noveler.NovelChapter) {
 }
 
 // saveExist 儲存記錄資料
-func (r *record) saveExist(dirPath string) error {
+func (r *record) saveExist(filePath string) error {
 	r.lock.Lock()
 	defer r.lock.Unlock()
 
@@ -97,7 +95,6 @@ func (r *record) saveExist(dirPath string) error {
 		return errors.Wrap(err, "json.Marshal")
 	}
 
-	filePath := path.Join(dirPath, "record.dat")
 	err = ioutil.WriteFile(filePath, jsonString, os.ModePerm)
 	if err != nil {
 		return errors.Wrap(err, "ioutil.WriteFile")

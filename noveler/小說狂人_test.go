@@ -10,6 +10,30 @@ import (
 	"github.com/z-Wind/getNovel/util"
 )
 
+func TestCzbooksNoveler_GetInfo(t *testing.T) {
+	tests := []struct {
+		name    string
+		n       *CzbooksNoveler
+		want    CzbooksNoveler
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+		{"原來我是妖二代", &CzbooksNoveler{URL: "https://czbooks.net/n/u5a6m"}, CzbooksNoveler{title: "《原來我是妖二代》", author: "賣報小郎君"}, false},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			err := tt.n.GetInfo()
+			if (err != nil) != tt.wantErr {
+				t.Errorf("CzbooksNoveler.getChapterURLs() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if tt.n.title != tt.want.title || tt.n.author != tt.want.author {
+				t.Errorf("CzbooksNoveler = %v, want %v", tt.n, tt.want)
+			}
+		})
+	}
+}
+
 func TestCzbooksNoveler_GetChapterURLs(t *testing.T) {
 	tests := []struct {
 		name    string
@@ -27,7 +51,7 @@ func TestCzbooksNoveler_GetChapterURLs(t *testing.T) {
 				t.Errorf("CzbooksNoveler.getChapterURLs() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if len(got) == 0 || tt.n.title != tt.want.title || tt.n.author != tt.want.author {
+			if len(got) == 0 {
 				t.Errorf("CzbooksNoveler = %v, want %v", tt.n, tt.want)
 			} else {
 				t.Log(got)
@@ -36,7 +60,7 @@ func TestCzbooksNoveler_GetChapterURLs(t *testing.T) {
 	}
 }
 
-func TestCzbooksNoveler_GetText(t *testing.T) {
+func TestCzbooksNoveler_getText(t *testing.T) {
 	type args struct {
 		html io.Reader
 	}
@@ -57,7 +81,7 @@ func TestCzbooksNoveler_GetText(t *testing.T) {
 			resp.Body.Close()
 			tt.args.html = r
 
-			got, err := tt.n.GetText(tt.args.html)
+			got, err := tt.n.getText(tt.args.html)
 			if (err != nil) != tt.wantErr {
 				t.Errorf("CzbooksNoveler.getText() error = %v, wantErr %v", err, tt.wantErr)
 				return
@@ -85,7 +109,7 @@ func TestCzbooksNoveler_MergeContent(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{"Test",
-			&CzbooksNoveler{title: "《原來我是妖二代》", author: "賣報小郎君", numPages: 10},
+			&CzbooksNoveler{title: "《原來我是妖二代》", author: "賣報小郎君"},
 			args{fileNames: []string{"1.txt", "2.txt"}, fromPath: "./temp", toPath: "./finish"},
 			false},
 	}
@@ -98,7 +122,7 @@ func TestCzbooksNoveler_MergeContent(t *testing.T) {
 	}
 }
 
-func TestCzbooksNoveler_GetNextPage(t *testing.T) {
+func TestCzbooksNoveler_getNextPage(t *testing.T) {
 	type args struct {
 		html io.Reader
 		req  crawler.Request
@@ -128,13 +152,13 @@ func TestCzbooksNoveler_GetNextPage(t *testing.T) {
 			resp.Body.Close()
 			tt.args.html = r
 
-			got, err := tt.n.GetNextPage(tt.args.html, tt.args.req)
+			got, err := tt.n.getNextPage(tt.args.html, tt.args.req)
 			if (err != nil) != tt.wantErr {
-				t.Errorf("WanbentxtNoveler.GetNextPage() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("WanbentxtNoveler.getNextPage() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if !reflect.DeepEqual(got, tt.want) {
-				t.Errorf("WanbentxtNoveler.GetNextPage() = %v, want %v", got, tt.want)
+				t.Errorf("WanbentxtNoveler.getNextPage() = %v, want %v", got, tt.want)
 			}
 		})
 	}
