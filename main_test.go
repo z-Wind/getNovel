@@ -18,7 +18,7 @@ func Test_getNovel(t *testing.T) {
 		wantErr bool
 	}{
 		// TODO: Add test cases.
-		{"完本神店", args{&noveler.WanbentxtNoveler{URL: "https://www.wanbentxt.com/18868/"}}, false},
+		{"完本神站", args{&noveler.WanbentxtNoveler{URL: "https://www.wanbentxt.com/18868/"}}, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -40,7 +40,7 @@ func Test_chooseNoveler(t *testing.T) {
 		wantErr bool
 	}{
 		// TODO: Add test cases.
-		{"test", args{URLNovel: "https://m.wanbentxt.com/8895/"}, func(i interface{}) bool { _, ok := i.(noveler.WanbentxtNoveler); return ok }, true},
+		{"完本神站 mobile", args{URLNovel: "https://m.wanbentxt.com/8895/"}, func(i interface{}) bool { _, ok := i.(noveler.WanbentxtNoveler); return ok }, false},
 		{"完本神站", args{URLNovel: "https://www.wanbentxt.com/8895/"}, func(i interface{}) bool { _, ok := i.(noveler.WanbentxtNoveler); return ok }, false},
 		{"小說狂人", args{URLNovel: "https://czbooks.net/n/u5a6m"}, func(i interface{}) bool { _, ok := i.(noveler.CzbooksNoveler); return ok }, false},
 	}

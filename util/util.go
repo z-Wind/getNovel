@@ -16,8 +16,8 @@ import (
 	"golang.org/x/text/transform"
 )
 
-// URLToUTF8Encoding 將網頁編碼為 UTF8 並回傳 reader
-func URLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
+// URLHTMLToUTF8Encoding 將網頁編碼為 UTF8 並回傳 reader
+func URLHTMLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
 	// Create a new context with a deadline
 	ctx := context.Background()
 	ctx, cancel := context.WithTimeout(ctx, 30*time.Second)

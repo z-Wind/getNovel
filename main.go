@@ -69,6 +69,11 @@ func chooseNoveler(URLNovel string) (Noveler, error) {
 	}
 
 	switch u.Host {
+	case "m.wanbentxt.com": // 完本神站 mobile
+		u.Host = "www.wanbentxt.com"
+		fmt.Printf("%s => %s\n", URLNovel, u.String())
+		URLNovel = u.String()
+		fallthrough
 	case "www.wanbentxt.com": // 完本神站
 		return noveler.NewWanbentxtNoveler(URLNovel), nil
 	case "czbooks.net": // 小說狂人
@@ -91,11 +96,12 @@ func getNovel(novel Noveler) error {
 	}
 
 	fileNames := []string{}
-	hisRecord := NewRecord()
+	hisRecord := newRecord()
 	novelPages, err := hisRecord.loadExist(tmpPath)
 	if err != nil {
 		return errors.Wrap(err, "loadExist")
 	}
+
 	var requests []crawler.Request
 	for i := range novelPages {
 		req := crawler.Request{Item: novelPages[i], ParseFunc: novel.GetParseResult}

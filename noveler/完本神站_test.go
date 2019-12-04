@@ -138,3 +138,42 @@ func TestWanbentxtNoveler_GetNextPage(t *testing.T) {
 		})
 	}
 }
+
+func TestWanbentxtNoveler_GetParseResult(t *testing.T) {
+	type args struct {
+		req crawler.Request
+	}
+	tests := []struct {
+		name    string
+		n       *WanbentxtNoveler
+		args    args
+		want    crawler.ParseResult
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+		{
+			"test",
+			&WanbentxtNoveler{},
+			args{
+				req: crawler.Request{
+					Item: NovelChapter{
+						URL:   "https://www.wanbentxt.com/8895/5687694.html",
+						Order: "0001",
+					}}},
+			crawler.ParseResult{},
+			false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got, err := tt.n.GetParseResult(tt.args.req)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("WanbentxtNoveler.GetParseResult() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if got.DoneN != -len(got.Requests)+1 {
+				t.Errorf("WanbentxtNoveler.GetParseResult() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}

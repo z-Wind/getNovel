@@ -20,7 +20,7 @@ func Test_record(t *testing.T) {
 		Item: noveler.NovelChapter{Order: order, URL: url},
 	}
 
-	r := NewRecord()
+	r := newRecord()
 	if got := r.checkExistOrAdd(req); got {
 		t.Errorf("r.checkExist() = %v, want %v", got, false)
 	}
@@ -32,7 +32,7 @@ func Test_record(t *testing.T) {
 		t.Errorf("r.saveExist() error = %v, wantErr %v", err, nil)
 	}
 
-	r = NewRecord()
+	r = newRecord()
 	if _, err := r.loadExist(tmpPath); err != nil {
 		t.Errorf("r.saveExist() error = %v, wantErr %v", err, nil)
 	}
@@ -48,5 +48,4 @@ func Test_record(t *testing.T) {
 	if err := os.RemoveAll(tmpPath); err != nil {
 		t.Error(err)
 	}
-
 }

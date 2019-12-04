@@ -26,6 +26,7 @@ type WanbentxtNoveler struct {
 	numPages int
 }
 
+// NewWanbentxtNoveler 建立 WanbentxtNoveler
 func NewWanbentxtNoveler(url string) *WanbentxtNoveler {
 	var noveler WanbentxtNoveler
 	noveler.URL = url
@@ -81,7 +82,7 @@ func (n *WanbentxtNoveler) GetChapterURLs() ([]NovelChapter, error) {
 	return chapters, nil
 }
 
-// 獲得 章節的內容 下一頁的連結
+// GetParseResult 獲得 章節的內容 & 下一頁的連結
 func (n *WanbentxtNoveler) GetParseResult(req crawler.Request) (crawler.ParseResult, error) {
 	// Request the HTML page
 	// Create a new context with a deadline
@@ -106,7 +107,7 @@ func (n *WanbentxtNoveler) GetParseResult(req crawler.Request) (crawler.ParseRes
 			Item:     nil,
 			Requests: []crawler.Request{req},
 			DoneN:    0,
-		}, fmt.Errorf("util.HTTPGetwithContext(%s): status code error: %d %s\n", req.Item.(NovelChapter).URL, resp.StatusCode, resp.Status)
+		}, fmt.Errorf("util.HTTPGetwithContext(%s): status code error: %d %s", req.Item.(NovelChapter).URL, resp.StatusCode, resp.Status)
 	}
 
 	r, name, certain, err := util.ToUTF8Encoding(resp.Body)
@@ -159,7 +160,7 @@ func (n *WanbentxtNoveler) GetParseResult(req crawler.Request) (crawler.ParseRes
 	}, nil
 }
 
-// 獲得下一頁的連結
+// GetNextPage 獲得下一頁的連結
 func (n *WanbentxtNoveler) GetNextPage(html io.Reader, req crawler.Request) ([]crawler.Request, error) {
 	requests := []crawler.Request{}
 

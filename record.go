@@ -18,8 +18,8 @@ type record struct {
 	lock     sync.Mutex
 }
 
-// record 建立 record
-func NewRecord() *record {
+// newRecord 建立 record
+func newRecord() *record {
 	var r record
 
 	r.taskDone = make(map[noveler.NovelChapter]bool)

@@ -3,8 +3,10 @@ package noveler
 import (
 	"io"
 	"net/http"
+	"reflect"
 	"testing"
 
+	"github.com/z-Wind/getNovel/crawler"
 	"github.com/z-Wind/getNovel/util"
 )
 
@@ -91,6 +93,87 @@ func TestCzbooksNoveler_MergeContent(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			if err := tt.n.MergeContent(tt.args.fileNames, tt.args.fromPath, tt.args.toPath); (err != nil) != tt.wantErr {
 				t.Errorf("CzbooksNoveler.MergeContent() error = %v, wantErr %v", err, tt.wantErr)
+			}
+		})
+	}
+}
+
+func TestCzbooksNoveler_GetNextPage(t *testing.T) {
+	type args struct {
+		html io.Reader
+		req  crawler.Request
+	}
+	tests := []struct {
+		name    string
+		n       *CzbooksNoveler
+		url     string
+		args    args
+		want    []crawler.Request
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+		{
+			"test",
+			&CzbooksNoveler{},
+			"https://www.wanbentxt.com/8895/5687694.html",
+			args{req: crawler.Request{Item: NovelChapter{Order: "0001"}}},
+			[]crawler.Request{},
+			false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			resp, _ := http.Get(tt.url)
+			r, _, _, _ := util.ToUTF8Encoding(resp.Body)
+			resp.Body.Close()
+			tt.args.html = r
+
+			got, err := tt.n.GetNextPage(tt.args.html, tt.args.req)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("WanbentxtNoveler.GetNextPage() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if !reflect.DeepEqual(got, tt.want) {
+				t.Errorf("WanbentxtNoveler.GetNextPage() = %v, want %v", got, tt.want)
+			}
+		})
+	}
+}
+
+func TestCzbooksNoveler_GetParseResult(t *testing.T) {
+	type args struct {
+		req crawler.Request
+	}
+	tests := []struct {
+		name    string
+		n       *CzbooksNoveler
+		args    args
+		want    crawler.ParseResult
+		wantErr bool
+	}{
+		// TODO: Add test cases.
+		{
+			"test",
+			&CzbooksNoveler{},
+			args{
+				req: crawler.Request{
+					Item: NovelChapter{
+						URL:   "https://czbooks.net/n/u5a6m/uj6h",
+						Order: "0001",
+					}}},
+			crawler.ParseResult{},
+			false,
+		},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			got, err := tt.n.GetParseResult(tt.args.req)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("WanbentxtNoveler.GetParseResult() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
+			if got.DoneN != -len(got.Requests)+1 {
+				t.Errorf("WanbentxtNoveler.GetParseResult() = %v, want %v", got, tt.want)
 			}
 		})
 	}

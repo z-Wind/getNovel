@@ -25,6 +25,7 @@ type CzbooksNoveler struct {
 	numPages int
 }
 
+// NewCzbooksNoveler 建立 CzbooksNoveler
 func NewCzbooksNoveler(url string) *CzbooksNoveler {
 	var noveler CzbooksNoveler
 	noveler.URL = url
@@ -80,7 +81,7 @@ func (n *CzbooksNoveler) GetChapterURLs() ([]NovelChapter, error) {
 	return chapters, nil
 }
 
-// 獲得 章節的內容 下一頁的連結
+// GetParseResult 獲得 章節的內容 & 下一頁的連結
 func (n *CzbooksNoveler) GetParseResult(req crawler.Request) (crawler.ParseResult, error) {
 	// Request the HTML page
 	// Create a new context with a deadline
@@ -105,7 +106,7 @@ func (n *CzbooksNoveler) GetParseResult(req crawler.Request) (crawler.ParseResul
 			Item:     nil,
 			Requests: []crawler.Request{req},
 			DoneN:    0,
-		}, fmt.Errorf("util.HTTPGetwithContext(%s): status code error: %d %s\n", req.Item.(NovelChapter).URL, resp.StatusCode, resp.Status)
+		}, fmt.Errorf("util.HTTPGetwithContext(%s): status code error: %d %s", req.Item.(NovelChapter).URL, resp.StatusCode, resp.Status)
 	}
 
 	r, name, certain, err := util.ToUTF8Encoding(resp.Body)
@@ -128,7 +129,7 @@ func (n *CzbooksNoveler) GetParseResult(req crawler.Request) (crawler.ParseResul
 		}, errors.Wrap(err, "ioutil.ReadAll")
 	}
 
-	requests, err := n.GetNextPage(bytes.NewReader(b))
+	requests, err := n.GetNextPage(bytes.NewReader(b), req)
 	if err != nil {
 		return crawler.ParseResult{
 			Item:     nil,
@@ -158,8 +159,8 @@ func (n *CzbooksNoveler) GetParseResult(req crawler.Request) (crawler.ParseResul
 	}, nil
 }
 
-// 獲得下一頁的連結
-func (n *CzbooksNoveler) GetNextPage(html io.Reader) ([]crawler.Request, error) {
+// GetNextPage 獲得下一頁的連結
+func (n *CzbooksNoveler) GetNextPage(html io.Reader, req crawler.Request) ([]crawler.Request, error) {
 	return []crawler.Request{}, nil
 }
 
@@ -206,9 +207,4 @@ func (n *CzbooksNoveler) MergeContent(fileNames []string, fromPath, toPath strin
 	}
 
 	return nil
-}
-
-// 確認連結是否存在
-func (n *CzbooksNoveler) CheckExist(req interface{}) bool {
-	return false
 }
