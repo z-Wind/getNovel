@@ -65,8 +65,7 @@ func (e *ConcurrentEngine) Run(seeds ...Request) chan interface{} {
 				for _, req := range parseResult.Requests {
 					if !e.CheckExistOrAdd(req) {
 						e.Scheduler.Submit(req)
-					} else {
-						e.NumTasks--
+						e.NumTasks++
 					}
 				}
 				fmt.Printf("tasks: %d\n", e.NumTasks)

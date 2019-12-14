@@ -26,7 +26,7 @@ var (
 )
 
 func init() {
-	flag.StringVar(&urlNovel, "url", "", "小說網址")
+	flag.StringVar(&urlNovel, "url", "", "小說目錄網址")
 	flag.BoolVar(&version, "version", false, "程式版本")
 }
 
@@ -78,6 +78,17 @@ func chooseNoveler(URLNovel string) (noveler.Noveler, error) {
 		return noveler.NewWanbentxtNoveler(URLNovel), nil
 	case "czbooks.net": // 小說狂人
 		return noveler.NewCzbooksNoveler(URLNovel), nil
+	case "www.hjwzw.com": // 黃金屋 簡體
+		u.Host = "tw.hjwzw.com"
+		fmt.Printf("%s => %s\n", URLNovel, u.String())
+		URLNovel = u.String()
+		fallthrough
+	case "tw.hjwzw.com": // 黃金屋
+		return noveler.NewHjwzwNoveler(URLNovel), nil
+	case "www.uukanshu.com": // UU看書網
+		return noveler.NewUUkanshuNoveler(URLNovel), nil
+	case "www.ptwxz.com": // 飄天文學
+		return noveler.NewPtwxzNoveler(URLNovel), nil
 	default:
 		return nil, fmt.Errorf("%s No useful interface", u.Host)
 	}

@@ -82,7 +82,7 @@ func (n *CzbooksNoveler) GetParseResult(req crawler.Request) (crawler.ParseResul
 	return getParseResult(n, req)
 }
 
-// GetName 獲得 章節的內容 & 下一頁的連結
+// GetName 回傳目前抓取的小說名字
 func (n *CzbooksNoveler) GetName() string {
 	novelName := fmt.Sprintf("%s-作者：%s", n.title, n.author)
 	return novelName

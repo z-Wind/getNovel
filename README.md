@@ -36,3 +36,6 @@ To build with two ways
 ## Support
 - [完本神站](https://www.wanbentxt.com/)
 - [小說狂人](https://czbooks.net/)
+- [黃金屋](https://tw.hjwzw.com/)
+- [飄天文學](https://www.ptwxz.com/)
+- [UU看書網](https://www.uukanshu.com/)

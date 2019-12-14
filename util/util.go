@@ -8,6 +8,7 @@ import (
 	"io"
 	"io/ioutil"
 	"net/http"
+	"net/url"
 	"time"
 
 	"github.com/pkg/errors"
@@ -100,4 +101,18 @@ func HTTPGetwithContext(ctx context.Context, URL string) (*http.Response, error)
 	}
 
 	return resp, nil
+}
+
+func ToAbsoluteURL(baseURI, uri string) (string, error) {
+	u, err := url.Parse(uri)
+	if err != nil {
+		return "", errors.Wrap(err, "url.Parse")
+	}
+
+	base, err := url.Parse(baseURI)
+	if err != nil {
+		return "", errors.Wrap(err, "url.Parse")
+	}
+
+	return base.ResolveReference(u).String(), nil
 }

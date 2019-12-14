@@ -31,7 +31,7 @@ all: test build
 build:	
 	$(GOBUILD) -ldflags ${flags} -x   -v -o $(BINARY_NAME)
 test:
-	$(GOTEST)  -v ./...
+	$(GOTEST) -v ./...
 clean:
 	$(GOCLEAN)
 	rm -f $(BINARY_NAME)

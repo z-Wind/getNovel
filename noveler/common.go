@@ -25,21 +25,21 @@ func getParseResult(novel Noveler, req crawler.Request) (crawler.ParseResult, er
 	if err != nil {
 		fmt.Printf("GetParseResult: util.URLHTMLToUTF8Encoding: name:%s, certain:%v err:%s\n", name, certain, err)
 		parseResult.Requests = append(parseResult.Requests, req)
-		parseResult.DoneN = 1 - len(parseResult.Requests)
+		parseResult.DoneN = 0
 		return parseResult, errors.Wrap(err, "util.URLHTMLToUTF8Encoding")
 	}
 
 	b, err := ioutil.ReadAll(r)
 	if err != nil {
 		parseResult.Requests = append(parseResult.Requests, req)
-		parseResult.DoneN = 1 - len(parseResult.Requests)
+		parseResult.DoneN = 0
 		return parseResult, errors.Wrap(err, "ioutil.ReadAll")
 	}
 
 	requests, err := novel.getNextPage(bytes.NewReader(b), req)
 	if err != nil {
 		parseResult.Requests = append(parseResult.Requests, req)
-		parseResult.DoneN = 1 - len(parseResult.Requests)
+		parseResult.DoneN = 0
 		return parseResult, errors.Wrap(err, "GetNextPage")
 	}
 	parseResult.Requests = append(parseResult.Requests, requests...)
@@ -47,7 +47,7 @@ func getParseResult(novel Noveler, req crawler.Request) (crawler.ParseResult, er
 	text, err := novel.getText(bytes.NewReader(b))
 	if err != nil {
 		parseResult.Requests = append(parseResult.Requests, req)
-		parseResult.DoneN = 1 - len(parseResult.Requests)
+		parseResult.DoneN = 0
 		return parseResult, errors.Wrap(err, "GetText")
 	}
 
@@ -57,7 +57,7 @@ func getParseResult(novel Noveler, req crawler.Request) (crawler.ParseResult, er
 			URL:   req.Item.(NovelChapter).URL,
 		},
 		Text: text}
-	parseResult.DoneN = 1 - len(parseResult.Requests)
+	parseResult.DoneN = 1
 	return parseResult, nil
 }
 

@@ -54,15 +54,12 @@ func (r *record) loadExist(filePath string) ([]noveler.NovelChapter, error) {
 
 // checkExistOrAdd 確認連結是否存在，不存在就加入
 func (r *record) checkExistOrAdd(req interface{}) bool {
-	r.lock.Lock()
-
 	key := req.(crawler.Request).Item.(noveler.NovelChapter)
+	r.lock.Lock()
 	_, ok := r.taskDone[key]
-
 	if !ok {
 		r.taskDone[key] = false
 	}
-
 	r.lock.Unlock()
 
 	return ok

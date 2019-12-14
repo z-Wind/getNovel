@@ -3,7 +3,6 @@ package noveler
 import (
 	"fmt"
 	"io"
-	"log"
 	"net/url"
 	"strings"
 
@@ -13,23 +12,23 @@ import (
 	"github.com/z-Wind/getNovel/util"
 )
 
-// WanbentxtNoveler 完本神站的 Noveler
-type WanbentxtNoveler struct {
+// PtwxzNoveler 黃金屋的 Noveler
+type PtwxzNoveler struct {
 	URL    string
 	title  string
 	author string
 }
 
-// NewWanbentxtNoveler 建立 WanbentxtNoveler
-func NewWanbentxtNoveler(url string) *WanbentxtNoveler {
-	var noveler WanbentxtNoveler
+// NewPtwxzNoveler 建立 PtwxzNoveler
+func NewPtwxzNoveler(url string) *PtwxzNoveler {
+	var noveler PtwxzNoveler
 	noveler.URL = url
 
 	return &noveler
 }
 
 // GetInfo 獲得小說基本資料
-func (n *WanbentxtNoveler) GetInfo() error {
+func (n *PtwxzNoveler) GetInfo() error {
 	r, name, certain, err := util.URLHTMLToUTF8Encoding(n.URL)
 	if err != nil {
 		fmt.Printf("URLHTMLToUTF8Encoding: name:%s, certain:%v err:%s\n", name, certain, err)
@@ -41,15 +40,22 @@ func (n *WanbentxtNoveler) GetInfo() error {
 		return errors.Wrap(err, "goquery.NewDocumentFromReader")
 	}
 
-	n.title = dom.Find("div.detailTitle > h1").Text()
+	n.title = dom.Find("div.title h1").Text()
+	n.title = strings.ReplaceAll(n.title, "最新章节", "")
 	n.title = strings.Trim(n.title, " ")
-	n.author = dom.Find("div.writer").Text()
+
+	dom.Find("div.mainbody > div.list a").Remove()
+	n.author = dom.Find("div.mainbody > div.list").Text()
+	n.author = strings.ReplaceAll(n.author, "作者：", "")
+	n.author = strings.ReplaceAll(n.author, "\u00a0", "")
+	n.author = strings.ReplaceAll(n.author, "\n", "")
+	n.author = strings.Trim(n.author, " ")
 
 	return nil
 }
 
 // GetChapterURLs 獲得所有章節的網址
-func (n *WanbentxtNoveler) GetChapterURLs() ([]NovelChapter, error) {
+func (n *PtwxzNoveler) GetChapterURLs() ([]NovelChapter, error) {
 	r, name, certain, err := util.URLHTMLToUTF8Encoding(n.URL)
 	if err != nil {
 		fmt.Printf("URLHTMLToUTF8Encoding: name:%s, certain:%v err:%s\n", name, certain, err)
@@ -67,73 +73,64 @@ func (n *WanbentxtNoveler) GetChapterURLs() ([]NovelChapter, error) {
 	}
 
 	var chapters []NovelChapter
-	dom.Find("div.chapter > ul > li > a").Each(func(i int, s *goquery.Selection) {
+	sel := dom.Find("div.centent li a")
+	for i := range sel.Nodes {
+		s := sel.Eq(i)
 		if href, ok := s.Attr("href"); ok {
-			u.Path = href
-			chapters = append(chapters, NovelChapter{Order: fmt.Sprintf("%s-%010d", n.title, i), URL: u.String()})
-			fmt.Printf("NovelPage %010d: %s\n", i, u.String())
+			link, err := util.ToAbsoluteURL(u.String(), href)
+			if err != nil {
+				return chapters, errors.Wrap(err, "util.ToAbsoluteURL")
+			}
+			chapters = append(chapters, NovelChapter{Order: fmt.Sprintf("%s-%010d", n.title, i), URL: link})
+			fmt.Printf("NovelPage %010d: %s\n", i, link)
 		}
-	})
+	}
 
 	return chapters, nil
 }
 
 // GetParseResult 獲得 章節的內容 & 下一頁的連結
-func (n *WanbentxtNoveler) GetParseResult(req crawler.Request) (crawler.ParseResult, error) {
+func (n *PtwxzNoveler) GetParseResult(req crawler.Request) (crawler.ParseResult, error) {
 	return getParseResult(n, req)
 }
 
 // GetName 回傳目前抓取的小說名字
-func (n *WanbentxtNoveler) GetName() string {
+func (n *PtwxzNoveler) GetName() string {
 	novelName := fmt.Sprintf("%s-作者：%s", n.title, n.author)
 	return novelName
 }
 
 // getNextPage 獲得下一頁的連結
-func (n *WanbentxtNoveler) getNextPage(html io.Reader, req crawler.Request) ([]crawler.Request, error) {
+func (n *PtwxzNoveler) getNextPage(html io.Reader, req crawler.Request) ([]crawler.Request, error) {
 	requests := []crawler.Request{}
-
-	dom, err := goquery.NewDocumentFromReader(html)
-	if err != nil {
-		return requests, errors.Wrap(err, "goquery.NewDocumentFromReader")
-	}
-
-	if s := dom.Find("span.next"); s.Text() == "下一页" {
-		href, ok := s.Parent().Attr("href")
-		if !ok {
-			log.Fatal(goquery.OuterHtml(s.Parent()))
-		}
-		order := req.Item.(NovelChapter).Order + "-1"
-
-		requests = append(requests, crawler.Request{
-			Item: NovelChapter{
-				Order: order,
-				URL:   href,
-			},
-			ParseFunc: n.GetParseResult,
-		})
-
-		fmt.Printf("NovelPage %s: %s\n", order, href)
-	}
 
 	return requests, nil
 }
 
 // getText 獲得章節的內容
-func (n *WanbentxtNoveler) getText(html io.Reader) (string, error) {
+func (n *PtwxzNoveler) getText(html io.Reader) (string, error) {
 	dom, err := goquery.NewDocumentFromReader(html)
 	if err != nil {
 		return "", errors.Wrap(err, "goquery.NewDocumentFromReader")
 	}
 
-	chapterTitle := dom.Find("div.readerTitle").Text()
-	text := dom.Find("div.readerCon").Text()
+	dom.Find("body h1 a").Remove()
+	chapterTitle := dom.Find("body h1").Text()
+	chapterTitle = strings.Trim(chapterTitle, " ")
+
+	dom.Find("body > div").Remove()
+	dom.Find("body > script").Remove()
+	dom.Find("body > h1").Remove()
+	dom.Find("body > table").Remove()
+	dom.Find("body > center").Remove()
+	text := dom.Find("body").Text()
+	text = strings.Trim(text, "\n")
 
 	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
 }
 
 // MergeContent 合併章節
-func (n *WanbentxtNoveler) MergeContent(fileNames []string, fromPath, toPath string) error {
+func (n *PtwxzNoveler) MergeContent(fileNames []string, fromPath, toPath string) error {
 	novelName := n.GetName() + ".txt"
 	return mergeContent(novelName, fileNames, fromPath, toPath)
 }

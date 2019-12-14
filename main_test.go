@@ -43,6 +43,10 @@ func Test_chooseNoveler(t *testing.T) {
 		{"完本神站 mobile", args{URLNovel: "https://m.wanbentxt.com/8895/"}, func(i interface{}) bool { _, ok := i.(noveler.WanbentxtNoveler); return ok }, false},
 		{"完本神站", args{URLNovel: "https://www.wanbentxt.com/8895/"}, func(i interface{}) bool { _, ok := i.(noveler.WanbentxtNoveler); return ok }, false},
 		{"小說狂人", args{URLNovel: "https://czbooks.net/n/u5a6m"}, func(i interface{}) bool { _, ok := i.(noveler.CzbooksNoveler); return ok }, false},
+		{"黃金屋 簡體", args{URLNovel: "https://www.hjwzw.com/Book/Chapter/37176"}, func(i interface{}) bool { _, ok := i.(noveler.HjwzwNoveler); return ok }, false},
+		{"黃金屋", args{URLNovel: "https://tw.hjwzw.com/Book/Chapter/37176"}, func(i interface{}) bool { _, ok := i.(noveler.HjwzwNoveler); return ok }, false},
+		{"UU看書網", args{URLNovel: "https://www.uukanshu.com/b/81074/"}, func(i interface{}) bool { _, ok := i.(noveler.UUkanshuNoveler); return ok }, false},
+		{"飄天文學", args{URLNovel: "https://www.ptwxz.com/html/9/9795/index.html"}, func(i interface{}) bool { _, ok := i.(noveler.PtwxzNoveler); return ok }, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

@@ -24,7 +24,7 @@ func TestCzbooksNoveler_GetInfo(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			err := tt.n.GetInfo()
 			if (err != nil) != tt.wantErr {
-				t.Errorf("CzbooksNoveler.getChapterURLs() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("CzbooksNoveler.GetInfo() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if tt.n.title != tt.want.title || tt.n.author != tt.want.author {
@@ -48,7 +48,7 @@ func TestCzbooksNoveler_GetChapterURLs(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			got, err := tt.n.GetChapterURLs()
 			if (err != nil) != tt.wantErr {
-				t.Errorf("CzbooksNoveler.getChapterURLs() error = %v, wantErr %v", err, tt.wantErr)
+				t.Errorf("CzbooksNoveler.GetChapterURLs() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
 			if len(got) == 0 {
