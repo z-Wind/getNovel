@@ -9,16 +9,17 @@ endif
 GOCMD=go
 GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
-GOTEST=$(GOCMD) test
+GOTEST=$(GOCMD) test -race
 GOGET=$(GOCMD) get
 
 
 ifeq ($(detected_OS),Windows)
 	BINARY_NAME=getNovel.exe
+	BINARY_RACE_NAME=getNovel_race.exe
 else
 	BINARY_NAME=getNovel
+	BINARY_RACE_NAME=getNovel_race
 endif
-
 
 
 DIR_TEMP=temp/
@@ -30,12 +31,16 @@ all: test build
 build:	
 	$(GOBUILD) -ldflags ${flags} -x   -v -o $(BINARY_NAME)
 test:
-	$(GOTEST) -v ./...
+	$(GOTEST)  -v ./...
 clean:
 	$(GOCLEAN)
 	rm -f $(BINARY_NAME)
 	rm -f $(BINARY_NAME).exe
+	rm -f $(BINARY_RACE_NAME)
+	rm -f $(BINARY_RACE_NAME).exe
 	rm -rf $(DIR_TEMP)
 	rm -rf $(DIR_RESULT)
 run: build
 	./$(BINARY_NAME) -version
+race:
+	$(GOBUILD)  -race -ldflags ${flags} -x   -v -o $(BINARY_RACE_NAME)

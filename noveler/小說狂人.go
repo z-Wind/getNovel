@@ -27,7 +27,7 @@ func NewCzbooksNoveler(url string) *CzbooksNoveler {
 	return &noveler
 }
 
-// 獲得小說基本資料
+// GetInfo 獲得小說基本資料
 func (n *CzbooksNoveler) GetInfo() error {
 	r, name, certain, err := util.URLHTMLToUTF8Encoding(n.URL)
 	if err != nil {

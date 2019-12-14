@@ -145,11 +145,7 @@ func getNovel(novel noveler.Noveler) error {
 
 	// 網址傳進 engine 抓取 HTML，並將小說內容存檔
 	dataChan := e.Run(requests...)
-	for {
-		data, more := <-dataChan
-		if !more {
-			break
-		}
+	for data := range dataChan {
 		// 不加 .txt 以免檔名排序錯誤，導致合併出錯
 		fileName := fmt.Sprintf("%s", data.(noveler.NovelChapterHTML).Order)
 		fileNames = append(fileNames, fileName)

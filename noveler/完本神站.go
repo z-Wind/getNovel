@@ -28,7 +28,7 @@ func NewWanbentxtNoveler(url string) *WanbentxtNoveler {
 	return &noveler
 }
 
-// 獲得小說基本資料
+// GetInfo 獲得小說基本資料
 func (n *WanbentxtNoveler) GetInfo() error {
 	r, name, certain, err := util.URLHTMLToUTF8Encoding(n.URL)
 	if err != nil {
