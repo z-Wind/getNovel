@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"bytes"
 	"context"
+	"crypto/tls"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -94,7 +95,13 @@ func HTTPGetwithContext(ctx context.Context, URL string) (*http.Response, error)
 	//http.DefaultTransport.(*http.Transport).DisableKeepAlives = true
 	// 以上會造成連線慢，需斟酌使用
 
-	client := http.DefaultClient
+	// client := http.DefaultClient
+	client := &http.Client{
+		// 跳過 https 認證
+		Transport: &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+		},
+	}
 	resp, err := client.Do(req)
 	if err != nil {
 		return nil, errors.Wrap(err, "client.Do")

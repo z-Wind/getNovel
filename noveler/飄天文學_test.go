@@ -17,6 +17,7 @@ func TestPtwxzNoveler_GetInfo(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{"原來我是妖二代", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9795/index.html"}, PtwxzNoveler{title: "原来我是妖二代", author: "卖报小郎君"}, false},
+		{"全球高武", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9640/"}, PtwxzNoveler{title: "全球高武", author: "老鹰吃小鸡"}, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -40,6 +41,7 @@ func TestPtwxzNoveler_GetChapterURLs(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{"原來我是妖二代", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9795/index.html"}, PtwxzNoveler{title: "原來我是妖二代", author: "賣報小郎君"}, false},
+		{"全球高武", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9640/"}, PtwxzNoveler{title: "全球高武", author: "老鹰吃小鸡"}, false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -70,11 +72,16 @@ func TestPtwxzNoveler_getText(t *testing.T) {
 		wantErr bool
 	}{
 		// TODO: Add test cases.
-		{"test", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9795/6694578.html"}, args{}, "", false},
+		{"原來我是妖二代", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9795/6694578.html"}, args{}, "", false},
+		{"全球高武", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9640/6523755.html"}, args{}, "", false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			r, _, _, _ := util.URLHTMLToUTF8Encoding(tt.n.URL)
+			r, _, _, err := util.URLHTMLToUTF8Encoding(tt.n.URL)
+			if (err != nil) != tt.wantErr {
+				t.Errorf("util.URLHTMLToUTF8Encoding() error = %v, wantErr %v", err, tt.wantErr)
+				return
+			}
 			tt.args.html = r
 
 			got, err := tt.n.getText(tt.args.html)

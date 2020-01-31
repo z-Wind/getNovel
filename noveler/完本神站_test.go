@@ -194,7 +194,7 @@ func TestWanbentxtNoveler_GetParseResult(t *testing.T) {
 				t.Errorf("WanbentxtNoveler.GetParseResult() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if got.DoneN != -len(got.Requests)+1 {
+			if got.DoneN != 1 || len(got.Requests) != 1 {
 				t.Errorf("WanbentxtNoveler.GetParseResult() = %v, want %v", got, tt.want)
 			}
 		})

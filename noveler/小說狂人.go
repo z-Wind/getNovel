@@ -102,6 +102,7 @@ func (n *CzbooksNoveler) getText(html io.Reader) (string, error) {
 
 	chapterTitle := dom.Find("div.name").Text()
 	text := dom.Find("div.content").Text()
+	text = strings.TrimSpace(text)
 
 	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
 }

@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io"
 	"net/url"
+	"regexp"
 	"strings"
 
 	"github.com/PuerkitoBio/goquery"
@@ -123,8 +124,13 @@ func (n *PtwxzNoveler) getText(html io.Reader) (string, error) {
 	dom.Find("body > h1").Remove()
 	dom.Find("body > table").Remove()
 	dom.Find("body > center").Remove()
-	text := dom.Find("body").Text()
-	text = strings.Trim(text, "\n")
+	text, err := dom.Find("body").Html()
+	if err != nil {
+		return "", errors.Wrap(err, "dom.Find")
+	}
+	text = strings.ReplaceAll(text, "<br/>", "\n")
+	text = regexp.MustCompile(`<!--.*-->`).ReplaceAllString(text, "")
+	text = strings.TrimSpace(text)
 
 	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
 }
