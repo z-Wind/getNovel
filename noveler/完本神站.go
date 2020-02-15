@@ -127,10 +127,12 @@ func (n *WanbentxtNoveler) getText(html io.Reader) (string, error) {
 	}
 
 	chapterTitle := dom.Find("div.readerTitle").Text()
+	chapterTitle = strings.TrimSpace(chapterTitle)
+
 	text := dom.Find("div.readerCon").Text()
 	text = strings.ReplaceAll(text, "一秒记住【完本神站】手机用户输入地址：m.wanbentxt.com", "")
 	text = strings.ReplaceAll(text, "-->>本章未完，点击下一页继续阅读", "")
-	text = strings.TrimSpace(text)
+	text = util.FormatText(text)
 
 	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
 }

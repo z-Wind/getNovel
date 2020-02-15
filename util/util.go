@@ -10,6 +10,8 @@ import (
 	"io/ioutil"
 	"net/http"
 	"net/url"
+	"regexp"
+	"strings"
 	"time"
 
 	"github.com/pkg/errors"
@@ -97,6 +99,7 @@ func HTTPGetwithContext(ctx context.Context, URL string) (*http.Response, error)
 
 	// client := http.DefaultClient
 	client := &http.Client{
+		Timeout: time.Second * 30,
 		// 跳過 https 認證
 		Transport: &http.Transport{
 			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
@@ -110,6 +113,7 @@ func HTTPGetwithContext(ctx context.Context, URL string) (*http.Response, error)
 	return resp, nil
 }
 
+// ToAbsoluteURL 將 url 轉為絕對路徑
 func ToAbsoluteURL(baseURI, uri string) (string, error) {
 	u, err := url.Parse(uri)
 	if err != nil {
@@ -122,4 +126,17 @@ func ToAbsoluteURL(baseURI, uri string) (string, error) {
 	}
 
 	return base.ResolveReference(u).String(), nil
+}
+
+// FormatText 格式化內文
+func FormatText(text string) string {
+	text = strings.TrimSpace(text)
+	// 每行之間空出一行
+	text = regexp.MustCompile(`\s+`).ReplaceAllString(text, "\n\n")
+	// 將句首的空格(半形 or 全形)取代為兩個半形空格
+	text = regexp.MustCompile(`(?m)^[ 　 ]*`).ReplaceAllString(text, "  ")
+	// 將只有空格的行，移除其空格
+	text = regexp.MustCompile(`(?m)^[ 　 ]+$`).ReplaceAllString(text, "")
+
+	return text
 }

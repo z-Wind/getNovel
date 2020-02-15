@@ -36,3 +36,24 @@ func TestURLHTMLToUTF8Encoding(t *testing.T) {
 		})
 	}
 }
+
+func TestFormatText(t *testing.T) {
+	type args struct {
+		text string
+	}
+	tests := []struct {
+		name string
+		args args
+		want string
+	}{
+		// TODO: Add test cases.
+		{"Test", args{"      一行\n 　 兩行\n       三行\n\n"}, "  一行\n\n  兩行\n\n  三行"},
+	}
+	for _, tt := range tests {
+		t.Run(tt.name, func(t *testing.T) {
+			if got := FormatText(tt.args.text); got != tt.want {
+				t.Errorf("FormatText() = %q, want %q", got, tt.want)
+			}
+		})
+	}
+}

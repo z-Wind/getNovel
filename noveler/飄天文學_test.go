@@ -74,6 +74,7 @@ func TestPtwxzNoveler_getText(t *testing.T) {
 		// TODO: Add test cases.
 		{"原來我是妖二代", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9795/6694578.html"}, args{}, "", false},
 		{"全球高武", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9640/6523755.html"}, args{}, "", false},
+		{"全球高武", &PtwxzNoveler{URL: "https://www.ptwxz.com/html/9/9640/6770680.html"}, args{}, "", false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {

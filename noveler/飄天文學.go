@@ -117,20 +117,23 @@ func (n *PtwxzNoveler) getText(html io.Reader) (string, error) {
 
 	dom.Find("body h1 a").Remove()
 	chapterTitle := dom.Find("body h1").Text()
-	chapterTitle = strings.Trim(chapterTitle, " ")
+	chapterTitle = strings.TrimSpace(chapterTitle)
 
-	dom.Find("body > div").Remove()
-	dom.Find("body > script").Remove()
-	dom.Find("body > h1").Remove()
+	dom.Find("body div").Remove()
+	dom.Find("body script").Remove()
 	dom.Find("body > table").Remove()
-	dom.Find("body > center").Remove()
+	dom.Find("body > h1").Remove()
+	dom.Find("body center").Remove()
+
 	text, err := dom.Find("body").Html()
 	if err != nil {
 		return "", errors.Wrap(err, "dom.Find")
 	}
 	text = strings.ReplaceAll(text, "<br/>", "\n")
-	text = regexp.MustCompile(`<!--.*-->`).ReplaceAllString(text, "")
-	text = strings.TrimSpace(text)
+	text = regexp.MustCompile(`.*<.*>.*`).ReplaceAllString(text, "")
+	text = regexp.MustCompile(`.*小说网友请提示:.*`).ReplaceAllString(text, "")
+	text = regexp.MustCompile(`&gt;`).ReplaceAllString(text, "")
+	text = util.FormatText(text)
 
 	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
 }

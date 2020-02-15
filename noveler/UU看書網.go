@@ -110,7 +110,8 @@ func (n *UUkanshuNoveler) getText(html io.Reader) (string, error) {
 	}
 
 	chapterTitle := dom.Find("h1#timu").Text()
-	chapterTitle = strings.Trim(chapterTitle, " ")
+	chapterTitle = strings.TrimSpace(chapterTitle)
+
 	dom.Find("div.ad_content").Remove()
 	text, err := dom.Find("div#contentbox").Html()
 	if err != nil {
@@ -119,7 +120,7 @@ func (n *UUkanshuNoveler) getText(html io.Reader) (string, error) {
 	text = strings.ReplaceAll(text, "</p>", "\n")
 	text = strings.ReplaceAll(text, "<p>", "\n")
 	text = regexp.MustCompile(`..看书 .*?\n`).ReplaceAllString(text, "")
-	text = strings.TrimSpace(text)
+	text = util.FormatText(text)
 
 	return fmt.Sprintf("%s\n\n%s\n", chapterTitle, text), nil
 }

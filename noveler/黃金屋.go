@@ -103,10 +103,11 @@ func (n *HjwzwNoveler) getText(html io.Reader) (string, error) {
 	}
 
 	chapterTitle := dom.Find("table:nth-of-type(7) h1").Text()
-	chapterTitle = strings.Trim(chapterTitle, " ")
+	chapterTitle = strings.TrimSpace(chapterTitle)
+
 	text := dom.Find("table:nth-of-type(7) div:nth-of-type(5)").Text()
 	text = strings.ReplaceAll(text, "請記住本站域名: 黃金屋", "")
-	text = strings.TrimSpace(text)
+	text = util.FormatText(text)
 
 	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
 }
