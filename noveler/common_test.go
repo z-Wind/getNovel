@@ -10,6 +10,7 @@ func Test_getParseResult(t *testing.T) {
 	type args struct {
 		novel Noveler
 		req   crawler.Request
+		reqN  int
 	}
 	tests := []struct {
 		name    string
@@ -26,7 +27,9 @@ func Test_getParseResult(t *testing.T) {
 					Item: NovelChapter{
 						URL:   "https://www.wanbentxt.com/8895/5687694.html",
 						Order: "0001",
-					}}},
+					}},
+				reqN: 1,
+			},
 			crawler.ParseResult{},
 			false,
 		},
@@ -37,7 +40,9 @@ func Test_getParseResult(t *testing.T) {
 					Item: NovelChapter{
 						URL:   "https://czbooks.net/n/u5a6m/uj6h",
 						Order: "0001",
-					}}},
+					}},
+				reqN: 0,
+			},
 			crawler.ParseResult{},
 			false,
 		},
@@ -49,7 +54,7 @@ func Test_getParseResult(t *testing.T) {
 				t.Errorf("getParseResult() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if got.DoneN != 1-len(got.Requests) {
+			if !got.Done || len(got.Requests) != tt.args.reqN {
 				t.Errorf("getParseResult() = %v, want %v", got, tt.want)
 			}
 		})

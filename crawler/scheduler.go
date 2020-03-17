@@ -2,7 +2,6 @@ package crawler
 
 import (
 	"context"
-	"fmt"
 )
 
 // QueueScheduler 分配 request 給 worker
@@ -16,8 +15,9 @@ type QueueScheduler struct {
 func (s *QueueScheduler) Submit(r Request) {
 	select {
 	case s.requestChan <- r:
+		ELog.LPrintf("%-30s s.requestChan <- r %+v\n", "Scheduler.Submit", r.Item)
 	case <-s.Ctx.Done():
-		fmt.Printf("QueueScheduler.Submit.Done\n")
+		ELog.Printf("%-30s QueueScheduler.Submit.Done\n", "Scheduler.Submit")
 	}
 }
 
@@ -25,8 +25,9 @@ func (s *QueueScheduler) Submit(r Request) {
 func (s *QueueScheduler) WorkerReady(w chan Request) {
 	select {
 	case s.workerChan <- w:
+		ELog.LPrintf("%-30s s.workerChan <- worker(%v)\n", "Scheduler.WorkerReady", w)
 	case <-s.Ctx.Done():
-		fmt.Printf("QueueScheduler.WorkerReady.Done\n")
+		ELog.Printf("%-30s QueueScheduler.WorkerReady.Done\n", "Scheduler.WorkerReady")
 	}
 }
 
@@ -51,14 +52,17 @@ func (s *QueueScheduler) Run() {
 
 			select {
 			case activeWorker <- activeRequest:
+				ELog.LPrintf("%-30s Worker(%v) <- Request(%+v)\n", "Scheduler.Run", activeWorker, activeRequest.Item)
 				requestQ = requestQ[1:]
 				workerQ = workerQ[1:]
 			case r := <-s.requestChan:
+				ELog.LPrintf("%-30s Get Request(%+v)\n", "Scheduler.Run", r.Item)
 				requestQ = append(requestQ, r)
 			case w := <-s.workerChan:
+				ELog.LPrintf("%-30s Worker(%v) Free\n", "Scheduler.Run", w)
 				workerQ = append(workerQ, w)
 			case <-s.Ctx.Done():
-				fmt.Printf("QueueScheduler.Run.Done\n")
+				ELog.Printf("%-30s QueueScheduler.Run.Done\n", "Scheduler.Run")
 				return
 			}
 		}

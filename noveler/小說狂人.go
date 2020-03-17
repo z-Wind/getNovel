@@ -41,8 +41,9 @@ func (n *CzbooksNoveler) GetInfo() error {
 	}
 
 	n.title = dom.Find("span.title").Text()
-	n.title = strings.Trim(n.title, " ")
+	n.title = strings.TrimSpace(n.title)
 	n.author = strings.Replace(dom.Find("span.author").Text(), "作者: ", "", 1)
+	n.author = strings.TrimSpace(n.author)
 
 	return nil
 }

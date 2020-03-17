@@ -10,8 +10,8 @@ type Request struct {
 type ParseResult struct {
 	Item     interface{}
 	Requests []Request
-	// 已執行完的任務數，用來扣除用
-	DoneN int
+	// 記錄任務是否已完成
+	Done bool
 }
 
 // Scheduler 調配工作

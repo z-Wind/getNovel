@@ -38,8 +38,8 @@ func TestConcurrentEngine_Run(t *testing.T) {
 						}
 						defer resp.Body.Close()
 						return ParseResult{
-							Item:  resp.StatusCode,
-							DoneN: 1,
+							Item: resp.StatusCode,
+							Done: true,
 						}, nil
 					},
 				}}},

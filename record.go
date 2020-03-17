@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"io/ioutil"
 	"os"
 	"sync"
@@ -42,7 +41,7 @@ func (r *record) loadExist(filePath string) ([]noveler.NovelChapter, error) {
 		return nil, errors.Wrap(err, "json.Unmarshal(")
 	}
 
-	fmt.Printf("load from %s\n", filePath)
+	crawler.ELog.Printf("load from %s\n", filePath)
 
 	var chapters []noveler.NovelChapter
 	for k := range r.taskDone {
@@ -52,7 +51,8 @@ func (r *record) loadExist(filePath string) ([]noveler.NovelChapter, error) {
 	return chapters, nil
 }
 
-// checkExistOrAdd 確認連結是否存在，不存在就加入
+// checkExistOrAdd 確認已處理，未處理就加入
+// 不存在表示未處理，存在但 False 表示處理中，存在且 True 表示已處理
 func (r *record) checkExistOrAdd(req interface{}) bool {
 	key := req.(crawler.Request).Item.(noveler.NovelChapter)
 	r.lock.Lock()
@@ -70,7 +70,7 @@ func (r *record) checkDone(req interface{}) bool {
 	order := req.(crawler.Request).Item.(noveler.NovelChapter).Order
 	key := req.(crawler.Request).Item.(noveler.NovelChapter)
 
-	fmt.Printf("NovelPage %s: %s Done\n", order, key)
+	crawler.ELog.Printf("NovelPage %s: %s Done\n", order, key)
 
 	return r.taskDone[key]
 }
@@ -98,7 +98,7 @@ func (r *record) saveExist(filePath string) error {
 	if err != nil {
 		return errors.Wrap(err, "ioutil.WriteFile")
 	}
-	fmt.Printf("save to %s\n", filePath)
+	crawler.ELog.LPrintf("save to %s\n", filePath)
 
 	return nil
 }

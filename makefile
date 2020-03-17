@@ -34,6 +34,7 @@ test:
 	$(GOTEST) -v ./...
 clean:
 	$(GOCLEAN)
+	rm -f engine.log
 	rm -f $(BINARY_NAME)
 	rm -f $(BINARY_NAME).exe
 	rm -f $(BINARY_RACE_NAME)

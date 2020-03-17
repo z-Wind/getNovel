@@ -159,7 +159,7 @@ func TestPtwxzNoveler_GetParseResult(t *testing.T) {
 				t.Errorf("PtwxzNoveler.GetParseResult() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if got.DoneN != -len(got.Requests)+1 {
+			if !got.Done || len(got.Requests) != 0 {
 				t.Errorf("PtwxzNoveler.GetParseResult() = %v, want %v", got, tt.want)
 			}
 		})

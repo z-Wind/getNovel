@@ -3,7 +3,12 @@ package crawler
 import (
 	"context"
 	"fmt"
+
+	"github.com/z-Wind/getNovel/util"
 )
+
+// ELog engine log
+var ELog util.Log
 
 // ConcurrentEngine 負責處理對外與建立 worker
 type ConcurrentEngine struct {
@@ -21,7 +26,7 @@ func (e *ConcurrentEngine) Run(seeds ...Request) chan interface{} {
 
 	e.Scheduler.Run()
 	e.NumTasks = len(seeds)
-	fmt.Printf("tasks: %d\n", e.NumTasks)
+	ELog.Printf("Initial Tasks: %d\n", e.NumTasks)
 
 	for i := 0; i < e.WorkerCount; i++ {
 		e.createWorker(parseResultChan, e.Scheduler)
@@ -50,27 +55,35 @@ func (e *ConcurrentEngine) Run(seeds ...Request) chan interface{} {
 
 			select {
 			case activeDataChan <- activeData:
+				ELog.LPrintf("%-30s DataChan <- Data\n", "Engine.Run")
 				dataQ = dataQ[1:]
 				if e.NumTasks == 0 && len(dataQ) == 0 {
+					ELog.Printf("Finish =============================================\n")
 					close(dataChan)
 				}
 			case parseResult := <-parseResultChan:
+				ELog.LPrintf("%-30s parseResult := <-parseResultChan", "Engine.Run")
 				if parseResult.Item != nil {
-					// fmt.Printf("Get %+v\n", parseResult.Item)
+					ELog.LPrintf("%-30s Get Result\n", "Engine.Run")
 					dataQ = append(dataQ, parseResult.Item)
 				}
-				e.NumTasks -= parseResult.DoneN
+				if parseResult.Done {
+					e.NumTasks--
+				}
+				ELog.LPrintf("%-30s Done: %v\n", "Engine.Run", parseResult.Done)
 
 				// 排入新增的 requests
 				for _, req := range parseResult.Requests {
-					if !e.CheckExistOrAdd(req) {
+					isProc := e.CheckExistOrAdd(req)
+					if !parseResult.Done || !isProc {
 						e.Scheduler.Submit(req)
 						e.NumTasks++
+						ELog.LPrintf("%-30s Add Task: %+v", "Engine.Run", req.Item)
 					}
 				}
-				fmt.Printf("tasks: %d\n", e.NumTasks)
+				ELog.Printf("%-30s To Do Tasks: %d\n", "Engine.Run", e.NumTasks)
 			case <-e.Ctx.Done():
-				fmt.Printf("ConcurrentEngine.Run.Done\n")
+				ELog.Printf("%-30s ConcurrentEngine.Run.Done\n", "Engine.Run")
 				return
 			}
 		}
@@ -99,13 +112,16 @@ func (e *ConcurrentEngine) createWorker(parseResultChan chan<- ParseResult, s Sc
 
 			select {
 			case activeResultChan <- activeResult:
+				ELog.LPrintf("%-30s ResultChan <- Result\n", fmt.Sprintf("worker(%v)", requestChan))
 				parseResultQ = parseResultQ[1:]
 			case request := <-requestChan:
+				ELog.LPrintf("%-30s request := <-requestChan\n", fmt.Sprintf("worker(%v)", requestChan))
+				ELog.LPrintf("%-30s Process Request: %+v", fmt.Sprintf("worker(%v)", requestChan), request.Item)
 				result := worker(request)
 				parseResultQ = append(parseResultQ, result)
 				s.WorkerReady(requestChan)
 			case <-e.Ctx.Done():
-				fmt.Printf("ConcurrentEngine.createWorker.Done\n")
+				ELog.Printf("%-30s ConcurrentEngine.createWorker.Done\n", fmt.Sprintf("worker(%v)", requestChan))
 				return
 			}
 		}
@@ -115,12 +131,9 @@ func (e *ConcurrentEngine) createWorker(parseResultChan chan<- ParseResult, s Sc
 func worker(req Request) ParseResult {
 	parseResult, err := req.ParseFunc(req)
 	if err != nil {
-		fmt.Printf("worker: req.ParseFunc: err:%s\n", err)
-		return ParseResult{
-			Item:     nil,
-			Requests: []Request{req},
-			DoneN:    0,
-		}
+		ELog.Printf("worker: req.ParseFunc: err:%s\n", err)
+		ELog.LPrintf("%+v\n", parseResult)
+		return parseResult
 	}
 
 	return parseResult

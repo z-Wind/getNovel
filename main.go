@@ -39,6 +39,10 @@ func main() {
 		fmt.Printf("Build Time : %s\n", buildstamp)
 		fmt.Printf("Golang Version : %s\n", goversion)
 	case urlNovel != "":
+		crawler.ELog.Start("engine.log", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0666)
+		crawler.ELog.SetFlags(0)
+		defer crawler.ELog.Stop()
+
 		novel, err := chooseNoveler(urlNovel)
 		if err != nil {
 			log.Fatal(err)
@@ -75,8 +79,10 @@ func chooseNoveler(URLNovel string) (noveler.Noveler, error) {
 		URLNovel = u.String()
 		fallthrough
 	case "www.wanbentxt.com": // 完本神站
+		crawler.ELog.LPrintf("Noveler Choose 完本神站\n")
 		return noveler.NewWanbentxtNoveler(URLNovel), nil
 	case "czbooks.net": // 小說狂人
+		crawler.ELog.LPrintf("Noveler Choose 小說狂人\n")
 		return noveler.NewCzbooksNoveler(URLNovel), nil
 	case "www.hjwzw.com": // 黃金屋 簡體
 		u.Host = "tw.hjwzw.com"
@@ -84,10 +90,13 @@ func chooseNoveler(URLNovel string) (noveler.Noveler, error) {
 		URLNovel = u.String()
 		fallthrough
 	case "tw.hjwzw.com": // 黃金屋
+		crawler.ELog.LPrintf("Noveler Choose 黃金屋\n")
 		return noveler.NewHjwzwNoveler(URLNovel), nil
 	case "www.uukanshu.com": // UU看書網
+		crawler.ELog.LPrintf("Noveler Choose UU看書網\n")
 		return noveler.NewUUkanshuNoveler(URLNovel), nil
 	case "www.ptwxz.com": // 飄天文學
+		crawler.ELog.LPrintf("Noveler Choose 飄天文學\n")
 		return noveler.NewPtwxzNoveler(URLNovel), nil
 	default:
 		return nil, fmt.Errorf("%s No useful interface", u.Host)
@@ -143,7 +152,7 @@ func getNovel(novel noveler.Noveler) error {
 	// 取得章節網址
 	novelPages, err := novel.GetChapterURLs()
 	if err != nil {
-		fmt.Printf("novel.GetChapterURLs Fail: %s\n", err)
+		crawler.ELog.Printf("novel.GetChapterURLs Fail: %s\n", err)
 		return errors.Wrap(err, "novel.GetChapterURLs")
 	}
 
@@ -169,10 +178,10 @@ func getNovel(novel noveler.Noveler) error {
 		text := data.(noveler.NovelChapterHTML).Text
 		err = ioutil.WriteFile(filePath, []byte(text), os.ModePerm)
 		if err != nil {
-			fmt.Printf("ioutil.WriteFile Fail: %s\n", err)
+			crawler.ELog.Printf("ioutil.WriteFile Fail: %s\n", err)
 			return errors.Wrap(err, "ioutil.WriteFile")
 		}
-		fmt.Printf("write to %s\n", fileName)
+		crawler.ELog.LPrintf("Chapter Content Write to %s\n", fileName)
 		hisRecord.done(data.(noveler.NovelChapterHTML).NovelChapter)
 
 		err = hisRecord.saveExist(path.Join(tmpPath, fmt.Sprintf("%s-record.dat", novel.GetName())))
