@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/z-Wind/getNovel/crawler"
+	"github.com/z-Wind/concurrencyengine"
 	"github.com/z-Wind/getNovel/util"
 )
 
@@ -123,14 +123,14 @@ func TestWanbentxtNoveler_MergeContent(t *testing.T) {
 func TestWanbentxtNoveler_getNextPage(t *testing.T) {
 	type args struct {
 		html io.Reader
-		req  crawler.Request
+		req  concurrencyengine.Request
 	}
 	tests := []struct {
 		name    string
 		n       *WanbentxtNoveler
 		url     string
 		args    args
-		want    []crawler.Request
+		want    []concurrencyengine.Request
 		wantErr bool
 	}{
 		// TODO: Add test cases.
@@ -138,7 +138,7 @@ func TestWanbentxtNoveler_getNextPage(t *testing.T) {
 			"test",
 			&WanbentxtNoveler{},
 			"https://www.wanbentxt.com/8895/5687694.html",
-			args{req: crawler.Request{Item: NovelChapter{Order: "0001"}}},
+			args{req: concurrencyengine.Request{Item: NovelChapter{Order: "0001"}}},
 			nil,
 			false,
 		},
@@ -164,13 +164,13 @@ func TestWanbentxtNoveler_getNextPage(t *testing.T) {
 
 func TestWanbentxtNoveler_GetParseResult(t *testing.T) {
 	type args struct {
-		req crawler.Request
+		req concurrencyengine.Request
 	}
 	tests := []struct {
 		name    string
 		n       *WanbentxtNoveler
 		args    args
-		want    crawler.ParseResult
+		want    concurrencyengine.ParseResult
 		wantErr bool
 	}{
 		// TODO: Add test cases.
@@ -178,12 +178,12 @@ func TestWanbentxtNoveler_GetParseResult(t *testing.T) {
 			"test",
 			&WanbentxtNoveler{},
 			args{
-				req: crawler.Request{
+				req: concurrencyengine.Request{
 					Item: NovelChapter{
 						URL:   "https://www.wanbentxt.com/8895/5687694.html",
 						Order: "0001",
 					}}},
-			crawler.ParseResult{},
+			concurrencyengine.ParseResult{},
 			false,
 		},
 	}
@@ -194,7 +194,7 @@ func TestWanbentxtNoveler_GetParseResult(t *testing.T) {
 				t.Errorf("WanbentxtNoveler.GetParseResult() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !got.Done || len(got.Requests) != 1 {
+			if !got.Done || len(got.ExtraRequests) != 1 || len(got.RedoRequests) != 0 {
 				t.Errorf("WanbentxtNoveler.GetParseResult() = %v, want %v", got, tt.want)
 			}
 		})

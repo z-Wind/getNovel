@@ -31,7 +31,7 @@ To build with two ways
 ## Examples
 
     $ cd $GOPATH/src/github.com/z-Wind/getNovel
-    $ ./getNovel url_novel
+    $ ./getNovel -url url_novel_contents
 
 ## Support
 - [完本神站](https://www.wanbentxt.com/)

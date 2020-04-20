@@ -6,7 +6,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/z-Wind/getNovel/crawler"
+	"github.com/z-Wind/concurrencyengine"
 )
 
 // Timeout Context 的 timeout
@@ -21,12 +21,12 @@ type Noveler interface {
 	// 獲得和所有章節的網址
 	GetChapterURLs() ([]NovelChapter, error)
 	// 獲得 章節的內容 下一頁的連結
-	GetParseResult(req crawler.Request) (crawler.ParseResult, error)
+	GetParseResult(req concurrencyengine.Request) (concurrencyengine.ParseResult, error)
 	// 合併章節
 	MergeContent(fileNames []string, fromPath, toPath string) error
 
 	// getNextPage 獲得下一頁的連結
-	getNextPage(html io.Reader, req crawler.Request) ([]crawler.Request, error)
+	getNextPage(html io.Reader, req concurrencyengine.Request) ([]concurrencyengine.Request, error)
 	// getText 獲得章節的內容
 	getText(html io.Reader) (string, error)
 }

@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/z-Wind/getNovel/crawler"
+	"github.com/z-Wind/concurrencyengine"
 	"github.com/z-Wind/getNovel/util"
 )
 
@@ -123,13 +123,13 @@ func TestHjwzwNoveler_MergeContent(t *testing.T) {
 
 func TestHjwzwNoveler_GetParseResult(t *testing.T) {
 	type args struct {
-		req crawler.Request
+		req concurrencyengine.Request
 	}
 	tests := []struct {
 		name    string
 		n       *HjwzwNoveler
 		args    args
-		want    crawler.ParseResult
+		want    concurrencyengine.ParseResult
 		wantErr bool
 	}{
 		// TODO: Add test cases.
@@ -137,12 +137,12 @@ func TestHjwzwNoveler_GetParseResult(t *testing.T) {
 			"test",
 			&HjwzwNoveler{},
 			args{
-				req: crawler.Request{
+				req: concurrencyengine.Request{
 					Item: NovelChapter{
 						URL:   "https://tw.hjwzw.com/Book/Chapter/37176",
 						Order: "0001",
 					}}},
-			crawler.ParseResult{},
+			concurrencyengine.ParseResult{},
 			false,
 		},
 	}
@@ -153,7 +153,7 @@ func TestHjwzwNoveler_GetParseResult(t *testing.T) {
 				t.Errorf("HjwzwNoveler.GetParseResult() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !got.Done || len(got.Requests) != 0 {
+			if !got.Done || len(got.ExtraRequests) != 0 || len(got.RedoRequests) != 0 {
 				t.Errorf("HjwzwNoveler.GetParseResult() = %v, want %v", got, tt.want)
 			}
 		})

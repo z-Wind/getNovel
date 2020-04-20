@@ -8,7 +8,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/pkg/errors"
-	"github.com/z-Wind/getNovel/crawler"
+	"github.com/z-Wind/concurrencyengine"
 	"github.com/z-Wind/getNovel/util"
 )
 
@@ -79,7 +79,7 @@ func (n *CzbooksNoveler) GetChapterURLs() ([]NovelChapter, error) {
 }
 
 // GetParseResult 獲得 章節的內容 & 下一頁的連結
-func (n *CzbooksNoveler) GetParseResult(req crawler.Request) (crawler.ParseResult, error) {
+func (n *CzbooksNoveler) GetParseResult(req concurrencyengine.Request) (concurrencyengine.ParseResult, error) {
 	return getParseResult(n, req)
 }
 
@@ -90,8 +90,8 @@ func (n *CzbooksNoveler) GetName() string {
 }
 
 // getNextPage 獲得下一頁的連結
-func (n *CzbooksNoveler) getNextPage(html io.Reader, req crawler.Request) ([]crawler.Request, error) {
-	return []crawler.Request{}, nil
+func (n *CzbooksNoveler) getNextPage(html io.Reader, req concurrencyengine.Request) ([]concurrencyengine.Request, error) {
+	return []concurrencyengine.Request{}, nil
 }
 
 // getText 獲得章節的內容

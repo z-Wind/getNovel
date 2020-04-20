@@ -8,45 +8,46 @@ import (
 	"path"
 
 	"github.com/pkg/errors"
-	"github.com/z-Wind/getNovel/crawler"
+	"github.com/z-Wind/concurrencyengine"
 	"github.com/z-Wind/getNovel/util"
 )
 
 // getParseResult 獲得 章節的內容 & 下一頁的連結
-func getParseResult(novel Noveler, req crawler.Request) (crawler.ParseResult, error) {
-	parseResult := crawler.ParseResult{
-		Item:     nil,
-		Requests: []crawler.Request{},
-		Done:     false,
+func getParseResult(novel Noveler, req concurrencyengine.Request) (concurrencyengine.ParseResult, error) {
+	parseResult := concurrencyengine.ParseResult{
+		Item:          nil,
+		ExtraRequests: []concurrencyengine.Request{},
+		RedoRequests:  []concurrencyengine.Request{},
+		Done:          false,
 	}
 
 	url := req.Item.(NovelChapter).URL
 	r, name, certain, err := util.URLHTMLToUTF8Encoding(url)
 	if err != nil {
 		fmt.Printf("GetParseResult: util.URLHTMLToUTF8Encoding: name:%s, certain:%v err:%s\n", name, certain, err)
-		parseResult.Requests = append(parseResult.Requests, req)
+		parseResult.RedoRequests = append(parseResult.RedoRequests, req)
 		parseResult.Done = false
 		return parseResult, errors.Wrap(err, "util.URLHTMLToUTF8Encoding")
 	}
 
 	b, err := ioutil.ReadAll(r)
 	if err != nil {
-		parseResult.Requests = append(parseResult.Requests, req)
+		parseResult.RedoRequests = append(parseResult.RedoRequests, req)
 		parseResult.Done = false
 		return parseResult, errors.Wrap(err, "ioutil.ReadAll")
 	}
 
 	requests, err := novel.getNextPage(bytes.NewReader(b), req)
 	if err != nil {
-		parseResult.Requests = append(parseResult.Requests, req)
+		parseResult.RedoRequests = append(parseResult.RedoRequests, req)
 		parseResult.Done = false
 		return parseResult, errors.Wrap(err, "GetNextPage")
 	}
-	parseResult.Requests = append(parseResult.Requests, requests...)
+	parseResult.ExtraRequests = append(parseResult.ExtraRequests, requests...)
 
 	text, err := novel.getText(bytes.NewReader(b))
 	if err != nil {
-		parseResult.Requests = append(parseResult.Requests, req)
+		parseResult.RedoRequests = append(parseResult.RedoRequests, req)
 		parseResult.Done = false
 		return parseResult, errors.Wrap(err, "GetText")
 	}

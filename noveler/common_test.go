@@ -3,19 +3,19 @@ package noveler
 import (
 	"testing"
 
-	"github.com/z-Wind/getNovel/crawler"
+	"github.com/z-Wind/concurrencyengine"
 )
 
 func Test_getParseResult(t *testing.T) {
 	type args struct {
 		novel Noveler
-		req   crawler.Request
+		req   concurrencyengine.Request
 		reqN  int
 	}
 	tests := []struct {
 		name    string
 		args    args
-		want    crawler.ParseResult
+		want    concurrencyengine.ParseResult
 		wantErr bool
 	}{
 		// TODO: Add test cases.
@@ -23,27 +23,27 @@ func Test_getParseResult(t *testing.T) {
 			"完本神站",
 			args{
 				novel: &WanbentxtNoveler{},
-				req: crawler.Request{
+				req: concurrencyengine.Request{
 					Item: NovelChapter{
 						URL:   "https://www.wanbentxt.com/8895/5687694.html",
 						Order: "0001",
 					}},
 				reqN: 1,
 			},
-			crawler.ParseResult{},
+			concurrencyengine.ParseResult{},
 			false,
 		},
 		{
 			"小說狂人",
 			args{novel: &CzbooksNoveler{},
-				req: crawler.Request{
+				req: concurrencyengine.Request{
 					Item: NovelChapter{
 						URL:   "https://czbooks.net/n/u5a6m/uj6h",
 						Order: "0001",
 					}},
 				reqN: 0,
 			},
-			crawler.ParseResult{},
+			concurrencyengine.ParseResult{},
 			false,
 		},
 	}
@@ -54,7 +54,7 @@ func Test_getParseResult(t *testing.T) {
 				t.Errorf("getParseResult() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			if !got.Done || len(got.Requests) != tt.args.reqN {
+			if !got.Done || len(got.ExtraRequests) != tt.args.reqN || len(got.RedoRequests) != 0 {
 				t.Errorf("getParseResult() = %v, want %v", got, tt.want)
 			}
 		})

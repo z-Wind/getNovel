@@ -9,7 +9,7 @@ import (
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/pkg/errors"
-	"github.com/z-Wind/getNovel/crawler"
+	"github.com/z-Wind/concurrencyengine"
 	"github.com/z-Wind/getNovel/util"
 )
 
@@ -79,7 +79,7 @@ func (n *WanbentxtNoveler) GetChapterURLs() ([]NovelChapter, error) {
 }
 
 // GetParseResult 獲得 章節的內容 & 下一頁的連結
-func (n *WanbentxtNoveler) GetParseResult(req crawler.Request) (crawler.ParseResult, error) {
+func (n *WanbentxtNoveler) GetParseResult(req concurrencyengine.Request) (concurrencyengine.ParseResult, error) {
 	return getParseResult(n, req)
 }
 
@@ -90,8 +90,8 @@ func (n *WanbentxtNoveler) GetName() string {
 }
 
 // getNextPage 獲得下一頁的連結
-func (n *WanbentxtNoveler) getNextPage(html io.Reader, req crawler.Request) ([]crawler.Request, error) {
-	requests := []crawler.Request{}
+func (n *WanbentxtNoveler) getNextPage(html io.Reader, req concurrencyengine.Request) ([]concurrencyengine.Request, error) {
+	requests := []concurrencyengine.Request{}
 
 	dom, err := goquery.NewDocumentFromReader(html)
 	if err != nil {
@@ -105,7 +105,7 @@ func (n *WanbentxtNoveler) getNextPage(html io.Reader, req crawler.Request) ([]c
 		}
 		order := req.Item.(NovelChapter).Order + "-1"
 
-		requests = append(requests, crawler.Request{
+		requests = append(requests, concurrencyengine.Request{
 			Item: NovelChapter{
 				Order: order,
 				URL:   href,

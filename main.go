@@ -12,7 +12,7 @@ import (
 	"sort"
 
 	"github.com/pkg/errors"
-	"github.com/z-Wind/getNovel/crawler"
+	"github.com/z-Wind/concurrencyengine"
 	"github.com/z-Wind/getNovel/noveler"
 )
 
@@ -39,9 +39,9 @@ func main() {
 		fmt.Printf("Build Time : %s\n", buildstamp)
 		fmt.Printf("Golang Version : %s\n", goversion)
 	case urlNovel != "":
-		crawler.ELog.Start("engine.log", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0666)
-		crawler.ELog.SetFlags(0)
-		defer crawler.ELog.Stop()
+		concurrencyengine.ELog.Start("engine.log", os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0666)
+		concurrencyengine.ELog.SetFlags(0)
+		defer concurrencyengine.ELog.Stop()
 
 		novel, err := chooseNoveler(urlNovel)
 		if err != nil {
@@ -79,10 +79,10 @@ func chooseNoveler(URLNovel string) (noveler.Noveler, error) {
 		URLNovel = u.String()
 		fallthrough
 	case "www.wanbentxt.com": // 完本神站
-		crawler.ELog.LPrintf("Noveler Choose 完本神站\n")
+		concurrencyengine.ELog.LPrintf("Noveler Choose 完本神站\n")
 		return noveler.NewWanbentxtNoveler(URLNovel), nil
 	case "czbooks.net": // 小說狂人
-		crawler.ELog.LPrintf("Noveler Choose 小說狂人\n")
+		concurrencyengine.ELog.LPrintf("Noveler Choose 小說狂人\n")
 		return noveler.NewCzbooksNoveler(URLNovel), nil
 	case "www.hjwzw.com": // 黃金屋 簡體
 		u.Host = "tw.hjwzw.com"
@@ -90,13 +90,13 @@ func chooseNoveler(URLNovel string) (noveler.Noveler, error) {
 		URLNovel = u.String()
 		fallthrough
 	case "tw.hjwzw.com": // 黃金屋
-		crawler.ELog.LPrintf("Noveler Choose 黃金屋\n")
+		concurrencyengine.ELog.LPrintf("Noveler Choose 黃金屋\n")
 		return noveler.NewHjwzwNoveler(URLNovel), nil
 	case "www.uukanshu.com": // UU看書網
-		crawler.ELog.LPrintf("Noveler Choose UU看書網\n")
+		concurrencyengine.ELog.LPrintf("Noveler Choose UU看書網\n")
 		return noveler.NewUUkanshuNoveler(URLNovel), nil
 	case "www.ptwxz.com": // 飄天文學
-		crawler.ELog.LPrintf("Noveler Choose 飄天文學\n")
+		concurrencyengine.ELog.LPrintf("Noveler Choose 飄天文學\n")
 		return noveler.NewPtwxzNoveler(URLNovel), nil
 	default:
 		return nil, fmt.Errorf("%s No useful interface", u.Host)
@@ -118,13 +118,9 @@ func getNovel(novel noveler.Noveler) error {
 	ctx, cancel := context.WithCancel(context.Background())
 	defer cancel()
 
-	hisRecord := newRecord()
-	e := crawler.ConcurrentEngine{
-		Scheduler:       &crawler.QueueScheduler{Ctx: ctx},
-		WorkerCount:     10,
-		Ctx:             ctx,
-		CheckExistOrAdd: hisRecord.checkExistOrAdd,
-	}
+	reqToKey := func(req concurrencyengine.Request) interface{} { return req.Item.(noveler.NovelChapter) }
+	e := concurrencyengine.New(ctx, 10, reqToKey)
+	e.Recorder.JsonRWSetup(jsonUnmarshal, jsonMarshal)
 
 	err := novel.GetInfo()
 	if err != nil {
@@ -134,15 +130,19 @@ func getNovel(novel noveler.Noveler) error {
 	// 讀取記錄
 	fileNames := []string{}
 	filePath := path.Join(tmpPath, fmt.Sprintf("%s-record.dat", novel.GetName()))
-	novelPagesRecord, err := hisRecord.loadExist(filePath)
+	m, err := e.Recorder.Load(filePath)
 	if err != nil {
-		return errors.Wrap(err, "loadExist")
+		return errors.Wrap(err, "e.Recorder.Load")
+	}
+	var novelPagesRecord []noveler.NovelChapter
+	for k := range m {
+		novelPagesRecord = append(novelPagesRecord, k.(noveler.NovelChapter))
 	}
 
-	var requests []crawler.Request
+	var requests []concurrencyengine.Request
 	for i := range novelPagesRecord {
-		req := crawler.Request{Item: novelPagesRecord[i], ParseFunc: novel.GetParseResult}
-		if !hisRecord.checkDone(req) {
+		req := concurrencyengine.Request{Item: novelPagesRecord[i], ParseFunc: novel.GetParseResult}
+		if !e.Recorder.IsDone(req) {
 			requests = append(requests, req)
 		} else {
 			fileNames = append(fileNames, novelPagesRecord[i].Order)
@@ -152,13 +152,13 @@ func getNovel(novel noveler.Noveler) error {
 	// 取得章節網址
 	novelPages, err := novel.GetChapterURLs()
 	if err != nil {
-		crawler.ELog.Printf("novel.GetChapterURLs Fail: %s\n", err)
+		concurrencyengine.ELog.Printf("novel.GetChapterURLs Fail: %s\n", err)
 		return errors.Wrap(err, "novel.GetChapterURLs")
 	}
 
 	for i := range novelPages {
-		req := crawler.Request{Item: novelPages[i], ParseFunc: novel.GetParseResult}
-		if !hisRecord.checkExistOrAdd(req) {
+		req := concurrencyengine.Request{Item: novelPages[i], ParseFunc: novel.GetParseResult}
+		if !e.Recorder.IsProcessed(req) {
 			requests = append(requests, req)
 		}
 	}
@@ -178,15 +178,15 @@ func getNovel(novel noveler.Noveler) error {
 		text := data.(noveler.NovelChapterHTML).Text
 		err = ioutil.WriteFile(filePath, []byte(text), os.ModePerm)
 		if err != nil {
-			crawler.ELog.Printf("ioutil.WriteFile Fail: %s\n", err)
+			concurrencyengine.ELog.Printf("ioutil.WriteFile Fail: %s\n", err)
 			return errors.Wrap(err, "ioutil.WriteFile")
 		}
-		crawler.ELog.LPrintf("Chapter Content Write to %s\n", fileName)
-		hisRecord.done(data.(noveler.NovelChapterHTML).NovelChapter)
+		concurrencyengine.ELog.LPrintf("Chapter Content Write to %s\n", fileName)
+		e.Recorder.Done(data.(noveler.NovelChapterHTML).NovelChapter)
 
-		err = hisRecord.saveExist(path.Join(tmpPath, fmt.Sprintf("%s-record.dat", novel.GetName())))
+		err = e.Recorder.Save(path.Join(tmpPath, fmt.Sprintf("%s-record.dat", novel.GetName())))
 		if err != nil {
-			return errors.Wrap(err, "hisRecord.saveExist")
+			return errors.Wrap(err, "e.Recorder.Save")
 		}
 	}
 
