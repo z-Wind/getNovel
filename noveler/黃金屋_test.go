@@ -71,6 +71,8 @@ func TestHjwzwNoveler_getText(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{"test", &HjwzwNoveler{URL: "https://tw.hjwzw.com/Book/Read/37176,15476202"}, args{}, "", false},
+		{"test", &HjwzwNoveler{URL: "https://tw.hjwzw.com/Book/Read/36814,14206984"}, args{}, "", false},
+		{"test", &HjwzwNoveler{URL: "https://tw.hjwzw.com/Book/Read/36814,13825398"}, args{}, "", false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -84,7 +86,7 @@ func TestHjwzwNoveler_getText(t *testing.T) {
 				t.Errorf("HjwzwNoveler.getText() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-
+			t.Errorf("HjwzwNoveler.getText() = %v, want %v", got, tt.want)
 			if len(got) == 0 {
 				t.Errorf("HjwzwNoveler.getText() = %v, want %v", got, tt.want)
 			}

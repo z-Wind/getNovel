@@ -105,8 +105,11 @@ func (n *HjwzwNoveler) getText(html io.Reader) (string, error) {
 	chapterTitle := dom.Find("table:nth-of-type(7) h1").Text()
 	chapterTitle = strings.TrimSpace(chapterTitle)
 
-	text := dom.Find("table:nth-of-type(7) div:nth-of-type(5)").Text()
+	// text := dom.Find("table:nth-of-type(7) div:nth-of-type(5)").Text()
+	dom.Find("div#Pan_Ad1").Remove()
+	text := dom.Find("table:nth-of-type(7) div:nth-of-type(4)").Text()
 	text = strings.ReplaceAll(text, "請記住本站域名: 黃金屋", "")
+	text = strings.ReplaceAll(text, "，歡迎訪問大家讀書院", "")
 	text = util.FormatText(text)
 
 	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
