@@ -3,7 +3,6 @@ package noveler
 import (
 	"fmt"
 	"io"
-	"log"
 	"net/url"
 	"strings"
 
@@ -101,7 +100,8 @@ func (n *WanbentxtNoveler) getNextPage(html io.Reader, req concurrencyengine.Req
 	if s := dom.Find("span.next"); s.Text() == "下一页" {
 		href, ok := s.Parent().Attr("href")
 		if !ok {
-			log.Fatal(goquery.OuterHtml(s.Parent()))
+			outer, err := goquery.OuterHtml(s.Parent())
+			concurrencyengine.ELog.Fatalf("%v %v\n", outer, err)
 		}
 		order := req.Item.(NovelChapter).Order + "-1"
 

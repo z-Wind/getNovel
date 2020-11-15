@@ -5,7 +5,6 @@ import (
 	"flag"
 	"fmt"
 	"io/ioutil"
-	"log"
 	"net/url"
 	"os"
 	"path"
@@ -45,7 +44,7 @@ func main() {
 
 		novel, err := chooseNoveler(urlNovel)
 		if err != nil {
-			log.Fatal(err)
+			concurrencyengine.ELog.Fatalf("%v\n", err)
 		}
 
 		if err := getNovel(novel); err != nil {
@@ -92,6 +91,11 @@ func chooseNoveler(URLNovel string) (noveler.Noveler, error) {
 	case "tw.hjwzw.com": // 黃金屋
 		concurrencyengine.ELog.LPrintf("Noveler Choose 黃金屋\n")
 		return noveler.NewHjwzwNoveler(URLNovel), nil
+	case "tw.uukanshu.com": // UU看書網 tw
+		u.Host = "www.uukanshu.com"
+		fmt.Printf("%s => %s\n", URLNovel, u.String())
+		URLNovel = u.String()
+		fallthrough
 	case "www.uukanshu.com": // UU看書網
 		concurrencyengine.ELog.LPrintf("Noveler Choose UU看書網\n")
 		return noveler.NewUUkanshuNoveler(URLNovel), nil

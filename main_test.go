@@ -46,6 +46,7 @@ func Test_chooseNoveler(t *testing.T) {
 		{"黃金屋 簡體", args{URLNovel: "https://www.hjwzw.com/Book/Chapter/37176"}, func(i interface{}) bool { _, ok := i.(noveler.HjwzwNoveler); return ok }, false},
 		{"黃金屋", args{URLNovel: "https://tw.hjwzw.com/Book/Chapter/37176"}, func(i interface{}) bool { _, ok := i.(noveler.HjwzwNoveler); return ok }, false},
 		{"UU看書網", args{URLNovel: "https://www.uukanshu.com/b/81074/"}, func(i interface{}) bool { _, ok := i.(noveler.UUkanshuNoveler); return ok }, false},
+		{"UU看書網 TW", args{URLNovel: "https://tw.uukanshu.com/b/81005/"}, func(i interface{}) bool { _, ok := i.(noveler.UUkanshuNoveler); return ok }, false},
 		{"飄天文學", args{URLNovel: "https://www.ptwxz.com/html/9/9795/index.html"}, func(i interface{}) bool { _, ok := i.(noveler.PtwxzNoveler); return ok }, false},
 	}
 	for _, tt := range tests {
