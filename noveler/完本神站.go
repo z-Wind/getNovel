@@ -134,7 +134,7 @@ func (n *WanbentxtNoveler) getText(html io.Reader) (string, error) {
 	text = strings.ReplaceAll(text, "-->>本章未完，点击下一页继续阅读", "")
 	text = util.FormatText(text)
 
-	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
+	return util.MergeTitle(text,chapterTitle), nil
 }
 
 // MergeContent 合併章節

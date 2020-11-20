@@ -13,7 +13,7 @@ import (
 	"github.com/z-Wind/getNovel/util"
 )
 
-// PtwxzNoveler 黃金屋的 Noveler
+// PtwxzNoveler 飄天文學的 Noveler
 type PtwxzNoveler struct {
 	URL    string
 	title  string
@@ -135,7 +135,7 @@ func (n *PtwxzNoveler) getText(html io.Reader) (string, error) {
 	text = regexp.MustCompile(`&gt;`).ReplaceAllString(text, "")
 	text = util.FormatText(text)
 
-	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
+	return util.MergeTitle(text,chapterTitle), nil
 }
 
 // MergeContent 合併章節

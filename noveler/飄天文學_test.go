@@ -93,6 +93,8 @@ func TestPtwxzNoveler_getText(t *testing.T) {
 
 			if len(got) == 0 {
 				t.Errorf("PtwxzNoveler.getText() = %v, want %v", got, tt.want)
+			}else {
+				t.Logf("PtwxzNoveler.getText() = %v", got)
 			}
 		})
 	}

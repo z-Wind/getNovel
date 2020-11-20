@@ -72,6 +72,7 @@ func TestUUkanshuNoveler_getText(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{"test", &UUkanshuNoveler{URL: "https://www.uukanshu.com/b/81074/42310.html"}, args{}, "", false},
+		{"br", &UUkanshuNoveler{URL: "https://tw.uukanshu.com/b/81005/25938.html"}, args{}, "", false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
@@ -85,9 +86,11 @@ func TestUUkanshuNoveler_getText(t *testing.T) {
 				t.Errorf("UUkanshuNoveler.getText() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-
+			
 			if len(got) == 0 {
 				t.Errorf("UUkanshuNoveler.getText() = %v, want %v", got, tt.want)
+			} else {
+				t.Logf("UUkanshuNoveler.getText() = %v", got)
 			}
 		})
 	}

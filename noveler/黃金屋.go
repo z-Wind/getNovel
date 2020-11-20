@@ -112,7 +112,7 @@ func (n *HjwzwNoveler) getText(html io.Reader) (string, error) {
 	text = strings.ReplaceAll(text, "，歡迎訪問大家讀書院", "")
 	text = util.FormatText(text)
 
-	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text), nil
+	return util.MergeTitle(text,chapterTitle), nil
 }
 
 // MergeContent 合併章節

@@ -88,6 +88,8 @@ func TestCzbooksNoveler_getText(t *testing.T) {
 			}
 			if len(got) == 0 {
 				t.Errorf("CzbooksNoveler.getText() = %v, want %v", got, tt.want)
+			}else {
+				t.Logf("CzbooksNoveler.getText() = %v", got)
 			}
 		})
 	}

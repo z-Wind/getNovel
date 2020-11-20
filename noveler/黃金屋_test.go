@@ -86,9 +86,11 @@ func TestHjwzwNoveler_getText(t *testing.T) {
 				t.Errorf("HjwzwNoveler.getText() error = %v, wantErr %v", err, tt.wantErr)
 				return
 			}
-			t.Errorf("HjwzwNoveler.getText() = %v, want %v", got, tt.want)
+			
 			if len(got) == 0 {
 				t.Errorf("HjwzwNoveler.getText() = %v, want %v", got, tt.want)
+			}else {
+				t.Logf("HjwzwNoveler.getText() = %v", got)
 			}
 		})
 	}

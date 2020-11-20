@@ -140,3 +140,9 @@ func FormatText(text string) string {
 
 	return text
 }
+
+// MergeTitle 合併標題
+func MergeTitle(text, chapterTitle  string) string {
+
+	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text)
+}

@@ -86,6 +86,8 @@ func TestWanbentxtNoveler_getText(t *testing.T) {
 			}
 			if len(got) == 0 {
 				t.Errorf("WanbentxtNoveler.getText() = %v, want %v", got, tt.want)
+			}else {
+				t.Logf("WanbentxtNoveler.getText() = %v", got)
 			}
 		})
 	}

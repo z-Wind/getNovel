@@ -13,7 +13,7 @@ import (
 	"github.com/z-Wind/getNovel/util"
 )
 
-// UUkanshuNoveler 黃金屋的 Noveler
+// UUkanshuNoveler UU看書網的 Noveler
 type UUkanshuNoveler struct {
 	URL    string
 	title  string
@@ -119,10 +119,14 @@ func (n *UUkanshuNoveler) getText(html io.Reader) (string, error) {
 	}
 	text = strings.ReplaceAll(text, "</p>", "\n")
 	text = strings.ReplaceAll(text, "<p>", "\n")
+	text = strings.ReplaceAll(text, "<br>", "\n")
+	text = strings.ReplaceAll(text, "<br/>", "\n")
+	text = strings.ReplaceAll(text, "wｗｗ.uukanｓhu．com", "")
 	text = regexp.MustCompile(`..看书 .*?\n`).ReplaceAllString(text, "")
+	text = regexp.MustCompile(`<.*>`).ReplaceAllString(text, "")
 	text = util.FormatText(text)
 
-	return fmt.Sprintf("%s\n\n%s\n", chapterTitle, text), nil
+	return util.MergeTitle(text, chapterTitle), nil
 }
 
 // MergeContent 合併章節
