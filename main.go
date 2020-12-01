@@ -123,7 +123,7 @@ func getNovel(novel noveler.Noveler) error {
 	defer cancel()
 
 	reqToKey := func(req concurrencyengine.Request) interface{} { return req.Item.(noveler.NovelChapter) }
-	e := concurrencyengine.New(ctx, 10, reqToKey)
+	e := concurrencyengine.New(ctx, 500, reqToKey)
 	e.Recorder.JsonRWSetup(jsonUnmarshal, jsonMarshal)
 
 	err := novel.GetInfo()

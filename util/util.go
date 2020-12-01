@@ -88,6 +88,11 @@ func HTTPGetwithContext(ctx context.Context, URL string) (*http.Response, error)
 
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:57.0) Gecko/20100101 Firefox/57.0")
 	req = req.WithContext(ctx)
+	// adding connection:close header hoping to get rid
+    // of too many files open error. Found this in http://craigwickesser.com/2015/01/golang-http-to-many-open-files/
+	// 連線會變慢，需增加 worker 數目
+    req.Header.Add("Connection", "close")
+
 
 	// 確定連結斷開，若對方不斷開仍存活，可能造成 goroutine leakage
 	// 連接的客戶端可以持有的最大空閒連接，預設 2
