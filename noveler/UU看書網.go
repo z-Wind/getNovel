@@ -121,7 +121,7 @@ func (n *UUkanshuNoveler) getText(html io.Reader) (string, error) {
 	text = strings.ReplaceAll(text, "<p>", "\n")
 	text = strings.ReplaceAll(text, "<br>", "\n")
 	text = strings.ReplaceAll(text, "<br/>", "\n")
-	text = strings.ReplaceAll(text, "wｗｗ.uukanｓhu．com", "")
+	text = regexp.MustCompile(`[wｗ]{3}[．\.][ｕu][ｕu][ｋk][ａa][ｎn][ｓs][ｈh][ｕu][．\.][ｃc][ｏo][ｍm]`).ReplaceAllString(text, "")
 	text = regexp.MustCompile(`..看书 .*?\n`).ReplaceAllString(text, "")
 	text = regexp.MustCompile(`<.*>`).ReplaceAllString(text, "")
 	text = util.FormatText(text)
