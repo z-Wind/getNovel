@@ -99,7 +99,7 @@ func chooseNoveler(URLNovel string) (noveler.Noveler, error) {
 	case "www.uukanshu.com": // UU看書網
 		concurrencyengine.ELog.LPrintf("Noveler Choose UU看書網\n")
 		return noveler.NewUUkanshuNoveler(URLNovel), nil
-	case "www.ptwxz.com": // 飄天文學
+	case "www.ptwxz.com", "www.piaotian.com", "www.piaotia.com": // 飄天文學
 		concurrencyengine.ELog.LPrintf("Noveler Choose 飄天文學\n")
 		return noveler.NewPtwxzNoveler(URLNovel), nil
 	default:
