@@ -1,0 +1,434 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>原來我是妖二代第二十九章 大老板,賣報小郎君 | 黃金屋中文</title>
+    <meta name="Keywords" content="第二十九章 大老板, 原來我是妖二代最新章節, 賣報小郎君,原來我是妖二代,小說原來我是妖二代,原來我是妖二代最新章節,原來我是妖二代txt,原來我是妖二代下載,原來我是妖二代吧,原來我是妖二代快眼看書,原來我是妖二代520" />
+    <meta name="Description" content="小說:原來我是妖二代 的章節: 第二十九章 大老板內容,作者:賣報小郎君, 黃金屋中文, 黃金書屋" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://tw.hjwzw.com/css/css1.css" type="text/css" />
+    <link rel="alternate" href="https://t.hjwzw.com/Read/37176_15476202" media="only screen and (max-width: 640px)" />
+    <meta http-equiv="mobile-agent" content="format=html5; url=https://t.hjwzw.com/Read/37176_15476202" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url=https://t.hjwzw.com/Read/37176_15476202" />
+
+    <meta property="og:type" content="novel" />
+    <meta property="og:title" content="第二十九章 大老板 原來我是妖二代" />
+    <meta property="og:description" content="萬神宮！雷電法王雙眼銳利的仿佛要射出光線，你確定與萬神宮有關？男人肯定的點點頭：法王您知道八十年前那場發生在血裔界的動亂么，險…" />
+    <meta property="og:image" content="https://tw.hjwzw.com/images/id/37176.jpg" />
+    <meta property="og:url" content="https://tw.hjwzw.com/Book/Read/37176,15476202" />
+
+    <script type="text/javascript" src="https://tw.hjwzw.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://tw.hjwzw.com/js/common.js" charset="utf-8"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L51P0WCBSV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L51P0WCBSV');
+    </script>
+
+
+    <script language="javascript" type="text/javascript" charset="utf-8">
+        var CanReportErro = false;
+        var tempStr = "";
+        var BookName = "原來我是妖二代";
+        var prevpage ="/Book/Read/37176,15476200";
+var nextpage ="/Book/Read/37176,15476204";
+var chapterpage ="/Book/Chapter/37176";
+        var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
+
+        $(document).ready(function () {
+            document.onkeydown = jumpIEPage;
+
+            $.getScript("https://bm.hjwzw.com/Count.aspx?bookid=37176&chapterid=15476202&title=" + encodeURIComponent("第二十九章 大老板") + "&referer=" + escape(document.referrer));
+
+            try { xmlhttp.open("GET", nextpage, true); xmlhttp.send(); } catch (e) { }
+        });
+
+        function jumpIEPage() {
+            if (event.keyCode == 37) window.top.location = prevpage;
+            if (event.keyCode == 80) window.top.location = prevpage;
+            if (event.keyCode == 39) window.top.location = nextpage;
+            if (event.keyCode == 78) window.top.location = nextpage;
+            if (event.keyCode == 13) window.top.location = "/Book/37176";
+        }
+
+        $(window).keydown(function (event) {
+            switch (event.keyCode) {
+                case 13:
+                    window.top.location = "/Book/37176";
+                    break;
+                case 37:
+                    window.top.location = prevpage;
+                    break;
+                case 80:
+                    window.top.location = prevpage;
+                    break;
+                case 39:
+                    window.top.location = nextpage;
+                    break;
+                case 78:
+                    window.top.location = nextpage;
+                    break;
+            }
+        });
+
+        function doAjaxErroChapter() {
+
+            if (CanReportErro) {
+                $.ajax({
+                    type: "POST",
+                    url: "/ErroChapter.aspx",
+                    data: "bookid=37176&chapterid=15476202"
+                });
+                $("#ReportErro_div").html("多謝您的貢獻,章節內容將在1分鐘內自動更正,請稍候再試?");
+            }
+            else {
+                $("#ReportErro").html("如果您誤報錯誤,將影響其他讀者正常閱讀,您確信要更正此章節?");
+                CanReportErro = true;
+            }
+        }
+
+        function Search(obj) {
+            var keywords = $(obj).val();
+            if (keywords != null || keywords != "") {
+                top.location = "/List/" + encodeURIComponent(keywords.replace(/(^\s*)|(\s*$)/g, ""));
+            }
+            return false;
+        }
+
+        function ShowAllySite() {
+            var prA1 = "\x77\x77\x77"; if (window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]["\x64\x6f\x6d\x61\x69\x6e"]["\x69\x6e\x64\x65\x78\x4f\x66"]("\x74\x77\x2e") > -1) { prA1 = "\x74\x77"; }
+            var r_NgCkJpY2 = "\x3c\x66\x6f\x6e\x74 \x63\x6f\x6c\x6f\x72\x3d\x27\x72\x65\x64\x27\x3e\u5f39\u7a97\u592a\u591a\x3f\u8bf7\u8bbf\u95ee\u65e0\u5f39\u7a97\u7ad9\u70b9\x3a\x26\x6e\x62\x73\x70\x3b\x3c\x61 \x68\x72\x65\x66\x3d\x27\x68\x74\x74\x70\x3a\x2f\x2f" + prA1 + "\x2e";
+            r_NgCkJpY2 += tempStr + "\x78\x78\x77\x78\x38\x2e\x63\x6f\x6d\x27 \x73\x74\x79\x6c\x65\x3d\x27\x63\x6f\x6c\x6f\x72\x3a \x52\x65\x64\x3b\x27 \x74\x61\x72\x67\x65\x74\x3d\x27\x5f\x62\x6c\x61\x6e\x6b\x27\x3e\u4f11\u95f2" + tempStr + "\u6587\u5b66\u5427";
+            r_NgCkJpY2 += tempStr + "\x3c\x2f\x61\x3e" + tempStr + "\x26\x6e\x62\x73\x70\x3b    \x3c\x2f\x66\x6f\x6e\x74\x3e";
+            $("\x23\x41\x6c\x6c\x79\x53\x69\x74\x65")["\x68\x74\x6d\x6c"](r_NgCkJpY2);
+        }
+    </script>
+
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/45801421/xiaoshuo/hjw-728x90-001', [728, 90], 'div-gpt-ad-1692671598618-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+</head>
+<body>
+    
+<table width="1000px" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+        <td background="/images/hjw_01.jpg">&nbsp; </td>
+        <td width="1000px">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="11" height="28" background="/images/hjw_01.jpg">&nbsp;
+                    </td>
+                    <td width="709" background="/images/hjw_01.jpg"><span class="index1a">
+                        <a href="/">黃金屋首頁</a>| <a href="#">總點擊排行</a>| <a href="#">周點擊排行</a>| <a href="#">月點擊排行
+                        </a>| <a href="#">總搜藏排行</a></span></td>
+                    <td width="230" align="left" valign="middle" background="https://www.hjwzw.com/images/hjw_01.jpg"
+                        class="index1a"><a href="http://tw.hjwzw.com">繁體中文版</a>| <a href="#" onclick="addFavorite()"
+                            alt="收藏黃金屋">收藏黃金屋</a>| <a href="#" onclick="this.style.behavior
+							= 'url(#default#homepage)';
+	                              this.setHomePage('https://www.hjwzw.com');
+	                              return false;">設為首頁</a></td>
+                </tr>
+            </table>
+        </td>
+        <td background="/images/hjw_01.jpg">&nbsp; </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="15" colspan="4"></td>
+    </tr>
+    <tr>
+        <td width="157" height="52" align="left" valign="top"><a href="/"
+            title="點此返回黃金屋中文首頁">
+            <img src="/images/hjw_10.jpg" width="157" height="39" alt="黃金屋中文,黃金書屋" />
+        </a></td>
+        <td align="center">
+            <img src="/images/banner.jpg" width="700" height="60" alt="黃金屋中文,黃金書屋" />
+        </td>
+    </tr>
+    <tr>
+        <td height="10" colspan="4"></td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="6">
+            <img src="/images/hjw_15.jpg" width="6" height="28" alt="" />
+        </td>
+        <td background="/images/hjw_17.jpg">
+            <table width="977" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/" title="黃金書屋">首 頁</a></span></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="https://t.hjwzw.com" title="繁體移動手機版本">手機版</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a">最新章節</span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/玄幻">玄幻</a>·<a href="/Channel/奇幻">奇幻</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/武俠">武俠</a>·<a href="/Channel/仙俠">仙俠</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/都市">都市</a>·<a href="/Channel/言情">言情</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/歷史">歷史</a>·<a href="/Channel/軍事">軍事</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/游戲">游戲</a>·<a href="/Channel/競技">競技</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/科幻">科幻</a>·<a href="/Channel/靈異">靈異</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/全本">全本</a>·<a href="/Channel/all">全部</a></span></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="https://m.hjwzw.com" title="簡體移動手機版本">移動版</a></span></td>
+                    <td width="80" align="center" valign="middle"></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="/BookMark.aspx" title="書架">書架</a></span></td>
+                    <td>&nbsp; </td>
+                </tr>
+            </table>
+        </td>
+        <td width="7">
+            <img src="/images/hjw_20.jpg" width="7" height="28" alt="" />
+        </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td style="height: 25px; background-color: #d5d5d5">
+            <table border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="28">&nbsp; </td>
+                    <td width="71"><span class="STYLE5">文章查詢：</span></td>
+                    <td width="171">
+                        <input id="Txt_Keywords" type="text" />
+                    </td>
+                    <td width="49">
+                        <input id="Button1" type="image" value="button" src="/images/hjw_26.jpg"
+                            onclick="Search('#Txt_Keywords'); return false;" />
+                    </td>
+                    <td width="500"><span class="index3a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 熱門關鍵字：
+                        <a href="/List/道君" title="道君 躍千愁">道君</a>&nbsp;<a href="/List/大王饒命" title="大王饒命 牧狐">大王饒命</a>&nbsp;
+                        <a href="/List/神話紀元" title="神話紀元 人勿玩人">神話紀元</a>&nbsp;
+                        <a href="/List/飛劍問道" title="飛劍問道 我吃西紅柿">飛劍問道</a>&nbsp;
+                        <a href="/List/重生似水青春" title="重生似水青春 魚人二代">重生似水青春</a>
+                    </span></td>
+                    <td>
+                        <select name="colorSetting" id="colorSetting" size="1" onchange="setUserStyle()">
+                            <option value="0">閱讀底色..</option>
+                            <option value="2" style='background-color: #E9FAFF'>淡藍海洋 </option>
+                            <option value="3" style='background-color: #FFFFED'>明黃清俊 </option>
+                            <option value="4" style='background-color: #eefaee'>綠意淡雅 </option>
+                            <option value="5" style='background-color: #FCEFFF'>紅粉世家 </option>
+                            <option value="6" style='background-color: #ffffff'>白雪天地 </option>
+                            <option value="7" style='background-color: #efefef'>灰色世界 </option>
+                        </select></td>
+                    <td>
+                        <input type="button" class="btn1" id="btnSetStyle" value="設置" onclick="setUserStyle();" />
+                    </td>
+                    <td width="28">&nbsp; </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="5"></td>
+    </tr>
+</table>
+
+    <div style="margin: 0 auto; padding-top: 20px; padding-bottom: 20px; height: 90px; width: 800px;">
+        <div id="Pan_Ad3">
+	
+
+            <!-- /45801421/xiaoshuo/hjw-728x90-001 -->
+<div id='div-gpt-ad-1692671598618-0' style='min-width: 728px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1692671598618-0'); });
+  </script>
+</div>
+
+        
+</div>
+    </div>
+    <table style="width: 1000px;" align="center">
+        <tr>
+            <td align="left"><a href="/">黃金屋中文</a>&nbsp;>>&nbsp;<a href="/Book/37176">原來我是妖二代
+            </a>&nbsp;>>&nbsp; <a href="/Book/Chapter/37176">目錄</a>&nbsp;>>&nbsp;第二十九章 大老板
+            </td>
+        </tr>
+    </table>
+    <table align="center" width="1000px">
+        <tr>
+            <td>
+                <h1>
+                    第二十九章 大老板
+                </h1>
+                <div align="center">
+                    作者:<a href="/List/賣報小郎君" title="作者: 賣報小郎君 書名: 原來我是妖二代">賣報小郎君</a>&nbsp;&nbsp;分類:&nbsp;<a href="/Channel/%e9%83%bd%e5%b8%82" title="小說分類標簽: 都市  黃金屋">都市</a>&nbsp;|&nbsp;<a href="/Channel/%e5%bc%82%e6%9c%af%e8%b6%85%e8%83%bd" title="小說分類標簽: 異術超能  黃金屋">異術超能</a>&nbsp;|&nbsp;<a href="/Channel/%e5%8d%96%e6%8a%a5%e5%b0%8f%e9%83%8e%e5%90%9b" title="小說分類標簽: 賣報小郎君  黃金屋">賣報小郎君</a>&nbsp;|&nbsp;<a href="/Channel/%e5%8e%9f%e6%9d%a5%e6%88%91%e6%98%af%e5%a6%96%e4%ba%8c%e4%bb%a3" title="小說分類標簽: 原來我是妖二代  黃金屋">原來我是妖二代</a>&nbsp;|&nbsp;<a href="/Tag/" title="更多標簽">更多標簽</a>...
+                </div>
+                <div style="height: 20px;">
+                </div>
+                <div id="Pan_Ad1">
+	
+                    <table width="100%" align="center">
+                        <tr>
+                            <td width="49%" align="right">
+                                <script src="/js/n336.js" type="text/javascript"></script>
+                            </td>
+                            <td width="2%" align="center">&nbsp;</td>
+                            <td width="49%" align="left">
+                                <script src="/js/n336_2.js" type="text/javascript"></script>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="height: 20px;">
+                    </div>
+                
+</div>
+                <div id="AllySite" style="margin: 0 auto; margin-bottom: 10px; width: 800px; text-align: center; font-size: 20px;">
+                </div>
+                <div style="font-size: 20px; line-height: 30px; word-wrap: break-word; table-layout: fixed; word-break: break-all; width: 750px; margin: 0 auto; text-indent: 2em;">
+                    請記住本站域名: <b>黃金屋</b><p />
+                    <a href="/Book/37176" title="原來我是妖二代">原來我是妖二代</a>&nbsp;第二十九章 大老板<p/>
+“萬神宮！”雷電法王雙眼銳利的仿佛要射出光線，“你確定與萬神宮有關？”<p/>
+男人肯定的點點頭：“法王您知道八十年前那場發生在血裔界的動亂么，險些顛覆了整個道佛協會的動亂。始作俑者是一名道教棄徒，叫，叫.....”<p/>
+“妖道忘塵，”雷電法王沒心情嘲諷建國后的小妖還是太年輕，道：“他原本是全真的一名弟子，名不經傳，本是再平凡不過的道門弟子。當時全面抗戰爆發，生靈涂炭，道教弟子紛紛下山游歷，濟世救民。此人凡塵游歷數載，歸來后，如脫胎換骨，修為一日千里。而隨之增強的不止是修為，還有野心，他臣服于自己的內心，欺師滅祖，背叛國家，投奔了日苯人。”<p/>
+“道佛協會，以及正道人士，組織了六千血裔高手，將他圍殺在終南山。那一役后，六千高手十不存一，妖道身隕。史稱：全真之禍。”<p/>
+男人道：“那您想必知曉，他之所以脫胎換骨，修為一日千里的原因。”<p/>
+雷電法王點點頭：“萬神宮，妖道誤打誤撞尋到了萬神宮，他必然從萬神宮里得到了什么。天下安定后，無數血裔都曾尋找過它，但沒有一個人能成功。忘塵身隕后，他的一切秘密以及萬神宮的所在，都隨他而去。”<p/>
+男人沉默片刻，道：“我們有萬神宮的鑰匙！”<p/>
+雷電法王眼中精芒閃爍。<p/>
+“那鑰匙在我丹田里，法王請解開我的束縛，我取出來給你。”男人說。<p/>
+雷電法王曲指一彈，房間中幾道電蛇劃過，男人手腕、腳腕上的鐵箍應聲而斷。他松了松手腕，盤腿吐納，幾息后，丹田有一團溫潤的光芒亮起，那團光芒緩緩浮出他的丹田。<p/>
+在它離體的剎那，雷電法王按捺不住，伸手一招，將它攝入掌心。這是一塊不規則的金屬碎片，分明是金屬，觸手卻如玉一般溫潤，不屬于他所知的任何金屬，甚至看不出材質。<p/>
+它散發出淡淡的光輝，這是靈滿自溢的現象。<p/>
+“你們是怎么得到它的？”雷電法王沉聲道。<p/>
+男人搖搖頭：“我倆自幼便與它朝夕相處，此物有靈，開啟了我與妹子的靈竅，佩戴它修煉可以事半功倍。但我與青青也是遭逢大難后才知道它是萬神宮的鑰匙。”<p/>
+雷電法王握著金屬碎片，半晌無語，許久后，一聲不吭的起身走人。<p/>
+“法王！”男人叫道。<p/>
+雷電法王頓住腳步，“我沒答應你們任何條件，但寶澤是個講民主和人道的機構，你們犯了死罪，但也立了大功，我會建議公司從輕處罰。”<p/>
+男人和青青齊齊松口氣，后者又叫道：“等等。”<p/>
+雷電法王皺眉回頭。<p/>
+青青咬著唇，鼓起勇氣：“我要投訴，你們公司的獄卒天天騷擾我。”<p/>
+雷電法王道：“你是說觸手怪？他只是喜歡玩捆綁，不會真的碰你。你該慶幸管理這一層的不是秦大爺，就是抓捕你倆那個老頭。”<p/>
+說完，就關門就走了。<p/>
+雷電法王前腳剛走，走廊盡頭就飄來四只鐵箍，它們被四條看不見的觸手纏繞著，飄過走廊，飄到九號房間，為男人重新戴上鐵箍，臨走時，看不見的觸手狠狠“逗”了一下青青的胸脯，波濤四起。<p/>
+凌晨0：33分。<p/>
+5號會議室，只有雷電法王一人，他開啟了會議室的全息3D投影，向大老板發出遠程通訊請求。<p/>
+幾分鐘后，一道瑩藍色的光束投射下來，穿著睡衣的年輕男人站在光束中，打著哈欠。<p/>
+“大晚上的你不睡覺，找我什么事。”男人一出場就喋喋不休的抱怨：“你沒性生活的么，你沒有我有啊，我和姐....老婆說好今年要生二胎的。”<p/>
+“大老板，”雷電法王低聲道：“萬神宮的門要開啟了。”<p/>
+男人立刻停止抱怨，皺著眉，語氣嚴肅：“怎么回事。”<p/>
+“前幾天，秦大爺抓回來兩個犯事的血裔，他們是建國后覺醒的，還背了幾條人命，按照規矩，他們會被抹殺。但就在不久前，他們請求與我見面，直言有大事稟報，想戴罪立功......”<p/>
+他把剛剛的事說了一遍，將金屬碎片放在桌上，補充道：“我已經驗證過了，此物堅不可摧，難以被破壞，此外，我查閱卷宗，對比了圖鑒，十有八九是真的了。如今“鑰匙”靈滿自溢，說明遺跡即將開啟。”<p/>
+男人走到桌邊，伸手撫摸金屬碎片，他的手穿過“鑰匙”，熒光泛起漣漪般的波瀾：“嘖，兩個小小的血裔，竟然掌握著萬神宮的鑰匙？”<p/>
+雷電法王道：“我也有這個疑問，因此特意查了查當年“全真之禍”的詳細過程，道佛協會對那段往事諱莫如深，卷宗里只記載了事件的大概，寥寥百余字。而動亂的罪魁禍首，筆墨更少，不過我查到當年妖道曾與一名狐女交往甚密，而妖道死后，鑰匙不翼而飛，極有可能是被狐女帶走了。”<p/>
+世上有兩部歷史，一部是正統的人類歷史，一部是血裔歷史。<p/>
+男人低頭凝視著“鑰匙”，很長時間都沒有說話，他不說話，雷電法王就不敢出聲，怕打擾大老板思考。<p/>
+“八十年前，萬神宮開啟過一次，上一次它開啟是二十年前。前后相隔一甲子。這一次鑰匙靈滿自溢，預示著它即將開啟。與上一次相隔只有短短二十年。”男人抬起頭，問道：“你說那群東西，還有復蘇可能么？”<p/>
+雷電法王無奈道：“大老板，這種事我怎么知道。”<p/>
+男人愣了愣：“我不是問你。”<p/>
+雷電法王表情茫然，不是問我，那你問誰？<p/>
+男人擺擺手：“你派人去查，查清楚兩個血裔的身份背景，妖道身隕后，沒留下關于萬神宮的太多線索，但當年跟隨他的人，想必會留有只言片語，你讓人去盡可能的搜集。萬神宮每次開啟，都會帶來動蕩，煩的要死。我特么這幾年就沒過幾天安生日子，每天逼著我裝逼裝逼.....”<p/>
+漸漸的變成他的碎碎念。<p/>
+雷電法王習慣了，老板總是這樣，明明很愛裝逼，偏偏又表現出很厭惡人前顯圣的樣子，還說自己是被迫的。<p/>
+員工們私底下都叫他逼王。<p/>
+“會有收獲么？”雷電法王毫無自信：“這么多年都沒人能找到萬神宮。”<p/>
+“找不到是正常的，我猜它不在我們這片世界里。”男人道：“古書上有記載，一個姓陶的文人，無意中進入一片世外桃源，那里的人與世隔絕，夜不閉戶路不拾遺，與外界完全不往來不通商。他在那里流連數日才離開，可當他再次去尋找那片世外桃源時，卻發現那片世外桃源消失了。假設那片世外桃源真的存在，那它為什么會消失？”<p/>
+雷電法王：“您是說，他進入了另一個世界？”<p/>
+李羨魚點點頭：“這個世界其實不大，天上那么多衛星掛著，真要刻意去找什么地方，不可能傾盡血裔界數代之功，卻一無所獲。”<p/>
+“還有一件事，您還記得李家的極道傳人么。”雷電法王顯得憂心忡忡：“李無相二十年前進入過萬神宮，他是繼妖道之后，唯一進入過那里的人。沒人知道他從那里帶出了什么東西，在他死后，一切都塵歸塵土歸土，可眼下萬神宮即將重開，那兩名血裔遭人追殺，現在鑰匙落入我們寶澤手里，外人不敢覬覦，這時候，他們就該想起李家傳人了。”<p/>
+男人皺眉：“當年的事我不清楚，李無相隕落時，李家小娃娃還在娘胎里，他能知道什么。”<p/>
+雷電法王苦笑：“他不知道，但他們家那個祖傳戰魂知道啊。不，她其實也不知道，但外人未必肯信。這樣一來，李羨魚就危險了。原先有一層執法者的身份罩著，尋常人不敢找他麻煩，而如今，咱們公司的這層身份，未必能保住他。”<p/>
+男人道：“不是有三無護著他么，無雙戰魂身上封印太多，歷經六代仍然未能盡數解開，不成極道強者，對我而言就沒太大意義。換句話說，李羨魚這顆棋子，能成長起來最好，不能的話，也無關大局。看他自己造化吧。”<p/>
+男人的身影閃了閃，與熒光同化，他在那邊關閉了通訊。<p/>
+<br/><p />
+                </div>
+                <div style="font-size: 20px; line-height: 30px; word-wrap: break-word; table-layout: fixed; word-break: break-all; width: 750px; margin: 0 auto; text-indent: 2em;">
+                    請記住本站域名: <b>黃金屋</b><p />
+                </div>
+                <div id="Pan_Ad2">
+	
+                    <div style="margin: 0 auto; width: 730px; padding-top: 20px; padding-bottom: 20px;">
+                        <script src="/js/n728.js" type="text/javascript"></script>
+                    </div>
+                
+</div>
+                <div style="width: 750px; margin: 0 auto; text-align: center; padding-bottom: 10px;">
+                    快捷鍵: 上一章("←"或者"P")&nbsp;&nbsp;&nbsp;&nbsp;下一章("→"或者"N")&nbsp;&nbsp;&nbsp;&nbsp;回車鍵:返回書頁
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+    <div style="margin: 0 auto; width: 1000px; text-align: center; font-size: 20px;">
+        <a href="/Book/Read/37176,15476200" title="第二十八章 原來我是妖二代">上一章</a> &nbsp;|&nbsp; <a href="/Book/Chapter/37176" title="原來我是妖二代目錄">原來我是妖二代目錄</a> &nbsp;|&nbsp; <a href="/Book/Read/37176,15476204" title="第三十章 鬼嬰 原來我是妖二代">下一章</a>
+    </div>
+
+    <div style="width: 1000px; margin: 0 auto; text-align: center; padding-top: 20px; padding-bottom: 20px; min-height: 90px;">
+        <a href="https://m.hjwzw.com/Book/37176" title="原來我是妖二代 手機版">手機網頁版(簡體)</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://t.hjwzw.com/Book/37176" title="原來我是妖二代 手機版">手機網頁版(繁體)</a>
+    </div>
+    <div id="Pan_Ad4">
+	
+        
+    
+</div>
+    
+
+<div style="margin: 0 auto; width: 998px; min-height: 50px; border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: white;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="94" height="25" align="center" valign="middle" background="/images/hjw_47.jpg">
+                <span class="STYLE23">瀏覽記錄</span></td>
+            <td background="/images/hjw_32.jpg" style="width: 500px; text-align: right;"></td>
+            <td width="8">
+                <img src="/images/hjw_35.jpg" width="8" height="24" alt="" />
+            </td>
+        </tr>
+    </table>
+    <div id="BookMark" style="width: 988px; padding-left: 5px; padding-right: 5px; vertical-align: top; background-color: white; min-height: 50px;">
+    </div>
+</div>
+
+<div id="pagebottom" align="center">
+    <hr noshade size="1" />
+</div>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="5"></td>
+    </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="center" valign="middle">
+            <div class="STYLE40">
+                <div>
+                    字母索引: <a href="/Pinyin/A">A</a>&nbsp;|&nbsp; <a href="/Pinyin/B">B</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/C">C</a>&nbsp;|&nbsp; <a href="/Pinyin/D">D</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/E">E</a>&nbsp;|&nbsp; <a href="/Pinyin/F">F</a>&nbsp;|&nbsp; <a href="/Pinyin/G">G</a>&nbsp;|&nbsp; <a href="/Pinyin/H">H</a>&nbsp;|&nbsp; <a href="/Pinyin/J">J</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/K">K</a>&nbsp;|&nbsp; <a href="/Pinyin/L">L</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/M">M</a>&nbsp;|&nbsp; <a href="/Pinyin/N">N</a>&nbsp;|&nbsp; <a href="/Pinyin/P">P</a>&nbsp;|&nbsp; <a href="/Pinyin/Q">Q</a>&nbsp;|&nbsp; <a href="/Pinyin/R">R</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/S">S</a>&nbsp;|&nbsp; <a href="/Pinyin/T">T</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/W">W</a>&nbsp;|&nbsp; <a href="/Pinyin/X">X</a>&nbsp;|&nbsp; <a href="/Pinyin/Y">Y</a>&nbsp;|&nbsp; <a href="/Pinyin/Z">Z</a>
+                </div>
+                <hr size="1" />
+                <br />
+
+                <div id="CopyRight">
+                    聯系我們: <a href="mailto:hjwzw@live.com">hjwzw@live.com</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+    <div style="margin: 0 auto; width: 960px;">
+        頁面執行時間: 0.0234117
+    </div>
+</body>
+</html>

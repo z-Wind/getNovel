@@ -7,7 +7,10 @@ import (
 	"crypto/tls"
 	"fmt"
 	"io"
-	
+	"log"
+	"os"
+	"testing"
+
 	"net/http"
 	"net/url"
 	"regexp"
@@ -22,24 +25,48 @@ import (
 
 // URLHTMLToUTF8Encoding 將網頁編碼為 UTF8 並回傳 reader
 func URLHTMLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
-	// Create a new context with a deadline
-	ctx := context.Background()
-	ctx, cancel := context.WithTimeout(ctx, 30*time.Second)
-	defer cancel()
-
-	resp, err := HTTPGetwithContext(ctx, URL)
-	if err != nil {
-		err = errors.Wrap(err, "HTTPGetwithContext")
-		return nil, "", false, err
+	var body io.Reader
+	
+	if testing.Testing() {
+		urlAfter, found := strings.CutPrefix(URL, "https://")
+		if !found {
+			panic("url not https")
+		}
+		filename := "../test_dataset/" + urlAfter
+		if strings.HasSuffix(urlAfter, "/") {
+			filename += "index.html"
+		}
+		aa, _ := os.Getwd()
+		log.Println(filename, aa)
+		file, err := os.Open(filename)
+		defer func() {
+			_ = file.Close()
+		}()
+		if err != nil {
+			return nil, "", false, err
+		}
+		body = file
+	} else {
+		// Create a new context with a deadline
+		ctx := context.Background()
+		ctx, cancel := context.WithTimeout(ctx, 30*time.Second)
+		defer cancel()
+	
+		resp, err := HTTPGetwithContext(ctx, URL)
+		if err != nil {
+			err = errors.Wrap(err, "HTTPGetwithContext")
+			return nil, "", false, err
+		}
+		defer resp.Body.Close()
+	
+		if resp.StatusCode != http.StatusOK {
+			err = fmt.Errorf("response status code: %d", resp.StatusCode)
+			return nil, "", false, err
+		}
+		body = resp.Body
 	}
-	defer resp.Body.Close()
 
-	if resp.StatusCode != http.StatusOK {
-		err = fmt.Errorf("response status code: %d", resp.StatusCode)
-		return nil, "", false, err
-	}
-
-	r, name, certain, err := ToUTF8Encoding(resp.Body)
+	r, name, certain, err := ToUTF8Encoding(body)
 	if err != nil {
 		err = errors.Wrap(err, "ToUTF8Encoding")
 		return nil, "", false, err
