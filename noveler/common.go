@@ -3,7 +3,8 @@ package noveler
 import (
 	"bytes"
 	"fmt"
-	"io/ioutil"
+	
+	"io"
 	"os"
 	"path"
 
@@ -30,11 +31,11 @@ func getParseResult(novel Noveler, req concurrencyengine.Request) (concurrencyen
 		return parseResult, errors.Wrap(err, "util.URLHTMLToUTF8Encoding")
 	}
 
-	b, err := ioutil.ReadAll(r)
+	b, err := io.ReadAll(r)
 	if err != nil {
 		parseResult.RedoRequests = append(parseResult.RedoRequests, req)
 		parseResult.Done = false
-		return parseResult, errors.Wrap(err, "ioutil.ReadAll")
+		return parseResult, errors.Wrap(err, "io.ReadAll")
 	}
 
 	requests, err := novel.getNextPage(bytes.NewReader(b), req)
@@ -68,8 +69,8 @@ func mergeContent(novelName string, fileNames []string, fromPath, toPath string)
 
 	f, err := os.OpenFile(savePath, os.O_APPEND|os.O_CREATE|os.O_WRONLY, os.ModePerm)
 	if err != nil {
-		fmt.Printf("ioutil.ReadFile Fail: %s\n", err)
-		return errors.Wrap(err, "ioutil.ReadFile")
+		fmt.Printf("os.ReadFile Fail: %s\n", err)
+		return errors.Wrap(err, "os.ReadFile")
 	}
 
 	defer f.Close()
@@ -77,16 +78,16 @@ func mergeContent(novelName string, fileNames []string, fromPath, toPath string)
 	for _, fName := range fileNames {
 		fPath := path.Join(fromPath, fName)
 
-		b, err := ioutil.ReadFile(fPath)
+		b, err := os.ReadFile(fPath)
 		if err != nil {
-			fmt.Printf("ioutil.ReadFile Fail: %s\n", err)
-			return errors.Wrap(err, "ioutil.ReadFile")
+			fmt.Printf("os.ReadFile Fail: %s\n", err)
+			return errors.Wrap(err, "os.ReadFile")
 		}
 
 		_, err = f.WriteString(string(b))
 		if err != nil {
-			fmt.Printf("ioutil.WriteFile Fail: %s\n", err)
-			return errors.Wrap(err, "ioutil.WriteFile")
+			fmt.Printf("os.WriteFile Fail: %s\n", err)
+			return errors.Wrap(err, "os.WriteFile")
 		}
 	}
 

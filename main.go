@@ -4,7 +4,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"io/ioutil"
+	
 	"net/url"
 	"os"
 	"path"
@@ -180,10 +180,10 @@ func getNovel(novel noveler.Noveler) error {
 		}
 
 		text := data.(noveler.NovelChapterHTML).Text
-		err = ioutil.WriteFile(filePath, []byte(text), os.ModePerm)
+		err = os.WriteFile(filePath, []byte(text), os.ModePerm)
 		if err != nil {
-			concurrencyengine.ELog.Printf("ioutil.WriteFile Fail: %s\n", err)
-			return errors.Wrap(err, "ioutil.WriteFile")
+			concurrencyengine.ELog.Printf("os.WriteFile Fail: %s\n", err)
+			return errors.Wrap(err, "os.WriteFile")
 		}
 		concurrencyengine.ELog.LPrintf("Chapter Content Write to %s\n", fileName)
 		e.Recorder.Done(data.(noveler.NovelChapterHTML).NovelChapter)

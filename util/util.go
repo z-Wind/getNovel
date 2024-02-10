@@ -7,7 +7,7 @@ import (
 	"crypto/tls"
 	"fmt"
 	"io"
-	"io/ioutil"
+	
 	"net/http"
 	"net/url"
 	"regexp"
@@ -50,9 +50,9 @@ func URLHTMLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
 
 // ToUTF8Encoding 將 reader 轉換為 UTF8
 func ToUTF8Encoding(r io.Reader) (io.Reader, string, bool, error) {
-	b, err := ioutil.ReadAll(r)
+	b, err := io.ReadAll(r)
 	if err != nil {
-		err = errors.Wrap(err, "ioutil.ReadAll")
+		err = errors.Wrap(err, "io.ReadAll")
 		return nil, "", false, err
 	}
 
