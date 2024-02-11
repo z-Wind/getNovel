@@ -34,8 +34,12 @@ To build with two ways
     $ ./getNovel -url url_novel_contents
 
 ## Support
-- [完本神站](https://www.wanbentxt.com/)
-- [小說狂人](https://czbooks.net/)
 - [黃金屋](https://tw.hjwzw.com/)
 - [飄天文學](https://www.ptwxz.com/)
 - [UU看書網](https://www.uukanshu.com/)
+- ~~[小說狂人](https://czbooks.net/)~~ cloudflare
+- ~~[完本神站](https://www.wanbentxt.com/)~~ dead
+
+## Adding new files to test_dataset
+
+	$ cd test_dataset; wget2 -kx URL

@@ -1,0 +1,970 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>原來我是妖二代/賣報小郎君/txt下載-黃金屋中文</title>
+    <meta name="Keywords" content="原來我是妖二代目錄,原來我是妖二代最新章節,原來我是妖二代txt,原來我是妖二代下載" />
+    <meta name="Description" content="原來我是妖二代 目錄,李羨魚二十歲那年，收到了父親的遺產，一個年芳十八，貌美如花的祖奶奶。 李羨魚：祖奶奶，為什么你這么年輕。 祖奶奶：因" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/css1.css" type="text/css" />
+    <link rel="alternate" href="https://t.hjwzw.com/Chapter/37176" media="only screen and (max-width: 640px)" />
+    <meta http-equiv="mobile-agent" content="format=html5; url=https://t.hjwzw.com/Chapter/37176" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url=https://t.hjwzw.com/Chapter/37176" />
+
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/common.js" charset="utf-8"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L51P0WCBSV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L51P0WCBSV');
+    </script>
+
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            document.onkeydown = KeyDown;
+
+            GetTempBookMark();
+
+            $.getScript("https://bm.hjwzw.com/Count.aspx?bookid=37176&referer=" + escape(document.referrer));
+        });
+
+        function KeyDown() {
+            if (event.keyCode == 13) {
+                Search("#top1_Txt_Keywords");
+                return false;
+            }
+        }
+
+        function Search(obj) {
+            var keywords = $(obj).val();
+            if (keywords != null || keywords != "") {
+                top.location = "/List/" + encodeURIComponent(keywords.replace(/(^\s*)|(\s*$)/g, ""));
+            }
+            return false;
+        }
+    </script>
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/45801421/xiaoshuo/hjw-728x90-001', [728, 90], 'div-gpt-ad-1692671598618-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+
+
+    <base target="_blank" />
+</head>
+<body>
+    <div style="margin: 0 auto; width: 1000px;">
+        
+<table width="1000px" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+        <td background="/images/hjw_01.jpg">&nbsp; </td>
+        <td width="1000px">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="11" height="28" background="/images/hjw_01.jpg">&nbsp;
+                    </td>
+                    <td width="709" background="/images/hjw_01.jpg"><span class="index1a">
+                        <a href="/">黃金屋首頁</a>| <a href="#">總點擊排行</a>| <a href="#">周點擊排行</a>| <a href="#">月點擊排行
+                        </a>| <a href="#">總搜藏排行</a></span></td>
+                    <td width="230" align="left" valign="middle" background="https://www.hjwzw.com/images/hjw_01.jpg"
+                        class="index1a"><a href="http://tw.hjwzw.com">繁體中文版</a>| <a href="#" onclick="addFavorite()"
+                            alt="收藏黃金屋">收藏黃金屋</a>| <a href="#" onclick="this.style.behavior
+							= 'url(#default#homepage)';
+	                              this.setHomePage('https://www.hjwzw.com');
+	                              return false;">設為首頁</a></td>
+                </tr>
+            </table>
+        </td>
+        <td background="/images/hjw_01.jpg">&nbsp; </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="15" colspan="4"></td>
+    </tr>
+    <tr>
+        <td width="157" height="52" align="left" valign="top"><a href="/"
+            title="點此返回黃金屋中文首頁">
+            <img src="/images/hjw_10.jpg" width="157" height="39" alt="黃金屋中文,黃金書屋" />
+        </a></td>
+        <td align="center">
+            <img src="/images/banner.jpg" width="700" height="60" alt="黃金屋中文,黃金書屋" />
+        </td>
+    </tr>
+    <tr>
+        <td height="10" colspan="4"></td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="6">
+            <img src="/images/hjw_15.jpg" width="6" height="28" alt="" />
+        </td>
+        <td background="/images/hjw_17.jpg">
+            <table width="977" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/" title="黃金書屋">首 頁</a></span></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="https://t.hjwzw.com" title="繁體移動手機版本">手機版</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a">最新章節</span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/玄幻">玄幻</a>·<a href="/Channel/奇幻">奇幻</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/武俠">武俠</a>·<a href="/Channel/仙俠">仙俠</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/都市">都市</a>·<a href="/Channel/言情">言情</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/歷史">歷史</a>·<a href="/Channel/軍事">軍事</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/游戲">游戲</a>·<a href="/Channel/競技">競技</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/科幻">科幻</a>·<a href="/Channel/靈異">靈異</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/全本">全本</a>·<a href="/Channel/all">全部</a></span></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="https://m.hjwzw.com" title="簡體移動手機版本">移動版</a></span></td>
+                    <td width="80" align="center" valign="middle"></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="/BookMark.aspx" title="書架">書架</a></span></td>
+                    <td>&nbsp; </td>
+                </tr>
+            </table>
+        </td>
+        <td width="7">
+            <img src="/images/hjw_20.jpg" width="7" height="28" alt="" />
+        </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td style="height: 25px; background-color: #d5d5d5">
+            <table border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="28">&nbsp; </td>
+                    <td width="71"><span class="STYLE5">文章查詢：</span></td>
+                    <td width="171">
+                        <input id="Txt_Keywords" type="text" />
+                    </td>
+                    <td width="49">
+                        <input id="Button1" type="image" value="button" src="/images/hjw_26.jpg"
+                            onclick="Search('#Txt_Keywords'); return false;" />
+                    </td>
+                    <td width="500"><span class="index3a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 熱門關鍵字：
+                        <a href="/List/道君" title="道君 躍千愁">道君</a>&nbsp;<a href="/List/大王饒命" title="大王饒命 牧狐">大王饒命</a>&nbsp;
+                        <a href="/List/神話紀元" title="神話紀元 人勿玩人">神話紀元</a>&nbsp;
+                        <a href="/List/飛劍問道" title="飛劍問道 我吃西紅柿">飛劍問道</a>&nbsp;
+                        <a href="/List/重生似水青春" title="重生似水青春 魚人二代">重生似水青春</a>
+                    </span></td>
+                    <td>
+                        <select name="colorSetting" id="colorSetting" size="1" onchange="setUserStyle()">
+                            <option value="0">閱讀底色..</option>
+                            <option value="2" style='background-color: #E9FAFF'>淡藍海洋 </option>
+                            <option value="3" style='background-color: #FFFFED'>明黃清俊 </option>
+                            <option value="4" style='background-color: #eefaee'>綠意淡雅 </option>
+                            <option value="5" style='background-color: #FCEFFF'>紅粉世家 </option>
+                            <option value="6" style='background-color: #ffffff'>白雪天地 </option>
+                            <option value="7" style='background-color: #efefef'>灰色世界 </option>
+                        </select></td>
+                    <td>
+                        <input type="button" class="btn1" id="btnSetStyle" value="設置" onclick="setUserStyle();" />
+                    </td>
+                    <td width="28">&nbsp; </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="5"></td>
+    </tr>
+</table>
+
+        <div style="margin: 0 auto; padding-top: 20px; padding-bottom: 20px; height: 90px; width: 800px;">
+
+            <!-- /45801421/xiaoshuo/hjw-728x90-001 -->
+<div id='div-gpt-ad-1692671598618-0' style='min-width: 728px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1692671598618-0'); });
+  </script>
+</div>
+
+        </div>
+        <table style="width: 900px;" align="center">
+            <tr>
+                <td align="left"><a href="/">黃金屋中文</a>&nbsp;>>&nbsp;<a href="/Book/37176"
+                    title="小說名:原來我是妖二代">原來我是妖二代</a>&nbsp;>>原來我是妖二代目錄 </td>
+            </tr>
+        </table>
+        <table style="width: 960px; text-align: center;">
+            <tr>
+                <td>
+                    <h1>原來我是妖二代</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    作者:<a href="/List/%e5%8d%96%e6%8a%a5%e5%b0%8f%e9%83%8e%e5%90%9b" title="作者: 賣報小郎君 書名: 原來我是妖二代">賣報小郎君</a>&nbsp;&nbsp;分類:&nbsp;<a href="/Channel/%e9%83%bd%e5%b8%82" title="小說分類標簽: 都市  黃金屋">都市</a>&nbsp;|&nbsp;<a href="/Channel/%e5%bc%82%e6%9c%af%e8%b6%85%e8%83%bd" title="小說分類標簽: 異術超能  黃金屋">異術超能</a>&nbsp;|&nbsp;<a href="/Channel/%e5%8d%96%e6%8a%a5%e5%b0%8f%e9%83%8e%e5%90%9b" title="小說分類標簽: 賣報小郎君  黃金屋">賣報小郎君</a>&nbsp;|&nbsp;<a href="/Channel/%e5%8e%9f%e6%9d%a5%e6%88%91%e6%98%af%e5%a6%96%e4%ba%8c%e4%bb%a3" title="小說分類標簽: 原來我是妖二代  黃金屋">原來我是妖二代</a>&nbsp;|&nbsp;<a href="/Tag/" title="更多標簽">更多標簽</a>...
+                </td>
+            </tr>
+        </table>
+        <div style="width: 970px; margin: 0 auto; text-align: center; padding-top: 20px; padding-bottom: 20px; min-height: 90px;">
+            <script src="/js/n970.js" type="text/javascript"></script>
+        </div>
+        <div style="clear: both;">
+        </div>
+        <div>
+            <font color="red"><a href="https://tw.hjwzw.com/Book/Chapter/37176">繁體版:原來我是妖二代目錄
+            </a></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="red"><a href="https://tw.hjwzw.com/Book/Chapter/37176">簡體版:原來我是妖二代目錄</a></font>
+        </div>
+        <div id="tbchapterlist" style="margin: 0 auto;">
+            <table style="width: 960px;">
+                <tr>
+                    <td><a href="/Book/Read/37176,15476149" title=" 第一章 遺產:祖奶奶 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第一章 遺產:祖奶奶</a>
+</td><td><a href="/Book/Read/37176,15476151" title=" 第二章 古妖 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第二章 古妖</a>
+</td><td><a href="/Book/Read/37176,15476153" title=" 第三章 祖奶奶是磨人的小妖精 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第三章 祖奶奶是磨人的小妖精</a>
+</td><td><a href="/Book/Read/37176,15476155" title=" 第四章 我喜歡這個時代 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第四章 我喜歡這個時代</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476157" title=" 第五章 李羨魚:祖奶奶,我走火入魔了 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第五章 李羨魚:祖奶奶,我走火入魔了</a>
+</td><td><a href="/Book/Read/37176,15476159" title=" 第六章 我的祖奶奶是榨汁姬 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第六章 我的祖奶奶是榨汁姬</a>
+</td><td><a href="/Book/Read/37176,15476161" title=" 第七章 校草死亡事件 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第七章 校草死亡事件</a>
+</td><td><a href="/Book/Read/37176,15476163" title=" 第八章 快跑 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第八章 快跑</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476165" title=" 第九章 校草死亡事件(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第九章 校草死亡事件(二)</a>
+</td><td><a href="/Book/Read/37176,15476167" title=" 第十章 以身相許? 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第十章 以身相許?</a>
+</td><td><a href="/Book/Read/37176,15476169" title=" 第十一章 別浪費,上好的零嘴 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第十一章 別浪費,上好的零嘴</a>
+</td><td><a href="/Book/Read/37176,15476170" title=" 第十二章 我接受不了這樣的畫風 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第十二章 我接受不了這樣的畫風</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476172" title=" 第十三章 秦大爺 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第十三章 秦大爺</a>
+</td><td><a href="/Book/Read/37176,15476174" title=" 第十四章 我的錢呢? 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第十四章 我的錢呢?</a>
+</td><td><a href="/Book/Read/37176,15476176" title=" 第十五章 真香 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第十五章 真香</a>
+</td><td><a href="/Book/Read/37176,15476178" title=" 十六章 末法時代的猜測 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">十六章 末法時代的猜測</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476180" title=" 第十七章 覺醒的正確姿勢 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第十七章 覺醒的正確姿勢</a>
+</td><td><a href="/Book/Read/37176,15476182" title=" 第十八章 一廢帶兩坑“為盟主“于閣聽雨”” 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:34:00">第十八章 一廢帶兩坑“為盟主“于閣聽雨””</a>
+</td><td><a href="/Book/Read/37176,15476184" title=" 第十九章 加入寶澤 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第十九章 加入寶澤</a>
+</td><td><a href="/Book/Read/37176,15476186" title=" 第二十章 血裔的世界 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十章 血裔的世界</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476188" title=" 第二十一章 都是人才,說話又好聽 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十一章 都是人才,說話又好聽</a>
+</td><td><a href="/Book/Read/37176,15476189" title=" 第二十二章 李羨魚:我有新番 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十二章 李羨魚:我有新番</a>
+</td><td><a href="/Book/Read/37176,15476191" title=" 第二十三章 第一個任務 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十三章 第一個任務</a>
+</td><td><a href="/Book/Read/37176,15476193" title=" 第二十四章 此物,受國運洗禮 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十四章 此物,受國運洗禮</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476194" title=" 第二十五章 狗 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十五章 狗</a>
+</td><td><a href="/Book/Read/37176,15476196" title=" 第二十六章 新人勝舊狗 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十六章 新人勝舊狗</a>
+</td><td><a href="/Book/Read/37176,15476198" title=" 第二十七章 生死兩界 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十七章 生死兩界</a>
+</td><td><a href="/Book/Read/37176,15476200" title=" 第二十八章 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十八章</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476202" title=" 第二十九章 大老板 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第二十九章 大老板</a>
+</td><td><a href="/Book/Read/37176,15476204" title=" 第三十章 鬼嬰 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第三十章 鬼嬰</a>
+</td><td><a href="/Book/Read/37176,15476205" title=" 第三十一章 滾出去 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 13:35:00">第三十一章 滾出去</a>
+</td><td><a href="/Book/Read/37176,15476207" title=" 第三十二章 財大又死人了 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:06:00">第三十二章 財大又死人了</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476209" title=" 第三十三章 再遇鬼嬰 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:06:00">第三十三章 再遇鬼嬰</a>
+</td><td><a href="/Book/Read/37176,15476211" title=" 第三十四章 致命游戲 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:06:00">第三十四章 致命游戲</a>
+</td><td><a href="/Book/Read/37176,15476213" title=" 第三十五章 挖坑 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:06:00">第三十五章 挖坑</a>
+</td><td><a href="/Book/Read/37176,15476215" title=" 第三十六章 夜探女生宿舍 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:06:00">第三十六章 夜探女生宿舍</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476217" title=" 第三十七章 生死之交 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:06:00">第三十七章 生死之交</a>
+</td><td><a href="/Book/Read/37176,15476219" title=" 第三十八章 報仇 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:06:00">第三十八章 報仇</a>
+</td><td><a href="/Book/Read/37176,15476220" title=" 第三十九章 萬神宮帶出的東西 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第三十九章 萬神宮帶出的東西</a>
+</td><td><a href="/Book/Read/37176,15476222" title=" 第四十章 全家照 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十章 全家照</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476224" title=" 第四十一章 萬神宮開啟的消息 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十一章 萬神宮開啟的消息</a>
+</td><td><a href="/Book/Read/37176,15476226" title=" 第四十二章 翻車 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十二章 翻車</a>
+</td><td><a href="/Book/Read/37176,15476228" title=" 第四十三章 煉魂鼎 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十三章 煉魂鼎</a>
+</td><td><a href="/Book/Read/37176,15476230" title=" 第四十四章 名聲 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十四章 名聲</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476231" title=" 第四十五章 勾魂 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十五章 勾魂</a>
+</td><td><a href="/Book/Read/37176,15476233" title=" 第四十六章 抉擇 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十六章 抉擇</a>
+</td><td><a href="/Book/Read/37176,15476237" title=" 第四十七章 重創 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十七章 重創</a>
+</td><td><a href="/Book/Read/37176,15476239" title=" 第四十八章 大禍臨頭 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十八章 大禍臨頭</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476242" title=" 第四十九章 秘辛(一) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第四十九章 秘辛(一)</a>
+</td><td><a href="/Book/Read/37176,15476245" title=" 第五十章 我的奶 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十章 我的奶</a>
+</td><td><a href="/Book/Read/37176,15476247" title=" 第五十一章 秘辛(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十一章 秘辛(二)</a>
+</td><td><a href="/Book/Read/37176,15476250" title=" 第五十二章 秘辛(三) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十二章 秘辛(三)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476253" title=" 第五十三章 秘辛(四) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十三章 秘辛(四)</a>
+</td><td><a href="/Book/Read/37176,15476256" title=" 第五十四章 你祖奶奶還是你祖奶奶 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十四章 你祖奶奶還是你祖奶奶</a>
+</td><td><a href="/Book/Read/37176,15476259" title=" 第五十五章 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十五章</a>
+</td><td><a href="/Book/Read/37176,15476262" title=" 第五十六章 奶媽 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十六章 奶媽</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476265" title=" 第五十七章 詛咒 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十七章 詛咒</a>
+</td><td><a href="/Book/Read/37176,15476267" title=" 第五十八章 恐女癥和解決之法 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十八章 恐女癥和解決之法</a>
+</td><td><a href="/Book/Read/37176,15476270" title=" 第五十九章 米國血裔 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第五十九章 米國血裔</a>
+</td><td><a href="/Book/Read/37176,15476273" title=" 第六十章 初戰(一) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第六十章 初戰(一)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476276" title=" 第六十一章 初戰(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第六十一章 初戰(二)</a>
+</td><td><a href="/Book/Read/37176,15476279" title=" 第六十二章 初戰(三) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:07:00">第六十二章 初戰(三)</a>
+</td><td><a href="/Book/Read/37176,15476282" title=" 第六十三章 李羨魚的裝逼 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:26:00">第六十三章 李羨魚的裝逼</a>
+</td><td><a href="/Book/Read/37176,15476285" title=" 第六十四章 虛擬世界 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:26:00">第六十四章 虛擬世界</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476288" title=" 第六十五章 斗詩 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:26:00">第六十五章 斗詩</a>
+</td><td><a href="/Book/Read/37176,15476291" title=" 第六十六章 你想要裝逼嗎 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:26:00">第六十六章 你想要裝逼嗎</a>
+</td><td><a href="/Book/Read/37176,15476294" title=" 第六十七章 完犢子啦,龍傲天修為大進 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第六十七章 完犢子啦,龍傲天修為大進</a>
+</td><td><a href="/Book/Read/37176,15476302" title=" 第七十章 rbq 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十章 rbq</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476297" title=" 第六十八章 青樓 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第六十八章 青樓</a>
+</td><td><a href="/Book/Read/37176,15476299" title=" 第六十九章 在下趙日天 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第六十九章 在下趙日天</a>
+</td><td><a href="/Book/Read/37176,15476305" title=" 第七十一章 好慢啊,還沒出來 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十一章 好慢啊,還沒出來</a>
+</td><td><a href="/Book/Read/37176,15476317" title=" 第七十五章 等一下,死之前我有話說 原來我是妖二代 賣報小郎君 更新時間: 2019-02-06 05:48:00">第七十五章 等一下,死之前我有話說</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476308" title=" 第七十二章 退婚 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十二章 退婚</a>
+</td><td><a href="/Book/Read/37176,15476311" title=" 第七十三章 我的蓋世英雄 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十三章 我的蓋世英雄</a>
+</td><td><a href="/Book/Read/37176,15476314" title=" 第七十四章 食屎吧,龍傲天 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十四章 食屎吧,龍傲天</a>
+</td><td><a href="/Book/Read/37176,15476319" title=" 第七十六章 永遠無法接受的漏洞 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十六章 永遠無法接受的漏洞</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476321" title=" 第七十七章 大夢初醒 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十七章 大夢初醒</a>
+</td><td><a href="/Book/Read/37176,15476323" title=" 第七十八章 蘇醒 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十八章 蘇醒</a>
+</td><td><a href="/Book/Read/37176,15476325" title=" 第七十九章 專屬法器 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第七十九章 專屬法器</a>
+</td><td><a href="/Book/Read/37176,15476327" title=" 第八十章 維多利亞 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十章 維多利亞</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476329" title=" 第八十一章 中文八級 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十一章 中文八級</a>
+</td><td><a href="/Book/Read/37176,15476333" title=" 第八十二章 座談會 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十二章 座談會</a>
+</td><td><a href="/Book/Read/37176,15476335" title=" 第八十三章 座談會(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十三章 座談會(二)</a>
+</td><td><a href="/Book/Read/37176,15476337" title=" 第八十四章 我在佛前殺一人 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十四章 我在佛前殺一人</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15476343" title=" 第八十五章 我在佛前開殺戒 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十五章 我在佛前開殺戒</a>
+</td><td><a href="/Book/Read/37176,15476345" title=" 第八十六章 千里取經 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十六章 千里取經</a>
+</td><td><a href="/Book/Read/37176,15476347" title=" 第八十七章 女孩和靈異 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十七章 女孩和靈異</a>
+</td><td><a href="/Book/Read/37176,15513755" title=" 第八十八章 招陰體質? 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 14:27:00">第八十八章 招陰體質?</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15514402" title=" 第八十九章 又來 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 18:53:00">第八十九章 又來</a>
+</td><td><a href="/Book/Read/37176,15514758" title=" 第九十章 民間水怪(一) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-03 22:32:00">第九十章 民間水怪(一)</a>
+</td><td><a href="/Book/Read/37176,15515251" title=" 第九十一章 民間水怪(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-04 03:16:00">第九十一章 民間水怪(二)</a>
+</td><td><a href="/Book/Read/37176,15516183" title=" 第九十二章 妖道 原來我是妖二代 賣報小郎君 更新時間: 2018-10-04 20:13:00">第九十二章 妖道</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15516794" title=" 第九十三章 事逼 原來我是妖二代 賣報小郎君 更新時間: 2018-10-05 00:36:00">第九十三章 事逼</a>
+</td><td><a href="/Book/Read/37176,15516926" title=" 第九十四章 第一次生死戰 原來我是妖二代 賣報小郎君 更新時間: 2018-10-05 05:18:00">第九十四章 第一次生死戰</a>
+</td><td><a href="/Book/Read/37176,15517932" title=" 第九十五章 新任務 原來我是妖二代 賣報小郎君 更新時間: 2018-10-05 21:30:00">第九十五章 新任務</a>
+</td><td><a href="/Book/Read/37176,15518549" title=" 第九十六章 幽萌羽 原來我是妖二代 賣報小郎君 更新時間: 2018-10-06 03:12:00">第九十六章 幽萌羽</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15519365" title=" 第九十七章 百鬼亂舞 原來我是妖二代 賣報小郎君 更新時間: 2018-10-06 19:27:00">第九十七章 百鬼亂舞</a>
+</td><td><a href="/Book/Read/37176,15519849" title=" 第九十八章 齊天大圣真男人 原來我是妖二代 賣報小郎君 更新時間: 2018-10-06 23:35:00">第九十八章 齊天大圣真男人</a>
+</td><td><a href="/Book/Read/37176,15520162" title=" 第九十九章 讀出膠囊全稱的女人 原來我是妖二代 賣報小郎君 更新時間: 2018-10-07 04:20:00">第九十九章 讀出膠囊全稱的女人</a>
+</td><td><a href="/Book/Read/37176,15521041" title=" 第一百章 精準打擊 原來我是妖二代 賣報小郎君 更新時間: 2018-10-07 20:24:00">第一百章 精準打擊</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15521377" title=" 第一百零一章 如此美味的鮮血 原來我是妖二代 賣報小郎君 更新時間: 2018-10-07 23:21:00">第一百零一章 如此美味的鮮血</a>
+</td><td><a href="/Book/Read/37176,15521672" title=" 第一百零二章 直播 原來我是妖二代 賣報小郎君 更新時間: 2018-10-08 01:27:00">第一百零二章 直播</a>
+</td><td><a href="/Book/Read/37176,15521727" title=" 第一百零三章 大局上的頹勢 原來我是妖二代 賣報小郎君 更新時間: 2018-10-08 03:51:00">第一百零三章 大局上的頹勢</a>
+</td><td><a href="/Book/Read/37176,15522757" title=" 第一百零四章 你是不是喜歡上我了 原來我是妖二代 賣報小郎君 更新時間: 2018-10-08 21:37:00">第一百零四章 你是不是喜歡上我了</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15523208" title=" 第一百零五章 幽明雨 原來我是妖二代 賣報小郎君 更新時間: 2018-10-09 00:50:00">第一百零五章 幽明雨</a>
+</td><td><a href="/Book/Read/37176,15523321" title=" 第一百零六章 反轉 原來我是妖二代 賣報小郎君 更新時間: 2018-10-09 04:49:00">第一百零六章 反轉</a>
+</td><td><a href="/Book/Read/37176,15524441" title=" 第一百零七章 兩人勝負,眾人生死 原來我是妖二代 賣報小郎君 更新時間: 2018-10-09 23:05:00">第一百零七章 兩人勝負,眾人生死</a>
+</td><td><a href="/Book/Read/37176,15534844" title=" 第一百零八章 我的外掛到賬了 原來我是妖二代 賣報小郎君 更新時間: 2018-10-10 05:26:00">第一百零八章 我的外掛到賬了</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15535402" title=" 感謝書友群的大家。 原來我是妖二代 賣報小郎君 更新時間: 2018-10-10 16:57:00">感謝書友群的大家。</a>
+</td><td><a href="/Book/Read/37176,15535848" title=" 第一百零九章 尾聲 原來我是妖二代 賣報小郎君 更新時間: 2018-10-10 21:38:00">第一百零九章 尾聲</a>
+</td><td><a href="/Book/Read/37176,15546295" title=" 第110章 李家巔峰傳人 原來我是妖二代 賣報小郎君 更新時間: 2018-10-11 01:09:00">第110章 李家巔峰傳人</a>
+</td><td><a href="/Book/Read/37176,15546348" title=" 第111章 三無的往事(一) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-11 04:39:00">第111章 三無的往事(一)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15548705" title=" 第113章 三無的往事(三) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-12 20:38:00">第113章 三無的往事(三)</a>
+</td><td><a href="/Book/Read/37176,15548628" title=" 第112章 三無的往事(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-10-12 20:04:00">第112章 三無的往事(二)</a>
+</td><td><a href="/Book/Read/37176,15549328" title=" 第114章 顛覆世界的東西 原來我是妖二代 賣報小郎君 更新時間: 2018-10-13 02:17:00">第114章 顛覆世界的東西</a>
+</td><td><a href="/Book/Read/37176,15560788" title=" 115 妖道的寶藏 原來我是妖二代 賣報小郎君 更新時間: 2018-10-14 01:40:00">115 妖道的寶藏</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15571003" title=" 116 表情包重現世間 原來我是妖二代 賣報小郎君 更新時間: 2018-10-14 12:19:00">116 表情包重現世間</a>
+</td><td><a href="/Book/Read/37176,15572316" title=" 第117章 堂姐 原來我是妖二代 賣報小郎君 更新時間: 2018-10-15 02:38:00">第117章 堂姐</a>
+</td><td><a href="/Book/Read/37176,15572504" title=" 第118章 封印 原來我是妖二代 賣報小郎君 更新時間: 2018-10-15 09:44:00">第118章 封印</a>
+</td><td><a href="/Book/Read/37176,15573418" title=" 第119章 干他 原來我是妖二代 賣報小郎君 更新時間: 2018-10-15 22:49:00">第119章 干他</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15573856" title=" 第120章 你拿什么東西戳我 原來我是妖二代 賣報小郎君 更新時間: 2018-10-16 06:20:00">第120章 你拿什么東西戳我</a>
+</td><td><a href="/Book/Read/37176,15574750" title=" 121 妖道的寶藏 原來我是妖二代 賣報小郎君 更新時間: 2018-10-16 21:06:00">121 妖道的寶藏</a>
+</td><td><a href="/Book/Read/37176,15575327" title=" 第122章 吊打李家傳人 原來我是妖二代 賣報小郎君 更新時間: 2018-10-17 03:29:00">第122章 吊打李家傳人</a>
+</td><td><a href="/Book/Read/37176,15576431" title=" 第123章 妖道真正的寶藏 原來我是妖二代 賣報小郎君 更新時間: 2018-10-18 00:34:00">第123章 妖道真正的寶藏</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15576798" title=" 124 撿漏之王 原來我是妖二代 賣報小郎君 更新時間: 2018-10-18 04:12:00">124 撿漏之王</a>
+</td><td><a href="/Book/Read/37176,15587785" title=" 125 史萊姆 原來我是妖二代 賣報小郎君 更新時間: 2018-10-18 22:00:00">125 史萊姆</a>
+</td><td><a href="/Book/Read/37176,15588089" title=" 126 七大原罪 原來我是妖二代 賣報小郎君 更新時間: 2018-10-19 00:24:00">126 七大原罪</a>
+</td><td><a href="/Book/Read/37176,15588307" title=" 127 鬼手 原來我是妖二代 賣報小郎君 更新時間: 2018-10-19 06:09:00">127 鬼手</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15599031" title=" 128 以血還血 原來我是妖二代 賣報小郎君 更新時間: 2018-10-19 19:33:00">128 以血還血</a>
+</td><td><a href="/Book/Read/37176,15599575" title=" 129 暴食 原來我是妖二代 賣報小郎君 更新時間: 2018-10-20 00:20:00">129 暴食</a>
+</td><td><a href="/Book/Read/37176,15599855" title=" 130 撿漏之王再現 原來我是妖二代 賣報小郎君 更新時間: 2018-10-20 05:13:00">130 撿漏之王再現</a>
+</td><td><a href="/Book/Read/37176,15621299" title=" 131 放聲 原來我是妖二代 賣報小郎君 更新時間: 2018-10-21 04:26:00">131 放聲</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15621318" title=" 132 別想把鍋甩給我曾孫 原來我是妖二代 賣報小郎君 更新時間: 2018-10-21 05:37:00">132 別想把鍋甩給我曾孫</a>
+</td><td><a href="/Book/Read/37176,15621334" title=" 133 不是血裔 原來我是妖二代 賣報小郎君 更新時間: 2018-10-21 06:18:00">133 不是血裔</a>
+</td><td><a href="/Book/Read/37176,15652741" title=" 134 我有一個大膽的想法 原來我是妖二代 賣報小郎君 更新時間: 2018-10-22 00:57:00">134 我有一個大膽的想法</a>
+</td><td><a href="/Book/Read/37176,15653628" title=" 135 小蠻腰 原來我是妖二代 賣報小郎君 更新時間: 2018-10-22 20:05:00">135 小蠻腰</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15654010" title=" 136 折磨是一種藝術 原來我是妖二代 賣報小郎君 更新時間: 2018-10-22 23:33:00">136 折磨是一種藝術</a>
+</td><td><a href="/Book/Read/37176,15654427" title=" 137 體驗一下做女人的快樂吧 原來我是妖二代 賣報小郎君 更新時間: 2018-10-23 07:13:00">137 體驗一下做女人的快樂吧</a>
+</td><td><a href="/Book/Read/37176,15655410" title=" 138 檣櫓灰飛煙滅 原來我是妖二代 賣報小郎君 更新時間: 2018-10-23 22:31:00">138 檣櫓灰飛煙滅</a>
+</td><td><a href="/Book/Read/37176,15655907" title=" 139 祖奶奶,我帶你退隱江湖 原來我是妖二代 賣報小郎君 更新時間: 2018-10-24 07:17:00">139 祖奶奶,我帶你退隱江湖</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15656874" title=" 140 手套 原來我是妖二代 賣報小郎君 更新時間: 2018-10-24 22:28:00">140 手套</a>
+</td><td><a href="/Book/Read/37176,15658127" title=" 141 黑氣 原來我是妖二代 賣報小郎君 更新時間: 2018-10-25 19:56:00">141 黑氣</a>
+</td><td><a href="/Book/Read/37176,15658816" title=" 142 黃仙 原來我是妖二代 賣報小郎君 更新時間: 2018-10-26 02:15:00">142 黃仙</a>
+</td><td><a href="/Book/Read/37176,15658867" title=" 143 還有一個 原來我是妖二代 賣報小郎君 更新時間: 2018-10-26 05:10:00">143 還有一個</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15660424" title=" 144 女債父償 原來我是妖二代 賣報小郎君 更新時間: 2018-10-27 07:37:00">144 女債父償</a>
+</td><td><a href="/Book/Read/37176,15661163" title=" 145 磕頭認錯 原來我是妖二代 賣報小郎君 更新時間: 2018-10-27 20:22:00">145 磕頭認錯</a>
+</td><td><a href="/Book/Read/37176,15662811" title=" 146 不是我,是這個人類殺的 原來我是妖二代 賣報小郎君 更新時間: 2018-10-28 22:53:00">146 不是我,是這個人類殺的</a>
+</td><td><a href="/Book/Read/37176,15663236" title=" 147 血脈壓制 原來我是妖二代 賣報小郎君 更新時間: 2018-10-29 02:58:00">147 血脈壓制</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15664245" title=" 148 你不能小瞧自己的體質 原來我是妖二代 賣報小郎君 更新時間: 2018-10-29 22:42:00">148 你不能小瞧自己的體質</a>
+</td><td><a href="/Book/Read/37176,15664701" title=" 149 不解風情的女人 原來我是妖二代 賣報小郎君 更新時間: 2018-10-30 03:34:00">149 不解風情的女人</a>
+</td><td><a href="/Book/Read/37176,15665670" title=" 150 便當收好 原來我是妖二代 賣報小郎君 更新時間: 2018-10-30 22:17:00">150 便當收好</a>
+</td><td><a href="/Book/Read/37176,15666171" title=" 151 吃虧在沒敢偷看姐姐洗澡 原來我是妖二代 賣報小郎君 更新時間: 2018-10-31 04:02:00">151 吃虧在沒敢偷看姐姐洗澡</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15667302" title=" 152 風雨 原來我是妖二代 賣報小郎君 更新時間: 2018-10-31 22:28:00">152 風雨</a>
+</td><td><a href="/Book/Read/37176,15668494" title=" 153 不能 原來我是妖二代 賣報小郎君 更新時間: 2018-11-01 18:25:00">153 不能</a>
+</td><td><a href="/Book/Read/37176,15669148" title=" 154 原來我是妖二代 賣報小郎君 更新時間: 2018-11-02 00:08:00">154</a>
+</td><td><a href="/Book/Read/37176,15670491" title=" 155 上路 原來我是妖二代 賣報小郎君 更新時間: 2018-11-02 23:53:00">155 上路</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15670760" title=" 156 請君入甕 原來我是妖二代 賣報小郎君 更新時間: 2018-11-03 03:12:00">156 請君入甕</a>
+</td><td><a href="/Book/Read/37176,15671546" title=" 157 我的左手能讓你說真話 原來我是妖二代 賣報小郎君 更新時間: 2018-11-03 20:54:00">157 我的左手能讓你說真話</a>
+</td><td><a href="/Book/Read/37176,15672107" title=" 158 熊精 原來我是妖二代 賣報小郎君 更新時間: 2018-11-04 00:47:00">158 熊精</a>
+</td><td><a href="/Book/Read/37176,15673242" title=" 159 復制戰魂 原來我是妖二代 賣報小郎君 更新時間: 2018-11-04 23:03:00">159 復制戰魂</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15673620" title=" 160 胡心月的邀請 原來我是妖二代 賣報小郎君 更新時間: 2018-11-05 03:42:00">160 胡心月的邀請</a>
+</td><td><a href="/Book/Read/37176,15675040" title=" 161 女尸 原來我是妖二代 賣報小郎君 更新時間: 2018-11-06 01:31:00">161 女尸</a>
+</td><td><a href="/Book/Read/37176,15675816" title=" 162 好吃不過餃子,好玩..... 原來我是妖二代 賣報小郎君 更新時間: 2018-11-06 20:12:00">162 好吃不過餃子,好玩.....</a>
+</td><td><a href="/Book/Read/37176,15676501" title=" 163 幕后黑手 原來我是妖二代 賣報小郎君 更新時間: 2018-11-07 01:04:00">163 幕后黑手</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15676558" title=" 164 仇恨 原來我是妖二代 賣報小郎君 更新時間: 2018-11-07 04:35:00">164 仇恨</a>
+</td><td><a href="/Book/Read/37176,15677741" title=" 165 我回來了 原來我是妖二代 賣報小郎君 更新時間: 2018-11-08 00:12:00">165 我回來了</a>
+</td><td><a href="/Book/Read/37176,15678901" title=" 166 棋子和父女(一) 原來我是妖二代 賣報小郎君 更新時間: 2018-11-08 22:35:00">166 棋子和父女(一)</a>
+</td><td><a href="/Book/Read/37176,15679360" title=" 167 棋子和父女(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-11-09 02:32:00">167 棋子和父女(二)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15680392" title=" 168 祖奶奶不只是喜歡我身體 原來我是妖二代 賣報小郎君 更新時間: 2018-11-09 22:54:00">168 祖奶奶不只是喜歡我身體</a>
+</td><td><a href="/Book/Read/37176,15680762" title=" 169 人死燈滅 原來我是妖二代 賣報小郎君 更新時間: 2018-11-10 01:57:00">169 人死燈滅</a>
+</td><td><a href="/Book/Read/37176,15681501" title=" 170 腦殼疼想不出章節名 原來我是妖二代 賣報小郎君 更新時間: 2018-11-10 20:14:00">170 腦殼疼想不出章節名</a>
+</td><td><a href="/Book/Read/37176,15682035" title=" 171 龍傲天:君子報仇十年不晚 原來我是妖二代 賣報小郎君 更新時間: 2018-11-11 00:47:00">171 龍傲天:君子報仇十年不晚</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15683072" title=" 172 人間天堂(大章) 原來我是妖二代 賣報小郎君 更新時間: 2018-11-11 21:35:00">172 人間天堂(大章)</a>
+</td><td><a href="/Book/Read/37176,15684406" title=" 173 人在家中坐,綠帽天上來 原來我是妖二代 賣報小郎君 更新時間: 2018-11-12 20:39:00">173 人在家中坐,綠帽天上來</a>
+</td><td><a href="/Book/Read/37176,15684446" title=" 174 降頭 原來我是妖二代 賣報小郎君 更新時間: 2018-11-12 21:10:00">174 降頭</a>
+</td><td><a href="/Book/Read/37176,15685252" title=" 175 圣嬰 原來我是妖二代 賣報小郎君 更新時間: 2018-11-13 08:47:00">175 圣嬰</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15686510" title=" 176 怪物 原來我是妖二代 賣報小郎君 更新時間: 2018-11-14 01:00:00">176 怪物</a>
+</td><td><a href="/Book/Read/37176,15686621" title=" 177 黑色背脊 原來我是妖二代 賣報小郎君 更新時間: 2018-11-14 07:21:00">177 黑色背脊</a>
+</td><td><a href="/Book/Read/37176,15687624" title=" 178 它來了 原來我是妖二代 賣報小郎君 更新時間: 2018-11-14 23:59:00">178 它來了</a>
+</td><td><a href="/Book/Read/37176,15688009" title=" 179 水底 原來我是妖二代 賣報小郎君 更新時間: 2018-11-15 07:38:00">179 水底</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15688930" title=" 180 蛟鯢 原來我是妖二代 賣報小郎君 更新時間: 2018-11-15 23:09:00">180 蛟鯢</a>
+</td><td><a href="/Book/Read/37176,15689338" title=" 190 幸福像祖奶奶的XX一樣 原來我是妖二代 賣報小郎君 更新時間: 2018-11-16 07:17:00">190 幸福像祖奶奶的XX一樣</a>
+</td><td><a href="/Book/Read/37176,15690321" title=" 191 傳家寶 原來我是妖二代 賣報小郎君 更新時間: 2018-11-17 00:02:00">191 傳家寶</a>
+</td><td><a href="/Book/Read/37176,15756615" title=" 192 小鎮怪談 原來我是妖二代 賣報小郎君 更新時間: 2018-11-18 21:00:00">192 小鎮怪談</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15756864" title=" 193 貓鎮 原來我是妖二代 賣報小郎君 更新時間: 2018-11-18 21:52:00">193 貓鎮</a>
+</td><td><a href="/Book/Read/37176,15757432" title=" 194 貓神 原來我是妖二代 賣報小郎君 更新時間: 2018-11-19 03:10:00">194 貓神</a>
+</td><td><a href="/Book/Read/37176,15758297" title=" 195 唧唧復唧唧 原來我是妖二代 賣報小郎君 更新時間: 2018-11-19 20:18:00">195 唧唧復唧唧</a>
+</td><td><a href="/Book/Read/37176,15759166" title=" 196 神的時代結束了 原來我是妖二代 賣報小郎君 更新時間: 2018-11-20 07:34:00">196 神的時代結束了</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15760016" title=" 197 世界這么大 原來我是妖二代 賣報小郎君 更新時間: 2018-11-20 20:53:00">197 世界這么大</a>
+</td><td><a href="/Book/Read/37176,15760739" title=" 198 求救信息 原來我是妖二代 賣報小郎君 更新時間: 2018-11-21 01:46:00">198 求救信息</a>
+</td><td><a href="/Book/Read/37176,15762309" title=" 199 舔狗是沒好結局的 原來我是妖二代 賣報小郎君 更新時間: 2018-11-22 01:03:00">199 舔狗是沒好結局的</a>
+</td><td><a href="/Book/Read/37176,15763388" title=" 200 剎那芳華 原來我是妖二代 賣報小郎君 更新時間: 2018-11-22 21:15:00">200 剎那芳華</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15763558" title=" 201 研究 原來我是妖二代 賣報小郎君 更新時間: 2018-11-22 22:53:00">201 研究</a>
+</td><td><a href="/Book/Read/37176,15764095" title=" 202 無雙戰魂,你敗過嗎 原來我是妖二代 賣報小郎君 更新時間: 2018-11-23 07:11:00">202 無雙戰魂,你敗過嗎</a>
+</td><td><a href="/Book/Read/37176,15765605" title=" 203 民國33年 原來我是妖二代 賣報小郎君 更新時間: 2018-11-24 02:02:00">203 民國33年</a>
+</td><td><a href="/Book/Read/37176,15766773" title=" 204 渣男忘塵 原來我是妖二代 賣報小郎君 更新時間: 2018-11-24 22:52:00">204 渣男忘塵</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15767159" title=" 205 除名 原來我是妖二代 賣報小郎君 更新時間: 2018-11-25 01:08:00">205 除名</a>
+</td><td><a href="/Book/Read/37176,15768958" title=" 206 密會(一) 原來我是妖二代 賣報小郎君 更新時間: 2018-11-26 06:55:00">206 密會(一)</a>
+</td><td><a href="/Book/Read/37176,15768959" title=" 207 密會(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-11-26 06:55:00">207 密會(二)</a>
+</td><td><a href="/Book/Read/37176,15770522" title=" 208 返老還童 原來我是妖二代 賣報小郎君 更新時間: 2018-11-27 06:21:00">208 返老還童</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15772113" title=" 209 夜探病院 原來我是妖二代 賣報小郎君 更新時間: 2018-11-28 07:14:00">209 夜探病院</a>
+</td><td><a href="/Book/Read/37176,15772301" title=" 210 活著不好嗎 原來我是妖二代 賣報小郎君 更新時間: 2018-11-28 10:09:00">210 活著不好嗎</a>
+</td><td><a href="/Book/Read/37176,15773740" title=" 211 這真的只是怨靈么? 原來我是妖二代 賣報小郎君 更新時間: 2018-11-29 07:37:00">211 這真的只是怨靈么?</a>
+</td><td><a href="/Book/Read/37176,15774239" title=" 212 白裙子女人 原來我是妖二代 賣報小郎君 更新時間: 2018-11-29 16:40:00">212 白裙子女人</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15774897" title=" 213 后面有人 原來我是妖二代 賣報小郎君 更新時間: 2018-11-29 23:31:00">213 后面有人</a>
+</td><td><a href="/Book/Read/37176,15776649" title=" 214 救救我 原來我是妖二代 賣報小郎君 更新時間: 2018-11-30 23:59:00">214 救救我</a>
+</td><td><a href="/Book/Read/37176,15777060" title=" 215 墮落天使 原來我是妖二代 賣報小郎君 更新時間: 2018-12-01 07:38:00">215 墮落天使</a>
+</td><td><a href="/Book/Read/37176,15777929" title=" 216 華陽 原來我是妖二代 賣報小郎君 更新時間: 2018-12-01 21:17:00">216 華陽</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15778287" title=" 217 小媽 原來我是妖二代 賣報小郎君 更新時間: 2018-12-02 00:26:00">217 小媽</a>
+</td><td><a href="/Book/Read/37176,15816654" title=" 218 發際線 原來我是妖二代 賣報小郎君 更新時間: 2018-12-02 03:54:00">218 發際線</a>
+</td><td><a href="/Book/Read/37176,15826311" title=" 219 報名 原來我是妖二代 賣報小郎君 更新時間: 2018-12-02 22:52:00">219 報名</a>
+</td><td><a href="/Book/Read/37176,15826947" title=" 220 李羨魚 原來我是妖二代 賣報小郎君 更新時間: 2018-12-03 07:19:00">220 李羨魚</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15828174" title=" 221 佛頭 原來我是妖二代 賣報小郎君 更新時間: 2018-12-03 23:06:00">221 佛頭</a>
+</td><td><a href="/Book/Read/37176,15828604" title=" 222 寶寶心里苦 原來我是妖二代 賣報小郎君 更新時間: 2018-12-04 01:39:00">222 寶寶心里苦</a>
+</td><td><a href="/Book/Read/37176,15828709" title=" 223 你沒有弱點 原來我是妖二代 賣報小郎君 更新時間: 2018-12-04 07:16:00">223 你沒有弱點</a>
+</td><td><a href="/Book/Read/37176,15829393" title=" 224 精神對轟 原來我是妖二代 賣報小郎君 更新時間: 2018-12-04 17:51:00">224 精神對轟</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15830033" title=" 225 閉嘴 原來我是妖二代 賣報小郎君 更新時間: 2018-12-04 23:22:00">225 閉嘴</a>
+</td><td><a href="/Book/Read/37176,15830398" title=" 226 平息風波、仇人見面 原來我是妖二代 賣報小郎君 更新時間: 2018-12-05 02:02:00">226 平息風波、仇人見面</a>
+</td><td><a href="/Book/Read/37176,15831336" title=" 227 丹塵子 原來我是妖二代 賣報小郎君 更新時間: 2018-12-05 20:16:00">227 丹塵子</a>
+</td><td><a href="/Book/Read/37176,15831787" title=" 228 閑談 原來我是妖二代 賣報小郎君 更新時間: 2018-12-05 23:35:00">228 閑談</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15832193" title=" 229 一炮走紅 原來我是妖二代 賣報小郎君 更新時間: 2018-12-06 06:39:00">229 一炮走紅</a>
+</td><td><a href="/Book/Read/37176,15832254" title=" 230 擼貓狂魔 原來我是妖二代 賣報小郎君 更新時間: 2018-12-06 07:50:00">230 擼貓狂魔</a>
+</td><td><a href="/Book/Read/37176,15833504" title=" 240 握手 原來我是妖二代 賣報小郎君 更新時間: 2018-12-06 23:25:00">240 握手</a>
+</td><td><a href="/Book/Read/37176,15834438" title=" 232 我是左撇子 原來我是妖二代 賣報小郎君 更新時間: 2018-12-07 15:20:00">232 我是左撇子</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15834537" title=" 233 奧義·居合 原來我是妖二代 賣報小郎君 更新時間: 2018-12-07 17:19:00">233 奧義·居合</a>
+</td><td><a href="/Book/Read/37176,15834888" title=" 234 我要止步十六強了 原來我是妖二代 賣報小郎君 更新時間: 2018-12-07 20:56:00">234 我要止步十六強了</a>
+</td><td><a href="/Book/Read/37176,15836549" title=" 235 有句話要告訴你 原來我是妖二代 賣報小郎君 更新時間: 2018-12-08 20:44:00">235 有句話要告訴你</a>
+</td><td><a href="/Book/Read/37176,15837076" title=" 236 李羨魚vs宮本秀吉 原來我是妖二代 賣報小郎君 更新時間: 2018-12-09 00:27:00">236 李羨魚vs宮本秀吉</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15837434" title=" 237 擋 原來我是妖二代 賣報小郎君 更新時間: 2018-12-09 07:19:00">237 擋</a>
+</td><td><a href="/Book/Read/37176,15837660" title=" 238 嬰泣 原來我是妖二代 賣報小郎君 更新時間: 2018-12-09 10:51:00">238 嬰泣</a>
+</td><td><a href="/Book/Read/37176,15838497" title=" 239 二天一流 原來我是妖二代 賣報小郎君 更新時間: 2018-12-09 22:39:00">239 二天一流</a>
+</td><td><a href="/Book/Read/37176,15839131" title=" 240 ??? 原來我是妖二代 賣報小郎君 更新時間: 2018-12-10 07:15:00">240 ???</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15839777" title=" 241 雙重覺醒 原來我是妖二代 賣報小郎君 更新時間: 2018-12-10 18:02:00">241 雙重覺醒</a>
+</td><td><a href="/Book/Read/37176,15840610" title=" 242 在輔助的路上越走越遠 原來我是妖二代 賣報小郎君 更新時間: 2018-12-11 00:22:00">242 在輔助的路上越走越遠</a>
+</td><td><a href="/Book/Read/37176,15841395" title=" 243 談判 原來我是妖二代 賣報小郎君 更新時間: 2018-12-11 16:13:00">243 談判</a>
+</td><td><a href="/Book/Read/37176,15841728" title=" 244 我老羨慕我李家第三代傳人 原來我是妖二代 賣報小郎君 更新時間: 2018-12-11 20:08:00">244 我老羨慕我李家第三代傳人</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15842337" title=" 245 青木結衣vs李羨魚 原來我是妖二代 賣報小郎君 更新時間: 2018-12-12 00:23:00">245 青木結衣vs李羨魚</a>
+</td><td><a href="/Book/Read/37176,15843401" title=" 246 看你后面 原來我是妖二代 賣報小郎君 更新時間: 2018-12-12 19:06:00">246 看你后面</a>
+</td><td><a href="/Book/Read/37176,15843850" title=" 247 戒色vs埃里克 原來我是妖二代 賣報小郎君 更新時間: 2018-12-12 23:09:00">247 戒色vs埃里克</a>
+</td><td><a href="/Book/Read/37176,15844255" title=" 248 圣光啊,請為我們主持婚禮吧 原來我是妖二代 賣報小郎君 更新時間: 2018-12-13 02:37:00">248 圣光啊,請為我們主持婚禮吧</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15844854" title=" 249 女人啊,見識一下我左手的鬼畜和可怕吧 原來我是妖二代 賣報小郎君 更新時間: 2018-12-13 16:11:00">249 女人啊,見識一下我左手的鬼畜和可怕吧</a>
+</td><td><a href="/Book/Read/37176,15845281" title=" 250 被玩壞了 原來我是妖二代 賣報小郎君 更新時間: 2018-12-13 20:50:00">250 被玩壞了</a>
+</td><td><a href="/Book/Read/37176,15845738" title=" 251 是它 原來我是妖二代 賣報小郎君 更新時間: 2018-12-14 00:09:00">251 是它</a>
+</td><td><a href="/Book/Read/37176,15846067" title=" 252 事關重大 原來我是妖二代 賣報小郎君 更新時間: 2018-12-14 07:39:00">252 事關重大</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15847065" title=" 253 請柬 原來我是妖二代 賣報小郎君 更新時間: 2018-12-14 21:50:00">253 請柬</a>
+</td><td><a href="/Book/Read/37176,15847516" title=" 254 單獨聊聊 原來我是妖二代 賣報小郎君 更新時間: 2018-12-15 00:41:00">254 單獨聊聊</a>
+</td><td><a href="/Book/Read/37176,15847777" title=" 254 青木家的秘辛 原來我是妖二代 賣報小郎君 更新時間: 2018-12-15 07:31:00">254 青木家的秘辛</a>
+</td><td><a href="/Book/Read/37176,15848793" title=" 255 妖道(一) 原來我是妖二代 賣報小郎君 更新時間: 2018-12-15 22:04:00">255 妖道(一)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15850088" title=" 256 妖道(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-12-16 18:30:00">256 妖道(二)</a>
+</td><td><a href="/Book/Read/37176,15850205" title=" 第257章 救命啊,李家傳人瘋了 原來我是妖二代 賣報小郎君 更新時間: 2018-12-16 19:20:00">第257章 救命啊,李家傳人瘋了</a>
+</td><td><a href="/Book/Read/37176,15850670" title=" 258 變態李羨魚 原來我是妖二代 賣報小郎君 更新時間: 2018-12-16 23:31:00">258 變態李羨魚</a>
+</td><td><a href="/Book/Read/37176,15851071" title=" 259 吾可取而代之,亦可與您啪啪 原來我是妖二代 賣報小郎君 更新時間: 2018-12-17 03:05:00">259 吾可取而代之,亦可與您啪啪</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15851842" title=" 260 芳心錯付 原來我是妖二代 賣報小郎君 更新時間: 2018-12-17 18:42:00">260 芳心錯付</a>
+</td><td><a href="/Book/Read/37176,15852236" title=" 261 太慘了,畫面實在太慘 原來我是妖二代 賣報小郎君 更新時間: 2018-12-17 22:41:00">261 太慘了,畫面實在太慘</a>
+</td><td><a href="/Book/Read/37176,15852726" title=" 262 今晚十二點,西邊密林見 原來我是妖二代 賣報小郎君 更新時間: 2018-12-18 01:52:00">262 今晚十二點,西邊密林見</a>
+</td><td><a href="/Book/Read/37176,15853605" title=" 263 導演,劇本超綱了 原來我是妖二代 賣報小郎君 更新時間: 2018-12-18 19:42:00">263 導演,劇本超綱了</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15853865" title=" 264 決賽 原來我是妖二代 賣報小郎君 更新時間: 2018-12-18 22:09:00">264 決賽</a>
+</td><td><a href="/Book/Read/37176,15854145" title=" 265 李家的鬼畜傳人 原來我是妖二代 賣報小郎君 更新時間: 2018-12-18 23:51:00">265 李家的鬼畜傳人</a>
+</td><td><a href="/Book/Read/37176,15854468" title=" 266 來吧 原來我是妖二代 賣報小郎君 更新時間: 2018-12-19 03:36:00">266 來吧</a>
+</td><td><a href="/Book/Read/37176,15855320" title=" 267 不看,滾。 原來我是妖二代 賣報小郎君 更新時間: 2018-12-19 19:24:00">267 不看,滾。</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15855665" title=" 268 心機婊 原來我是妖二代 賣報小郎君 更新時間: 2018-12-19 22:30:00">268 心機婊</a>
+</td><td><a href="/Book/Read/37176,15856138" title=" 269 問題永遠不大 原來我是妖二代 賣報小郎君 更新時間: 2018-12-20 02:05:00">269 問題永遠不大</a>
+</td><td><a href="/Book/Read/37176,15857679" title=" 270 她不是我師妹 原來我是妖二代 賣報小郎君 更新時間: 2018-12-21 00:35:00">270 她不是我師妹</a>
+</td><td><a href="/Book/Read/37176,15857982" title=" 271 鐵證如山 原來我是妖二代 賣報小郎君 更新時間: 2018-12-21 07:44:00">271 鐵證如山</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15858242" title=" 272 白學家該死 原來我是妖二代 賣報小郎君 更新時間: 2018-12-21 11:17:00">272 白學家該死</a>
+</td><td><a href="/Book/Read/37176,15858464" title=" 273 你是二娃子? 原來我是妖二代 賣報小郎君 更新時間: 2018-12-21 16:09:00">273 你是二娃子?</a>
+</td><td><a href="/Book/Read/37176,15859119" title=" 274 講故事 原來我是妖二代 賣報小郎君 更新時間: 2018-12-21 23:08:00">274 講故事</a>
+</td><td><a href="/Book/Read/37176,15860171" title=" 275 忘情 原來我是妖二代 賣報小郎君 更新時間: 2018-12-22 16:54:00">275 忘情</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15860546" title=" 276 公理與大局 原來我是妖二代 賣報小郎君 更新時間: 2018-12-22 21:10:00">276 公理與大局</a>
+</td><td><a href="/Book/Read/37176,15860966" title=" 277 公理與大局(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-12-23 00:20:00">277 公理與大局(二)</a>
+</td><td><a href="/Book/Read/37176,15861193" title=" 278 他走了 原來我是妖二代 賣報小郎君 更新時間: 2018-12-23 04:01:00">278 他走了</a>
+</td><td><a href="/Book/Read/37176,15861209" title=" 279 我發現了一條..... 原來我是妖二代 賣報小郎君 更新時間: 2018-12-23 05:32:00">279 我發現了一條.....</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15862039" title=" 280 再次回溯 原來我是妖二代 賣報小郎君 更新時間: 2018-12-23 20:38:00">280 再次回溯</a>
+</td><td><a href="/Book/Read/37176,15862707" title=" 281 日漸猙獰 原來我是妖二代 賣報小郎君 更新時間: 2018-12-24 00:47:00">281 日漸猙獰</a>
+</td><td><a href="/Book/Read/37176,15863832" title=" 282 人間正道是滄桑(5000) 原來我是妖二代 賣報小郎君 更新時間: 2018-12-24 21:33:00">282 人間正道是滄桑(5000)</a>
+</td><td><a href="/Book/Read/37176,15864406" title=" 283 人間正道是滄桑(4000)(二) 原來我是妖二代 賣報小郎君 更新時間: 2018-12-25 00:32:00">283 人間正道是滄桑(4000)(二)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15864587" title=" 284 命運不能更改,再見 原來我是妖二代 賣報小郎君 更新時間: 2018-12-25 04:23:00">284 命運不能更改,再見</a>
+</td><td><a href="/Book/Read/37176,15865978" title=" 285 判決日 原來我是妖二代 賣報小郎君 更新時間: 2018-12-25 23:25:00">285 判決日</a>
+</td><td><a href="/Book/Read/37176,15866454" title=" 286 談談 原來我是妖二代 賣報小郎君 更新時間: 2018-12-26 08:17:00">286 談談</a>
+</td><td><a href="/Book/Read/37176,15867290" title=" 287 審 原來我是妖二代 賣報小郎君 更新時間: 2018-12-26 21:09:00">287 審</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15867642" title=" 288 你不要去 原來我是妖二代 賣報小郎君 更新時間: 2018-12-26 23:46:00">288 你不要去</a>
+</td><td><a href="/Book/Read/37176,15867918" title=" 289 李羨魚你變了 原來我是妖二代 賣報小郎君 更新時間: 2018-12-27 02:56:00">289 李羨魚你變了</a>
+</td><td><a href="/Book/Read/37176,15868789" title=" 290 S級齊出 原來我是妖二代 賣報小郎君 更新時間: 2018-12-27 20:14:00">290 S級齊出</a>
+</td><td><a href="/Book/Read/37176,15869523" title=" 300 瘋子(4000) 原來我是妖二代 賣報小郎君 更新時間: 2018-12-28 00:45:00">300 瘋子(4000)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15869610" title=" 292 釣出一條大魚 原來我是妖二代 賣報小郎君 更新時間: 2018-12-28 04:30:00">292 釣出一條大魚</a>
+</td><td><a href="/Book/Read/37176,15870739" title=" 293 萬妖盟 原來我是妖二代 賣報小郎君 更新時間: 2018-12-28 21:27:00">293 萬妖盟</a>
+</td><td><a href="/Book/Read/37176,15871269" title=" 294 茅山 原來我是妖二代 賣報小郎君 更新時間: 2018-12-29 00:13:00">294 茅山</a>
+</td><td><a href="/Book/Read/37176,15871514" title=" 295 山中一老道 原來我是妖二代 賣報小郎君 更新時間: 2018-12-29 07:52:00">295 山中一老道</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15872426" title=" 296 侵犯 原來我是妖二代 賣報小郎君 更新時間: 2018-12-29 20:31:00">296 侵犯</a>
+</td><td><a href="/Book/Read/37176,15872788" title=" 297 作案人 原來我是妖二代 賣報小郎君 更新時間: 2018-12-29 23:25:00">297 作案人</a>
+</td><td><a href="/Book/Read/37176,15873168" title=" 298 歌以詠志 原來我是妖二代 賣報小郎君 更新時間: 2018-12-30 01:27:00">298 歌以詠志</a>
+</td><td><a href="/Book/Read/37176,15873285" title=" 299 金門娛樂會所 原來我是妖二代 賣報小郎君 更新時間: 2018-12-30 07:47:00">299 金門娛樂會所</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15874430" title=" 300 床上的極道高手(4800) 原來我是妖二代 賣報小郎君 更新時間: 2018-12-30 22:29:00">300 床上的極道高手(4800)</a>
+</td><td><a href="/Book/Read/37176,15874681" title=" 301 人生巔峰 原來我是妖二代 賣報小郎君 更新時間: 2018-12-31 00:07:00">301 人生巔峰</a>
+</td><td><a href="/Book/Read/37176,15875068" title=" 302 這么巧? 原來我是妖二代 賣報小郎君 更新時間: 2018-12-31 07:58:00">302 這么巧?</a>
+</td><td><a href="/Book/Read/37176,15876203" title=" 303 收網 原來我是妖二代 賣報小郎君 更新時間: 2018-12-31 22:03:00">303 收網</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15876823" title=" 304 我是主角 原來我是妖二代 賣報小郎君 更新時間: 2019-01-01 02:33:00">304 我是主角</a>
+</td><td><a href="/Book/Read/37176,15877067" title=" 305 大佬們,過來集合 原來我是妖二代 賣報小郎君 更新時間: 2019-01-01 09:46:00">305 大佬們,過來集合</a>
+</td><td><a href="/Book/Read/37176,15877899" title=" 306 死鬼,約不約? 原來我是妖二代 賣報小郎君 更新時間: 2019-01-01 21:32:00">306 死鬼,約不約?</a>
+</td><td><a href="/Book/Read/37176,15878287" title=" 307 B計劃 原來我是妖二代 賣報小郎君 更新時間: 2019-01-02 00:03:00">307 B計劃</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15878629" title=" 308 中計了 原來我是妖二代 賣報小郎君 更新時間: 2019-01-02 07:46:00">308 中計了</a>
+</td><td><a href="/Book/Read/37176,15879703" title=" 309 被打自閉了 原來我是妖二代 賣報小郎君 更新時間: 2019-01-02 22:13:00">309 被打自閉了</a>
+</td><td><a href="/Book/Read/37176,15880122" title=" 310 巨獸 原來我是妖二代 賣報小郎君 更新時間: 2019-01-03 00:21:00">310 巨獸</a>
+</td><td><a href="/Book/Read/37176,15880322" title=" 311 不用謝我,我叫紅領巾 原來我是妖二代 賣報小郎君 更新時間: 2019-01-03 07:34:00">311 不用謝我,我叫紅領巾</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15881277" title=" 312 準備團戰 原來我是妖二代 賣報小郎君 更新時間: 2019-01-03 21:25:00">312 準備團戰</a>
+</td><td><a href="/Book/Read/37176,15881557" title=" 313 交鋒 原來我是妖二代 賣報小郎君 更新時間: 2019-01-03 23:27:00">313 交鋒</a>
+</td><td><a href="/Book/Read/37176,15882243" title=" 314 求助 原來我是妖二代 賣報小郎君 更新時間: 2019-01-04 08:25:00">314 求助</a>
+</td><td><a href="/Book/Read/37176,15883848" title=" 315 成道八十載 原來我是妖二代 賣報小郎君 更新時間: 2019-01-05 07:49:00">315 成道八十載</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15884086" title=" 316 巔峰王者局 原來我是妖二代 賣報小郎君 更新時間: 2019-01-05 11:06:00">316 巔峰王者局</a>
+</td><td><a href="/Book/Read/37176,15884257" title=" 317 大橘已定 原來我是妖二代 賣報小郎君 更新時間: 2019-01-05 14:10:00">317 大橘已定</a>
+</td><td><a href="/Book/Read/37176,15884438" title=" 318 女皇 原來我是妖二代 賣報小郎君 更新時間: 2019-01-05 17:57:00">318 女皇</a>
+</td><td><a href="/Book/Read/37176,15884778" title=" 319 后宮團最黑暗的一天 原來我是妖二代 賣報小郎君 更新時間: 2019-01-05 21:23:00">319 后宮團最黑暗的一天</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15885100" title=" 320 海澤王 原來我是妖二代 賣報小郎君 更新時間: 2019-01-05 23:51:00">320 海澤王</a>
+</td><td><a href="/Book/Read/37176,15886353" title=" 321 好香 原來我是妖二代 賣報小郎君 更新時間: 2019-01-06 21:11:00">321 好香</a>
+</td><td><a href="/Book/Read/37176,15886550" title=" 322 原來我是妖二代 賣報小郎君 更新時間: 2019-01-07 07:50:00">322</a>
+</td><td><a href="/Book/Read/37176,15887031" title=" 323 “假想”的敵人 原來我是妖二代 賣報小郎君 更新時間: 2019-01-07 07:38:00">323 “假想”的敵人</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15887179" title=" 324 密談 原來我是妖二代 賣報小郎君 更新時間: 2019-01-07 10:09:00">324 密談</a>
+</td><td><a href="/Book/Read/37176,15887381" title=" 325 二十年前的真相 原來我是妖二代 賣報小郎君 更新時間: 2019-01-07 13:43:00">325 二十年前的真相</a>
+</td><td><a href="/Book/Read/37176,15887464" title=" 326 煙籠霧罩的往事 原來我是妖二代 賣報小郎君 更新時間: 2019-01-07 16:46:00">326 煙籠霧罩的往事</a>
+</td><td><a href="/Book/Read/37176,15887743" title=" 327 回家 原來我是妖二代 賣報小郎君 更新時間: 2019-01-07 20:28:00">327 回家</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15889413" title=" 328 帶著后宮團回家 原來我是妖二代 賣報小郎君 更新時間: 2019-01-08 21:31:00">328 帶著后宮團回家</a>
+</td><td><a href="/Book/Read/37176,15890037" title=" 329 試探 原來我是妖二代 賣報小郎君 更新時間: 2019-01-09 01:30:00">329 試探</a>
+</td><td><a href="/Book/Read/37176,15890250" title=" 330 還是原來的配方 原來我是妖二代 賣報小郎君 更新時間: 2019-01-09 09:46:00">330 還是原來的配方</a>
+</td><td><a href="/Book/Read/37176,15890312" title=" 331 不要死 原來我是妖二代 賣報小郎君 更新時間: 2019-01-09 11:34:00">331 不要死</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15891352" title=" 332 驚變 原來我是妖二代 賣報小郎君 更新時間: 2019-01-10 00:02:00">332 驚變</a>
+</td><td><a href="/Book/Read/37176,15892503" title=" 333 聯手施壓 原來我是妖二代 賣報小郎君 更新時間: 2019-01-10 21:05:00">333 聯手施壓</a>
+</td><td><a href="/Book/Read/37176,15892965" title=" 334 逆鱗 原來我是妖二代 賣報小郎君 更新時間: 2019-01-11 00:23:00">334 逆鱗</a>
+</td><td><a href="/Book/Read/37176,15893152" title=" 335 秀兒 原來我是妖二代 賣報小郎君 更新時間: 2019-01-11 03:59:00">335 秀兒</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15894279" title=" 336 談“李”變色 原來我是妖二代 賣報小郎君 更新時間: 2019-01-11 23:27:00">336 談“李”變色</a>
+</td><td><a href="/Book/Read/37176,15894778" title=" 337 進擊的寶澤 原來我是妖二代 賣報小郎君 更新時間: 2019-01-12 09:19:00">337 進擊的寶澤</a>
+</td><td><a href="/Book/Read/37176,15895020" title=" 338 牛山 原來我是妖二代 賣報小郎君 更新時間: 2019-01-12 15:11:00">338 牛山</a>
+</td><td><a href="/Book/Read/37176,15896007" title=" 339 十神齊聚 原來我是妖二代 賣報小郎君 更新時間: 2019-01-13 01:25:00">339 十神齊聚</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15896036" title=" 340 萬神宮入口 原來我是妖二代 賣報小郎君 更新時間: 2019-01-13 03:43:00">340 萬神宮入口</a>
+</td><td><a href="/Book/Read/37176,15896977" title=" 340 群雄云集 原來我是妖二代 賣報小郎君 更新時間: 2019-01-13 22:13:00">340 群雄云集</a>
+</td><td><a href="/Book/Read/37176,15992392" title=" 242 石門(4000) 原來我是妖二代 賣報小郎君 更新時間: 2019-01-14 11:25:00">242 石門(4000)</a>
+</td><td><a href="/Book/Read/37176,15992890" title=" 343 河妖 原來我是妖二代 賣報小郎君 更新時間: 2019-01-14 19:06:00">343 河妖</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15993227" title=" 344 只要我速度夠快 原來我是妖二代 賣報小郎君 更新時間: 2019-01-14 22:15:00">344 只要我速度夠快</a>
+</td><td><a href="/Book/Read/37176,15994780" title=" 345 跑車 原來我是妖二代 賣報小郎君 更新時間: 2019-01-15 21:05:00">345 跑車</a>
+</td><td><a href="/Book/Read/37176,15995150" title=" 346 嘰嘰歪歪的男人 原來我是妖二代 賣報小郎君 更新時間: 2019-01-15 23:49:00">346 嘰嘰歪歪的男人</a>
+</td><td><a href="/Book/Read/37176,15995665" title=" 347 八把鑰匙 原來我是妖二代 賣報小郎君 更新時間: 2019-01-16 08:15:00">347 八把鑰匙</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15995896" title=" 348 真正的任務 原來我是妖二代 賣報小郎君 更新時間: 2019-01-16 12:21:00">348 真正的任務</a>
+</td><td><a href="/Book/Read/37176,15996791" title=" 349 為什么會變成這樣 原來我是妖二代 賣報小郎君 更新時間: 2019-01-16 23:21:00">349 為什么會變成這樣</a>
+</td><td><a href="/Book/Read/37176,15997971" title=" 350 門開 原來我是妖二代 賣報小郎君 更新時間: 2019-01-17 19:08:00">350 門開</a>
+</td><td><a href="/Book/Read/37176,15998504" title=" 352 門內的世界 原來我是妖二代 賣報小郎君 更新時間: 2019-01-17 23:47:00">352 門內的世界</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,15999146" title=" 352 萬神宮的猜測 原來我是妖二代 賣報小郎君 更新時間: 2019-01-18 10:31:00">352 萬神宮的猜測</a>
+</td><td><a href="/Book/Read/37176,15999399" title=" 353 嬰兒 原來我是妖二代 賣報小郎君 更新時間: 2019-01-18 14:55:00">353 嬰兒</a>
+</td><td><a href="/Book/Read/37176,15999725" title=" 354 地底囚禁著怪物 原來我是妖二代 賣報小郎君 更新時間: 2019-01-18 19:35:00">354 地底囚禁著怪物</a>
+</td><td><a href="/Book/Read/37176,15999966" title=" 355 萬神宮之謎 原來我是妖二代 賣報小郎君 更新時間: 2019-01-18 21:49:00">355 萬神宮之謎</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16001305" title=" 356 滾 原來我是妖二代 賣報小郎君 更新時間: 2019-01-19 18:43:00">356 滾</a>
+</td><td><a href="/Book/Read/37176,16002087" title=" 357 不要提事逼,不吉利 原來我是妖二代 賣報小郎君 更新時間: 2019-01-20 00:52:00">357 不要提事逼,不吉利</a>
+</td><td><a href="/Book/Read/37176,16002285" title=" 358 獵殺開始(4400) 原來我是妖二代 賣報小郎君 更新時間: 2019-01-20 08:14:00">358 獵殺開始(4400)</a>
+</td><td><a href="/Book/Read/37176,16003391" title=" 359 救救我 原來我是妖二代 賣報小郎君 更新時間: 2019-01-20 23:30:00">359 救救我</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16004298" title=" 360 初心(7000) 原來我是妖二代 賣報小郎君 更新時間: 2019-01-21 14:39:00">360 初心(7000)</a>
+</td><td><a href="/Book/Read/37176,16004712" title=" 361 劇本和我想的不一樣 原來我是妖二代 賣報小郎君 更新時間: 2019-01-21 20:26:00">361 劇本和我想的不一樣</a>
+</td><td><a href="/Book/Read/37176,16006427" title=" 362 離開 原來我是妖二代 賣報小郎君 更新時間: 2019-01-22 21:41:00">362 離開</a>
+</td><td><a href="/Book/Read/37176,16007102" title=" 363 我們隊伍里也有事逼體質? 原來我是妖二代 賣報小郎君 更新時間: 2019-01-23 07:32:00">363 我們隊伍里也有事逼體質?</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16007318" title=" 364 史上最強魅惑 原來我是妖二代 賣報小郎君 更新時間: 2019-01-23 11:12:00">364 史上最強魅惑</a>
+</td><td><a href="/Book/Read/37176,16007544" title=" 365 別怪我賣隊友 原來我是妖二代 賣報小郎君 更新時間: 2019-01-23 15:35:00">365 別怪我賣隊友</a>
+</td><td><a href="/Book/Read/37176,16007817" title=" 366 什么情況? 原來我是妖二代 賣報小郎君 更新時間: 2019-01-23 19:34:00">366 什么情況?</a>
+</td><td><a href="/Book/Read/37176,16009799" title=" 367 截胡(4500) 原來我是妖二代 賣報小郎君 更新時間: 2019-01-24 23:02:00">367 截胡(4500)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16014213" title=" 368 我承諾不戴套 原來我是妖二代 賣報小郎君 更新時間: 2019-01-25 13:03:00">368 我承諾不戴套</a>
+</td><td><a href="/Book/Read/37176,16015958" title=" 369 吞噬 原來我是妖二代 賣報小郎君 更新時間: 2019-01-25 20:52:00">369 吞噬</a>
+</td><td><a href="/Book/Read/37176,16016237" title=" 370 我....美嗎? 原來我是妖二代 賣報小郎君 更新時間: 2019-01-26 02:03:00">370 我....美嗎?</a>
+</td><td><a href="/Book/Read/37176,16017494" title=" 371 不介意我摸你屁股吧 原來我是妖二代 賣報小郎君 更新時間: 2019-01-27 00:11:00">371 不介意我摸你屁股吧</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16018084" title=" 372 調教系列之仇人之子納入后宮 原來我是妖二代 賣報小郎君 更新時間: 2019-01-27 08:02:00">372 調教系列之仇人之子納入后宮</a>
+</td><td><a href="/Book/Read/37176,16018553" title=" 373 上一輩的恩怨與我何干 原來我是妖二代 賣報小郎君 更新時間: 2019-01-27 18:53:00">373 上一輩的恩怨與我何干</a>
+</td><td><a href="/Book/Read/37176,16018962" title=" 374 又一座青銅殿 原來我是妖二代 賣報小郎君 更新時間: 2019-01-27 23:52:00">374 又一座青銅殿</a>
+</td><td><a href="/Book/Read/37176,16019353" title=" 375 逃出去的古妖 原來我是妖二代 賣報小郎君 更新時間: 2019-01-28 03:17:00">375 逃出去的古妖</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16019969" title=" 376 李施主,救救戒色師叔祖 原來我是妖二代 賣報小郎君 更新時間: 2019-01-28 20:02:00">376 李施主,救救戒色師叔祖</a>
+</td><td><a href="/Book/Read/37176,16020414" title=" 377 極道傳人的元神 原來我是妖二代 賣報小郎君 更新時間: 2019-01-29 00:14:00">377 極道傳人的元神</a>
+</td><td><a href="/Book/Read/37176,16021200" title=" 378 最動人的風景 原來我是妖二代 賣報小郎君 更新時間: 2019-01-29 18:48:00">378 最動人的風景</a>
+</td><td><a href="/Book/Read/37176,16021470" title=" 379 國色天香 原來我是妖二代 賣報小郎君 更新時間: 2019-01-29 22:22:00">379 國色天香</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16021941" title=" 380 李羨魚:我要勾引佛頭(6000) 原來我是妖二代 賣報小郎君 更新時間: 2019-01-30 03:59:00">380 李羨魚:我要勾引佛頭(6000)</a>
+</td><td><a href="/Book/Read/37176,16022708" title=" 381 萬神宮的門 原來我是妖二代 賣報小郎君 更新時間: 2019-01-30 21:34:00">381 萬神宮的門</a>
+</td><td><a href="/Book/Read/37176,16023650" title=" 382 當年的真相?(6000) 原來我是妖二代 賣報小郎君 更新時間: 2019-01-31 16:10:00">382 當年的真相?(6000)</a>
+</td><td><a href="/Book/Read/37176,16024049" title=" 383 宿命的對決:三無vs戰神 原來我是妖二代 賣報小郎君 更新時間: 2019-01-31 22:13:00">383 宿命的對決:三無vs戰神</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16025067" title=" 384 殺了你(5000) 原來我是妖二代 賣報小郎君 更新時間: 2019-02-01 18:13:00">384 殺了你(5000)</a>
+</td><td><a href="/Book/Read/37176,16025601" title=" 385 生與死,父與女 原來我是妖二代 賣報小郎君 更新時間: 2019-02-02 00:28:00">385 生與死,父與女</a>
+</td><td><a href="/Book/Read/37176,16026560" title=" 386 掰彎別人 原來我是妖二代 賣報小郎君 更新時間: 2019-02-02 21:09:00">386 掰彎別人</a>
+</td><td><a href="/Book/Read/37176,16490776" title=" 387 我是否曾走進你心里 原來我是妖二代 賣報小郎君 更新時間: 2019-02-03 19:10:00">387 我是否曾走進你心里</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16525341" title=" 388 遭遇 原來我是妖二代 賣報小郎君 更新時間: 2019-02-04 11:48:00">388 遭遇</a>
+</td><td><a href="/Book/Read/37176,16526826" title=" 389 君生我未生,我老君未老(5000) 原來我是妖二代 賣報小郎君 更新時間: 2019-02-04 21:19:00">389 君生我未生,我老君未老(5000)</a>
+</td><td><a href="/Book/Read/37176,16528147" title=" 390 天下之內,豈有長生不滅者 原來我是妖二代 賣報小郎君 更新時間: 2019-02-05 09:40:00">390 天下之內,豈有長生不滅者</a>
+</td><td><a href="/Book/Read/37176,16530077" title=" 391 李家有女初長成 原來我是妖二代 賣報小郎君 更新時間: 2019-02-06 05:48:00">391 李家有女初長成</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16531524" title=" 392 道可道,非恒道 原來我是妖二代 賣報小郎君 更新時間: 2019-02-07 00:54:00">392 道可道,非恒道</a>
+</td><td><a href="/Book/Read/37176,16533073" title=" 393 小女李姌 原來我是妖二代 賣報小郎君 更新時間: 2019-02-07 21:44:00">393 小女李姌</a>
+</td><td><a href="/Book/Read/37176,16534369" title=" 394 命運 原來我是妖二代 賣報小郎君 更新時間: 2019-02-08 10:00:00">394 命運</a>
+</td><td><a href="/Book/Read/37176,16534677" title=" 395 長兄如父 原來我是妖二代 賣報小郎君 更新時間: 2019-02-08 15:28:00">395 長兄如父</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16535043" title=" 396 往事紛紛擾擾逐浪潮(6600) 原來我是妖二代 賣報小郎君 更新時間: 2019-02-08 20:21:00">396 往事紛紛擾擾逐浪潮(6600)</a>
+</td><td><a href="/Book/Read/37176,16539296" title=" 397 戰魂一怒,血流千里 原來我是妖二代 賣報小郎君 更新時間: 2019-02-09 01:05:00">397 戰魂一怒,血流千里</a>
+</td><td><a href="/Book/Read/37176,16543420" title=" 398 怒火 原來我是妖二代 賣報小郎君 更新時間: 2019-02-09 22:04:00">398 怒火</a>
+</td><td><a href="/Book/Read/37176,16544412" title=" 399 劍氣沖霄漢 原來我是妖二代 賣報小郎君 更新時間: 2019-02-10 02:53:00">399 劍氣沖霄漢</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16545370" title=" 400 皇 原來我是妖二代 賣報小郎君 更新時間: 2019-02-10 19:31:00">400 皇</a>
+</td><td><a href="/Book/Read/37176,16545795" title=" 401 從今往后,恩斷義絕 原來我是妖二代 賣報小郎君 更新時間: 2019-02-10 22:58:00">401 從今往后,恩斷義絕</a>
+</td><td><a href="/Book/Read/37176,16546771" title=" 402 做好心理準備 原來我是妖二代 賣報小郎君 更新時間: 2019-02-11 05:01:00">402 做好心理準備</a>
+</td><td><a href="/Book/Read/37176,16548182" title=" 403 死后的風波 原來我是妖二代 賣報小郎君 更新時間: 2019-02-11 22:40:00">403 死后的風波</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16549091" title=" 404 事后諸葛亮 原來我是妖二代 賣報小郎君 更新時間: 2019-02-12 03:04:00">404 事后諸葛亮</a>
+</td><td><a href="/Book/Read/37176,16549138" title=" 405 干一行,愛一行 原來我是妖二代 賣報小郎君 更新時間: 2019-02-12 05:07:00">405 干一行,愛一行</a>
+</td><td><a href="/Book/Read/37176,16550769" title=" 406 坦誠相見,進出一番 原來我是妖二代 賣報小郎君 更新時間: 2019-02-12 23:52:00">406 坦誠相見,進出一番</a>
+</td><td><a href="/Book/Read/37176,16552677" title=" 407 上清派 原來我是妖二代 賣報小郎君 更新時間: 2019-02-13 21:14:00">407 上清派</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16553079" title=" 408 無趣 原來我是妖二代 賣報小郎君 更新時間: 2019-02-13 23:29:00">408 無趣</a>
+</td><td><a href="/Book/Read/37176,16555363" title=" 409 返老還童 原來我是妖二代 賣報小郎君 更新時間: 2019-02-14 22:38:00">409 返老還童</a>
+</td><td><a href="/Book/Read/37176,16556418" title=" 410 亞洲三大邪術(5000) 原來我是妖二代 賣報小郎君 更新時間: 2019-02-15 08:24:00">410 亞洲三大邪術(5000)</a>
+</td><td><a href="/Book/Read/37176,16557855" title=" 411 傾國傾城 原來我是妖二代 賣報小郎君 更新時間: 2019-02-15 23:38:00">411 傾國傾城</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16559817" title=" 412 五千年一遇的美人 原來我是妖二代 賣報小郎君 更新時間: 2019-02-16 20:57:00">412 五千年一遇的美人</a>
+</td><td><a href="/Book/Read/37176,16561072" title=" 413 李倩予的人設 原來我是妖二代 賣報小郎君 更新時間: 2019-02-17 01:26:00">413 李倩予的人設</a>
+</td><td><a href="/Book/Read/37176,16561878" title=" 414 兵不血刃 原來我是妖二代 賣報小郎君 更新時間: 2019-02-17 17:02:00">414 兵不血刃</a>
+</td><td><a href="/Book/Read/37176,16562100" title=" 415 這個女人,我要得到她 原來我是妖二代 賣報小郎君 更新時間: 2019-02-17 18:49:00">415 這個女人,我要得到她</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16564620" title=" 416 腰太粗了 原來我是妖二代 賣報小郎君 更新時間: 2019-02-18 20:40:00">416 腰太粗了</a>
+</td><td><a href="/Book/Read/37176,16565660" title=" 417 秀兒,人生何處不相逢 原來我是妖二代 賣報小郎君 更新時間: 2019-02-19 00:39:00">417 秀兒,人生何處不相逢</a>
+</td><td><a href="/Book/Read/37176,16567403" title=" 418 魚兒上鉤(4000) 原來我是妖二代 賣報小郎君 更新時間: 2019-02-19 21:59:00">418 魚兒上鉤(4000)</a>
+</td><td><a href="/Book/Read/37176,16569689" title=" 419 晚宴 原來我是妖二代 賣報小郎君 更新時間: 2019-02-20 21:06:00">419 晚宴</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16571994" title=" 420 秀兒:這姑娘是人才 原來我是妖二代 賣報小郎君 更新時間: 2019-02-21 20:46:00">420 秀兒:這姑娘是人才</a>
+</td><td><a href="/Book/Read/37176,16572132" title=" 421 摔杯為號 原來我是妖二代 賣報小郎君 更新時間: 2019-02-21 21:42:00">421 摔杯為號</a>
+</td><td><a href="/Book/Read/37176,16573012" title=" 422 李羨魚和香火 原來我是妖二代 賣報小郎君 更新時間: 2019-02-22 01:00:00">422 李羨魚和香火</a>
+</td><td><a href="/Book/Read/37176,16573433" title=" 423 下毒(4200) 原來我是妖二代 賣報小郎君 更新時間: 2019-02-22 08:22:00">423 下毒(4200)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16575614" title=" 424 這個彎轉的太快 原來我是妖二代 賣報小郎君 更新時間: 2019-02-23 01:10:00">424 這個彎轉的太快</a>
+</td><td><a href="/Book/Read/37176,16575986" title=" 425 血騎士 原來我是妖二代 賣報小郎君 更新時間: 2019-02-23 09:05:00">425 血騎士</a>
+</td><td><a href="/Book/Read/37176,16577393" title=" 426 魅惑異能的主動與被動 原來我是妖二代 賣報小郎君 更新時間: 2019-02-23 23:32:00">426 魅惑異能的主動與被動</a>
+</td><td><a href="/Book/Read/37176,16578755" title=" 427 意想不到的存在 原來我是妖二代 賣報小郎君 更新時間: 2019-02-24 14:54:00">427 意想不到的存在</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16580947" title=" 428 勾結邪教 原來我是妖二代 賣報小郎君 更新時間: 2019-02-25 11:36:00">428 勾結邪教</a>
+</td><td><a href="/Book/Read/37176,16611965" title=" 429 不一樣的皮夾子 原來我是妖二代 賣報小郎君 更新時間: 2019-02-25 20:16:00">429 不一樣的皮夾子</a>
+</td><td><a href="/Book/Read/37176,16614999" title=" 430 滅魂聯盟的真正目的 原來我是妖二代 賣報小郎君 更新時間: 2019-02-26 22:36:00">430 滅魂聯盟的真正目的</a>
+</td><td><a href="/Book/Read/37176,16615267" title=" 431 當今的極道 原來我是妖二代 賣報小郎君 更新時間: 2019-02-26 23:58:00">431 當今的極道</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16616253" title=" 432 正太控and徒弟控 原來我是妖二代 賣報小郎君 更新時間: 2019-02-27 09:23:00">432 正太控and徒弟控</a>
+</td><td><a href="/Book/Read/37176,16617114" title=" 433 一切都是命運的選擇 原來我是妖二代 賣報小郎君 更新時間: 2019-02-27 19:28:00">433 一切都是命運的選擇</a>
+</td><td><a href="/Book/Read/37176,16619458" title=" 434 龍騎士 原來我是妖二代 賣報小郎君 更新時間: 2019-02-28 16:30:00">434 龍騎士</a>
+</td><td><a href="/Book/Read/37176,16620343" title=" 435 開炮 原來我是妖二代 賣報小郎君 更新時間: 2019-02-28 23:10:00">435 開炮</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16621807" title=" 436 拯救女主 原來我是妖二代 賣報小郎君 更新時間: 2019-03-01 12:52:00">436 拯救女主</a>
+</td><td><a href="/Book/Read/37176,16622061" title=" 437 你好騷 原來我是妖二代 賣報小郎君 更新時間: 2019-03-01 14:41:00">437 你好騷</a>
+</td><td><a href="/Book/Read/37176,16622303" title=" 438 李倩予定是邪教之人 原來我是妖二代 賣報小郎君 更新時間: 2019-03-01 17:48:00">438 李倩予定是邪教之人</a>
+</td><td><a href="/Book/Read/37176,16622551" title=" 439 教皇和墮天使 原來我是妖二代 賣報小郎君 更新時間: 2019-03-01 20:22:00">439 教皇和墮天使</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16623133" title=" 440 奎因·亞當斯 原來我是妖二代 賣報小郎君 更新時間: 2019-03-01 23:34:00">440 奎因·亞當斯</a>
+</td><td><a href="/Book/Read/37176,16623579" title=" 441 往事 原來我是妖二代 賣報小郎君 更新時間: 2019-03-02 01:10:00">441 往事</a>
+</td><td><a href="/Book/Read/37176,16724640" title=" 442 其路之中并無死亡 原來我是妖二代 賣報小郎君 更新時間: 2019-03-02 23:08:00">442 其路之中并無死亡</a>
+</td><td><a href="/Book/Read/37176,16765165" title=" 443 拯救 原來我是妖二代 賣報小郎君 更新時間: 2019-03-03 23:22:00">443 拯救</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16767932" title=" 444 脫困 原來我是妖二代 賣報小郎君 更新時間: 2019-03-04 20:05:00">444 脫困</a>
+</td><td><a href="/Book/Read/37176,16769434" title=" 445 師徒夜談 原來我是妖二代 賣報小郎君 更新時間: 2019-03-05 00:53:00">445 師徒夜談</a>
+</td><td><a href="/Book/Read/37176,16772751" title=" 446 秘辛(一) 原來我是妖二代 賣報小郎君 更新時間: 2019-03-06 00:39:00">446 秘辛(一)</a>
+</td><td><a href="/Book/Read/37176,16774848" title=" 447 秘辛(二) 原來我是妖二代 賣報小郎君 更新時間: 2019-03-06 23:05:00">447 秘辛(二)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16777455" title=" 448 秘辛(三) 原來我是妖二代 賣報小郎君 更新時間: 2019-03-07 21:17:00">448 秘辛(三)</a>
+</td><td><a href="/Book/Read/37176,16778970" title=" 449 大BOSS血騎士 原來我是妖二代 賣報小郎君 更新時間: 2019-03-08 01:20:00">449 大BOSS血騎士</a>
+</td><td><a href="/Book/Read/37176,16780494" title=" 450 兒子弄丟了 原來我是妖二代 賣報小郎君 更新時間: 2019-03-08 21:07:00">450 兒子弄丟了</a>
+</td><td><a href="/Book/Read/37176,16781564" title=" 451 重返人生巔峰 原來我是妖二代 賣報小郎君 更新時間: 2019-03-09 00:54:00">451 重返人生巔峰</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16783285" title=" 452 不合理的魅惑 原來我是妖二代 賣報小郎君 更新時間: 2019-03-09 17:17:00">452 不合理的魅惑</a>
+</td><td><a href="/Book/Read/37176,16786720" title=" 453 李羨魚,你沒事吧 原來我是妖二代 賣報小郎君 更新時間: 2019-03-10 19:53:00">453 李羨魚,你沒事吧</a>
+</td><td><a href="/Book/Read/37176,16787122" title=" 454 墮落的神 原來我是妖二代 賣報小郎君 更新時間: 2019-03-10 21:57:00">454 墮落的神</a>
+</td><td><a href="/Book/Read/37176,16790292" title=" 455 內戰 原來我是妖二代 賣報小郎君 更新時間: 2019-03-11 21:49:00">455 內戰</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16791037" title=" 456 詭異 原來我是妖二代 賣報小郎君 更新時間: 2019-03-12 00:46:00">456 詭異</a>
+</td><td><a href="/Book/Read/37176,16792982" title=" 457 身隕(卷尾) 原來我是妖二代 賣報小郎君 更新時間: 2019-03-12 20:56:00">457 身隕(卷尾)</a>
+</td><td><a href="/Book/Read/37176,16795992" title=" 458 喜訊 原來我是妖二代 賣報小郎君 更新時間: 2019-03-13 20:04:00">458 喜訊</a>
+</td><td><a href="/Book/Read/37176,16799685" title=" 459 身份大白 原來我是妖二代 賣報小郎君 更新時間: 2019-03-14 23:19:00">459 身份大白</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16810992" title=" 462 復活的不一定是我曾孫 原來我是妖二代 賣報小郎君 更新時間: 2019-03-18 20:52:00">462 復活的不一定是我曾孫</a>
+</td><td><a href="/Book/Read/37176,16805152" title=" 460 逃亡 原來我是妖二代 賣報小郎君 更新時間: 2019-03-16 21:42:00">460 逃亡</a>
+</td><td><a href="/Book/Read/37176,16808043" title=" 461 姐弟夜談 原來我是妖二代 賣報小郎君 更新時間: 2019-03-17 22:00:00">461 姐弟夜談</a>
+</td><td><a href="/Book/Read/37176,16813459" title=" 463 輕輕的我走了,正如我輕輕的來 原來我是妖二代 賣報小郎君 更新時間: 2019-03-19 17:19:00">463 輕輕的我走了,正如我輕輕的來</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16811096" title=" 0462 復活的未必是我曾孫(抱歉,章節放錯卷了) 原來我是妖二代 賣報小郎君 更新時間: 2019-03-18 22:16:00">0462 復活的未必是我曾孫(抱歉,章節放錯卷了)</a>
+</td><td><a href="/Book/Read/37176,16814493" title=" 464 兩句話(一) 原來我是妖二代 賣報小郎君 更新時間: 2019-03-19 23:49:00">464 兩句話(一)</a>
+</td><td><a href="/Book/Read/37176,16818556" title=" 465 沒臉沒皮的出家人 原來我是妖二代 賣報小郎君 更新時間: 2019-03-21 01:53:00">465 沒臉沒皮的出家人</a>
+</td><td><a href="/Book/Read/37176,16820481" title=" 466 請你自證 原來我是妖二代 賣報小郎君 更新時間: 2019-03-22 00:28:00">466 請你自證</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16821549" title=" 467 借一步說話 原來我是妖二代 賣報小郎君 更新時間: 2019-03-22 05:14:00">467 借一步說話</a>
+</td><td><a href="/Book/Read/37176,16823198" title=" 468 相認 原來我是妖二代 賣報小郎君 更新時間: 2019-03-22 22:37:00">468 相認</a>
+</td><td><a href="/Book/Read/37176,16825799" title=" 469 原來我是妖二代 賣報小郎君 更新時間: 2019-03-23 20:50:00">469</a>
+</td><td><a href="/Book/Read/37176,16827199" title=" 470 回歸寶澤 原來我是妖二代 賣報小郎君 更新時間: 2019-03-24 01:13:00">470 回歸寶澤</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16828839" title=" 471祖奶奶,我好喜歡.... 原來我是妖二代 賣報小郎君 更新時間: 2019-03-24 20:56:00">471祖奶奶,我好喜歡....</a>
+</td><td><a href="/Book/Read/37176,16830244" title=" 472 那你呢? 原來我是妖二代 賣報小郎君 更新時間: 2019-03-25 02:11:00">472 那你呢?</a>
+</td><td><a href="/Book/Read/37176,16833220" title=" 473 失蹤 原來我是妖二代 賣報小郎君 更新時間: 2019-03-26 02:59:00">473 失蹤</a>
+</td><td><a href="/Book/Read/37176,16834391" title=" 474 女兒不靠譜 原來我是妖二代 賣報小郎君 更新時間: 2019-03-26 18:03:00">474 女兒不靠譜</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16835211" title=" 475 李元芳和狄仁杰 原來我是妖二代 賣報小郎君 更新時間: 2019-03-26 23:03:00">475 李元芳和狄仁杰</a>
+</td><td><a href="/Book/Read/37176,16836236" title=" 475 樊籠 原來我是妖二代 賣報小郎君 更新時間: 2019-03-27 03:30:00">475 樊籠</a>
+</td><td><a href="/Book/Read/37176,16837932" title=" 476 一頓早餐感動兩個女人 原來我是妖二代 賣報小郎君 更新時間: 2019-03-27 22:56:00">476 一頓早餐感動兩個女人</a>
+</td><td><a href="/Book/Read/37176,16839124" title=" 477 養父的真身 原來我是妖二代 賣報小郎君 更新時間: 2019-03-28 02:06:00">477 養父的真身</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16839233" title=" 478 姐姐不是親姐姐,是表姐 原來我是妖二代 賣報小郎君 更新時間: 2019-03-28 04:56:00">478 姐姐不是親姐姐,是表姐</a>
+</td><td><a href="/Book/Read/37176,16840406" title=" 479 再見宛如陌生人 原來我是妖二代 賣報小郎君 更新時間: 2019-03-28 19:30:00">479 再見宛如陌生人</a>
+</td><td><a href="/Book/Read/37176,16841850" title=" 480 男人需要鍛煉 原來我是妖二代 賣報小郎君 更新時間: 2019-03-29 00:59:00">480 男人需要鍛煉</a>
+</td><td><a href="/Book/Read/37176,16842245" title=" 481 看我如何調教你女兒 原來我是妖二代 賣報小郎君 更新時間: 2019-03-29 08:29:00">481 看我如何調教你女兒</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16844885" title=" 482 拜訪上清派 原來我是妖二代 賣報小郎君 更新時間: 2019-03-30 01:27:00">482 拜訪上清派</a>
+</td><td><a href="/Book/Read/37176,16845129" title=" 483 另有其人 原來我是妖二代 賣報小郎君 更新時間: 2019-03-30 08:39:00">483 另有其人</a>
+</td><td><a href="/Book/Read/37176,16846634" title=" 484 養父的真實身份 原來我是妖二代 賣報小郎君 更新時間: 2019-03-30 22:58:00">484 養父的真實身份</a>
+</td><td><a href="/Book/Read/37176,16849078" title=" 485 歸墟 原來我是妖二代 賣報小郎君 更新時間: 2019-03-31 20:40:00">485 歸墟</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16850085" title=" 486 哇,真香 原來我是妖二代 賣報小郎君 更新時間: 2019-04-01 00:42:00">486 哇,真香</a>
+</td><td><a href="/Book/Read/37176,16851981" title=" 487 女人間的斗爭 原來我是妖二代 賣報小郎君 更新時間: 2019-04-01 19:31:00">487 女人間的斗爭</a>
+</td><td><a href="/Book/Read/37176,16853147" title=" 488 你確定嗎 原來我是妖二代 賣報小郎君 更新時間: 2019-04-02 01:52:00">488 你確定嗎</a>
+</td><td><a href="/Book/Read/37176,16854296" title=" 489 養父的信息 原來我是妖二代 賣報小郎君 更新時間: 2019-04-02 14:31:00">489 養父的信息</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16856438" title=" 490 故人相逢風雪中 原來我是妖二代 賣報小郎君 更新時間: 2019-04-03 02:19:00">490 故人相逢風雪中</a>
+</td><td><a href="/Book/Read/37176,16946036" title=" 491 歸墟 原來我是妖二代 賣報小郎君 更新時間: 2019-04-04 21:40:00">491 歸墟</a>
+</td><td><a href="/Book/Read/37176,16947940" title=" 492 日記 原來我是妖二代 賣報小郎君 更新時間: 2019-04-05 11:57:00">492 日記</a>
+</td><td><a href="/Book/Read/37176,16952505" title=" 493 舞廳混混 原來我是妖二代 賣報小郎君 更新時間: 2019-04-06 22:37:00">493 舞廳混混</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16955276" title=" 494 初識 原來我是妖二代 賣報小郎君 更新時間: 2019-04-07 19:58:00">494 初識</a>
+</td><td><a href="/Book/Read/37176,16957103" title=" 495 秘密 原來我是妖二代 賣報小郎君 更新時間: 2019-04-08 01:12:00">495 秘密</a>
+</td><td><a href="/Book/Read/37176,16957983" title=" 496 滬市三俠客 原來我是妖二代 賣報小郎君 更新時間: 2019-04-08 14:49:00">496 滬市三俠客</a>
+</td><td><a href="/Book/Read/37176,16958431" title=" 497 我以后再也不去了 原來我是妖二代 賣報小郎君 更新時間: 2019-04-08 18:54:00">497 我以后再也不去了</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16961891" title=" 498 桃園三結義 原來我是妖二代 賣報小郎君 更新時間: 2019-04-09 20:03:00">498 桃園三結義</a>
+</td><td><a href="/Book/Read/37176,16962442" title=" 499 離別 原來我是妖二代 賣報小郎君 更新時間: 2019-04-09 22:56:00">499 離別</a>
+</td><td><a href="/Book/Read/37176,16965417" title=" 500 重聚 原來我是妖二代 賣報小郎君 更新時間: 2019-04-10 21:36:00">500 重聚</a>
+</td><td><a href="/Book/Read/37176,16966192" title=" 501 萬神宮 原來我是妖二代 賣報小郎君 更新時間: 2019-04-11 01:13:00">501 萬神宮</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16968506" title=" 502 半步極道 原來我是妖二代 賣報小郎君 更新時間: 2019-04-11 21:39:00">502 半步極道</a>
+</td><td><a href="/Book/Read/37176,16971343" title=" 503 謀劃 原來我是妖二代 賣報小郎君 更新時間: 2019-04-12 19:01:00">503 謀劃</a>
+</td><td><a href="/Book/Read/37176,16974605" title=" 504 任務名稱:探索 原來我是妖二代 賣報小郎君 更新時間: 2019-04-13 19:18:00">504 任務名稱:探索</a>
+</td><td><a href="/Book/Read/37176,16977797" title=" 505 我對姐姐總是特別溫柔 原來我是妖二代 賣報小郎君 更新時間: 2019-04-14 20:16:00">505 我對姐姐總是特別溫柔</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16978557" title=" 506 古妖現身 原來我是妖二代 賣報小郎君 更新時間: 2019-04-14 23:35:00">506 古妖現身</a>
+</td><td><a href="/Book/Read/37176,16981498" title=" 507 真正的萬神宮 原來我是妖二代 賣報小郎君 更新時間: 2019-04-15 22:44:00">507 真正的萬神宮</a>
+</td><td><a href="/Book/Read/37176,16982214" title=" 508 熟悉的味道 原來我是妖二代 賣報小郎君 更新時間: 2019-04-16 00:29:00">508 熟悉的味道</a>
+</td><td><a href="/Book/Read/37176,16996314" title=" 509 我們中出了一個叛徒 原來我是妖二代 賣報小郎君 更新時間: 2019-04-17 00:04:00">509 我們中出了一個叛徒</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,16997690" title=" 510 恐懼 原來我是妖二代 賣報小郎君 更新時間: 2019-04-17 02:51:00">510 恐懼</a>
+</td><td><a href="/Book/Read/37176,16997857" title=" 511 劍光天降 原來我是妖二代 賣報小郎君 更新時間: 2019-04-17 02:51:00">511 劍光天降</a>
+</td><td><a href="/Book/Read/37176,17013910" title=" 512 日出東方 原來我是妖二代 賣報小郎君 更新時間: 2019-04-17 23:16:00">512 日出東方</a>
+</td><td><a href="/Book/Read/37176,17014424" title=" 513 意料之外的人 原來我是妖二代 賣報小郎君 更新時間: 2019-04-17 23:16:00">513 意料之外的人</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17017214" title=" 514 幕后主謀 原來我是妖二代 賣報小郎君 更新時間: 2019-04-18 23:05:00">514 幕后主謀</a>
+</td><td><a href="/Book/Read/37176,17018685" title=" 515 都是忘塵的錯 原來我是妖二代 賣報小郎君 更新時間: 2019-04-19 02:55:00">515 都是忘塵的錯</a>
+</td><td><a href="/Book/Read/37176,17021151" title=" 516 另一個世界 原來我是妖二代 賣報小郎君 更新時間: 2019-04-20 00:35:00">516 另一個世界</a>
+</td><td><a href="/Book/Read/37176,17023544" title=" 517 解除CEO職務(5000大章) 原來我是妖二代 賣報小郎君 更新時間: 2019-04-20 22:30:00">517 解除CEO職務(5000大章)</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17064696" title=" 518 原來我是妖二代 賣報小郎君 更新時間: 2019-04-22 02:02:00">518</a>
+</td><td><a href="/Book/Read/37176,17068266" title=" 519 超級幻陣 原來我是妖二代 賣報小郎君 更新時間: 2019-04-23 00:22:00">519 超級幻陣</a>
+</td><td><a href="/Book/Read/37176,17072625" title=" 520 再次召開董事會 原來我是妖二代 賣報小郎君 更新時間: 2019-04-24 02:55:00">520 再次召開董事會</a>
+</td><td><a href="/Book/Read/37176,17073746" title=" 521 平安夜 原來我是妖二代 賣報小郎君 更新時間: 2019-04-24 18:14:00">521 平安夜</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17073935" title=" 522 槍出如龍 原來我是妖二代 賣報小郎君 更新時間: 2019-04-24 18:28:00">522 槍出如龍</a>
+</td><td><a href="/Book/Read/37176,17077715" title=" 523 董事會的要求 原來我是妖二代 賣報小郎君 更新時間: 2019-04-25 21:57:00">523 董事會的要求</a>
+</td><td><a href="/Book/Read/37176,17081244" title=" 524 直擊靈魂的呼喚 原來我是妖二代 賣報小郎君 更新時間: 2019-04-26 23:13:00">524 直擊靈魂的呼喚</a>
+</td><td><a href="/Book/Read/37176,17083694" title=" 525 夢 原來我是妖二代 賣報小郎君 更新時間: 2019-04-27 18:48:00">525 夢</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17088985" title=" 526 夢里的人 原來我是妖二代 賣報小郎君 更新時間: 2019-04-29 02:19:00">526 夢里的人</a>
+</td><td><a href="/Book/Read/37176,17091395" title=" 527 李羨魚的霸道 原來我是妖二代 賣報小郎君 更新時間: 2019-04-30 02:21:00">527 李羨魚的霸道</a>
+</td><td><a href="/Book/Read/37176,17094931" title=" 528 胡言:我沒李倩予風騷 原來我是妖二代 賣報小郎君 更新時間: 2019-05-01 01:15:00">528 胡言:我沒李倩予風騷</a>
+</td><td><a href="/Book/Read/37176,17155674" title=" 529 這一戰,牛生巔峰 原來我是妖二代 賣報小郎君 更新時間: 2019-05-02 01:32:00">529 這一戰,牛生巔峰</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17159582" title=" 530 原來我是妖二代 賣報小郎君 更新時間: 2019-05-03 01:26:00">530</a>
+</td><td><a href="/Book/Read/37176,17164001" title=" 531 據點集合 原來我是妖二代 賣報小郎君 更新時間: 2019-05-04 02:58:00">531 據點集合</a>
+</td><td><a href="/Book/Read/37176,17179920" title=" 532 好厲害的戰術 原來我是妖二代 賣報小郎君 更新時間: 2019-05-05 05:38:00">532 好厲害的戰術</a>
+</td><td><a href="/Book/Read/37176,17285730" title=" 533 水性楊花的表妹 原來我是妖二代 賣報小郎君 更新時間: 2019-05-06 22:15:00">533 水性楊花的表妹</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17287238" title=" 534 誰是狼人 原來我是妖二代 賣報小郎君 更新時間: 2019-05-07 03:56:00">534 誰是狼人</a>
+</td><td><a href="/Book/Read/37176,17290538" title=" 535 秀兒,好久不見 原來我是妖二代 賣報小郎君 更新時間: 2019-05-08 02:37:00">535 秀兒,好久不見</a>
+</td><td><a href="/Book/Read/37176,17296405" title=" 536 摸頭殺 原來我是妖二代 賣報小郎君 更新時間: 2019-05-09 21:37:00">536 摸頭殺</a>
+</td><td><a href="/Book/Read/37176,17300541" title=" 537 貴客來訪 原來我是妖二代 賣報小郎君 更新時間: 2019-05-11 01:48:00">537 貴客來訪</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17303823" title=" 538 請李君賜教 原來我是妖二代 賣報小郎君 更新時間: 2019-05-12 00:42:00">538 請李君賜教</a>
+</td><td><a href="/Book/Read/37176,17307253" title=" 539 這個男人會妖法 原來我是妖二代 賣報小郎君 更新時間: 2019-05-13 00:23:00">539 這個男人會妖法</a>
+</td><td><a href="/Book/Read/37176,17320689" title=" 540 交際花的恐懼 原來我是妖二代 賣報小郎君 更新時間: 2019-05-14 00:53:00">540 交際花的恐懼</a>
+</td><td><a href="/Book/Read/37176,17324425" title=" 541 我中了這個男人的毒 原來我是妖二代 賣報小郎君 更新時間: 2019-05-15 00:39:00">541 我中了這個男人的毒</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17327055" title=" 542 表面兄弟 原來我是妖二代 賣報小郎君 更新時間: 2019-05-15 21:20:00">542 表面兄弟</a>
+</td><td><a href="/Book/Read/37176,17328551" title=" 543 我們家結衣冰清玉潔。 原來我是妖二代 賣報小郎君 更新時間: 2019-05-16 01:10:00">543 我們家結衣冰清玉潔。</a>
+</td><td><a href="/Book/Read/37176,17333853" title=" 546 氣之劍出鞘 原來我是妖二代 賣報小郎君 更新時間: 2019-05-17 22:52:00">546 氣之劍出鞘</a>
+</td><td><a href="/Book/Read/37176,17338165" title=" 547 溫泉授業.avi 原來我是妖二代 賣報小郎君 更新時間: 2019-05-19 04:56:00">547 溫泉授業.avi</a>
+</td></tr><tr>
+<td><a href="/Book/Read/37176,17340183" title=" 548 癩蛤蟆想吃天鵝肉 原來我是妖二代 賣報小郎君 更新時間: 2019-05-20 01:14:00">548 癩蛤蟆想吃天鵝肉</a>
+</td><td><a href="/Book/Read/37176,17341435" title=" 549 扯平 原來我是妖二代 賣報小郎君 更新時間: 2019-05-20 09:50:00">549 扯平</a>
+</td><td><a href="/Book/Read/37176,17343033" title=" 550 開戰 原來我是妖二代 賣報小郎君 更新時間: 2019-05-20 23:47:00">550 開戰</a>
+</td><td><a href="/Book/Read/37176,17362907" title=" 551 青木結衣:我不動 原來我是妖二代 賣報小郎君 更新時間: 2019-05-28 16:34:00">551 青木結衣:我不動</a>
+</td>
+                </tr>
+            </table>
+        </div>
+        <div style="clear: both;">
+        </div>
+        <div style="width: 970px; margin: 0 auto; text-align: center; padding-top: 20px; padding-bottom: 20px; min-height: 90px;">
+            <script src="/js/n970.js" type="text/javascript"></script>
+        </div>
+    </div>
+    <div style="margin: 0 auto; width: 1000px;">
+        頁面執行時間: 0.0146044
+    </div>
+    <div style="margin: 0 auto; padding-top: 20px; padding-bottom: 20px; height: 90px; width: 800px;">
+        
+    </div>
+    
+
+<div style="margin: 0 auto; width: 998px; min-height: 50px; border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: white;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="94" height="25" align="center" valign="middle" background="/images/hjw_47.jpg">
+                <span class="STYLE23">瀏覽記錄</span></td>
+            <td background="/images/hjw_32.jpg" style="width: 500px; text-align: right;"></td>
+            <td width="8">
+                <img src="/images/hjw_35.jpg" width="8" height="24" alt="" />
+            </td>
+        </tr>
+    </table>
+    <div id="BookMark" style="width: 988px; padding-left: 5px; padding-right: 5px; vertical-align: top; background-color: white; min-height: 50px;">
+    </div>
+</div>
+
+<div id="pagebottom" align="center">
+    <hr noshade size="1" />
+</div>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="5"></td>
+    </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="center" valign="middle">
+            <div class="STYLE40">
+                <div>
+                    字母索引: <a href="/Pinyin/A">A</a>&nbsp;|&nbsp; <a href="/Pinyin/B">B</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/C">C</a>&nbsp;|&nbsp; <a href="/Pinyin/D">D</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/E">E</a>&nbsp;|&nbsp; <a href="/Pinyin/F">F</a>&nbsp;|&nbsp; <a href="/Pinyin/G">G</a>&nbsp;|&nbsp; <a href="/Pinyin/H">H</a>&nbsp;|&nbsp; <a href="/Pinyin/J">J</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/K">K</a>&nbsp;|&nbsp; <a href="/Pinyin/L">L</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/M">M</a>&nbsp;|&nbsp; <a href="/Pinyin/N">N</a>&nbsp;|&nbsp; <a href="/Pinyin/P">P</a>&nbsp;|&nbsp; <a href="/Pinyin/Q">Q</a>&nbsp;|&nbsp; <a href="/Pinyin/R">R</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/S">S</a>&nbsp;|&nbsp; <a href="/Pinyin/T">T</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/W">W</a>&nbsp;|&nbsp; <a href="/Pinyin/X">X</a>&nbsp;|&nbsp; <a href="/Pinyin/Y">Y</a>&nbsp;|&nbsp; <a href="/Pinyin/Z">Z</a>
+                </div>
+                <hr size="1" />
+                <br />
+
+                <div id="CopyRight">
+                    聯系我們: <a href="mailto:hjwzw@live.com">hjwzw@live.com</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+    
+</body>
+</html>

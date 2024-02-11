@@ -7,7 +7,10 @@ import (
 	"crypto/tls"
 	"fmt"
 	"io"
-	"io/ioutil"
+	// "log"
+	"os"
+	"testing"
+
 	"net/http"
 	"net/url"
 	"regexp"
@@ -22,24 +25,56 @@ import (
 
 // URLHTMLToUTF8Encoding 將網頁編碼為 UTF8 並回傳 reader
 func URLHTMLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
-	// Create a new context with a deadline
-	ctx := context.Background()
-	ctx, cancel := context.WithTimeout(ctx, 30*time.Second)
-	defer cancel()
+	var body io.Reader
 
-	resp, err := HTTPGetwithContext(ctx, URL)
-	if err != nil {
-		err = errors.Wrap(err, "HTTPGetwithContext")
-		return nil, "", false, err
+	if testing.Testing() {
+		urlAfter, found := strings.CutPrefix(URL, "https://")
+		if !found {
+			panic("url not https")
+		}
+		filename := "../test_dataset/" + urlAfter
+		if strings.HasSuffix(urlAfter, "/") {
+			filename += "index.html"
+		} else {
+			fstat, err := os.Stat(filename)
+			if err != nil {
+				return nil, "", false, err
+			}
+			if fstat.IsDir() {
+				filename += "/index.html"
+			}
+		}
+		// aa, _ := os.Getwd()
+		// log.Println(filename, aa)
+		file, err := os.Open(filename)
+		defer func() {
+			_ = file.Close()
+		}()
+		if err != nil {
+			return nil, "", false, err
+		}
+		body = file
+	} else {
+		// Create a new context with a deadline
+		ctx := context.Background()
+		ctx, cancel := context.WithTimeout(ctx, 30*time.Second)
+		defer cancel()
+
+		resp, err := HTTPGetwithContext(ctx, URL)
+		if err != nil {
+			err = errors.Wrap(err, "HTTPGetwithContext")
+			return nil, "", false, err
+		}
+		defer resp.Body.Close()
+
+		if resp.StatusCode != http.StatusOK {
+			err = fmt.Errorf("response status code: %d", resp.StatusCode)
+			return nil, "", false, err
+		}
+		body = resp.Body
 	}
-	defer resp.Body.Close()
 
-	if resp.StatusCode != http.StatusOK {
-		err = fmt.Errorf("response status code: %d", resp.StatusCode)
-		return nil, "", false, err
-	}
-
-	r, name, certain, err := ToUTF8Encoding(resp.Body)
+	r, name, certain, err := ToUTF8Encoding(body)
 	if err != nil {
 		err = errors.Wrap(err, "ToUTF8Encoding")
 		return nil, "", false, err
@@ -50,9 +85,9 @@ func URLHTMLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
 
 // ToUTF8Encoding 將 reader 轉換為 UTF8
 func ToUTF8Encoding(r io.Reader) (io.Reader, string, bool, error) {
-	b, err := ioutil.ReadAll(r)
+	b, err := io.ReadAll(r)
 	if err != nil {
-		err = errors.Wrap(err, "ioutil.ReadAll")
+		err = errors.Wrap(err, "io.ReadAll")
 		return nil, "", false, err
 	}
 
@@ -89,10 +124,9 @@ func HTTPGetwithContext(ctx context.Context, URL string) (*http.Response, error)
 	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:57.0) Gecko/20100101 Firefox/57.0")
 	req = req.WithContext(ctx)
 	// adding connection:close header hoping to get rid
-    // of too many files open error. Found this in http://craigwickesser.com/2015/01/golang-http-to-many-open-files/
+	// of too many files open error. Found this in http://craigwickesser.com/2015/01/golang-http-to-many-open-files/
 	// 連線會變慢，需增加 worker 數目
-    req.Header.Add("Connection", "close")
-
+	req.Header.Add("Connection", "close")
 
 	// 確定連結斷開，若對方不斷開仍存活，可能造成 goroutine leakage
 	// 連接的客戶端可以持有的最大空閒連接，預設 2
@@ -147,7 +181,7 @@ func FormatText(text string) string {
 }
 
 // MergeTitle 合併標題
-func MergeTitle(text, chapterTitle  string) string {
+func MergeTitle(text, chapterTitle string) string {
 
 	return fmt.Sprintf("%s\n\n%s\n\n\n\n\n", chapterTitle, text)
 }

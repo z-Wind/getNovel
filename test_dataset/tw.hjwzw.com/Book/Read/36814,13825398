@@ -1,0 +1,450 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>詭秘之主第一章 緋紅,愛潛水的烏賊 | 黃金屋中文</title>
+    <meta name="Keywords" content="第一章 緋紅, 詭秘之主最新章節, 愛潛水的烏賊,詭秘之主,小說詭秘之主,詭秘之主最新章節,詭秘之主txt,詭秘之主下載,詭秘之主吧,詭秘之主快眼看書,詭秘之主520" />
+    <meta name="Description" content="小說:詭秘之主 的章節: 第一章 緋紅內容,作者:愛潛水的烏賊, 黃金屋中文, 黃金書屋" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://tw.hjwzw.com/css/css1.css" type="text/css" />
+    <link rel="alternate" href="https://t.hjwzw.com/Read/36814_13825398" media="only screen and (max-width: 640px)" />
+    <meta http-equiv="mobile-agent" content="format=html5; url=https://t.hjwzw.com/Read/36814_13825398" />
+    <meta http-equiv="mobile-agent" content="format=xhtml; url=https://t.hjwzw.com/Read/36814_13825398" />
+
+    <meta property="og:type" content="novel" />
+    <meta property="og:title" content="第一章 緋紅 詭秘之主" />
+    <meta property="og:description" content="好痛！頭好痛！光怪陸離滿是低語的夢境迅速支離破碎，熟睡中的周明瑞只覺腦袋抽痛異常，仿佛被人用棒子狠狠掄了一下，不，更像是遭尖銳的物品…" />
+    <meta property="og:image" content="https://tw.hjwzw.com/images/id/36814.jpg" />
+    <meta property="og:url" content="https://tw.hjwzw.com/Book/Read/36814,13825398" />
+
+    <script type="text/javascript" src="https://tw.hjwzw.com/js/jquery.js"></script>
+    <script type="text/javascript" src="https://tw.hjwzw.com/js/common.js" charset="utf-8"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L51P0WCBSV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-L51P0WCBSV');
+    </script>
+
+
+    <script language="javascript" type="text/javascript" charset="utf-8">
+        var CanReportErro = false;
+        var tempStr = "";
+        var BookName = "詭秘之主";
+        var prevpage ="/Book/Read/36814,0";
+var nextpage ="/Book/Read/36814,13825407";
+var chapterpage ="/Book/Chapter/36814";
+        var xmlhttp; if (window.XMLHttpRequest) { xmlhttp = new XMLHttpRequest(); } else { xmlhttp = new ActiveXObject("Microsoft.XMLHTTP"); }
+
+        $(document).ready(function () {
+            document.onkeydown = jumpIEPage;
+
+            $.getScript("https://bm.hjwzw.com/Count.aspx?bookid=36814&chapterid=13825398&title=" + encodeURIComponent("第一章 緋紅") + "&referer=" + escape(document.referrer));
+
+            try { xmlhttp.open("GET", nextpage, true); xmlhttp.send(); } catch (e) { }
+        });
+
+        function jumpIEPage() {
+            if (event.keyCode == 37) window.top.location = prevpage;
+            if (event.keyCode == 80) window.top.location = prevpage;
+            if (event.keyCode == 39) window.top.location = nextpage;
+            if (event.keyCode == 78) window.top.location = nextpage;
+            if (event.keyCode == 13) window.top.location = "/Book/36814";
+        }
+
+        $(window).keydown(function (event) {
+            switch (event.keyCode) {
+                case 13:
+                    window.top.location = "/Book/36814";
+                    break;
+                case 37:
+                    window.top.location = prevpage;
+                    break;
+                case 80:
+                    window.top.location = prevpage;
+                    break;
+                case 39:
+                    window.top.location = nextpage;
+                    break;
+                case 78:
+                    window.top.location = nextpage;
+                    break;
+            }
+        });
+
+        function doAjaxErroChapter() {
+
+            if (CanReportErro) {
+                $.ajax({
+                    type: "POST",
+                    url: "/ErroChapter.aspx",
+                    data: "bookid=36814&chapterid=13825398"
+                });
+                $("#ReportErro_div").html("多謝您的貢獻,章節內容將在1分鐘內自動更正,請稍候再試?");
+            }
+            else {
+                $("#ReportErro").html("如果您誤報錯誤,將影響其他讀者正常閱讀,您確信要更正此章節?");
+                CanReportErro = true;
+            }
+        }
+
+        function Search(obj) {
+            var keywords = $(obj).val();
+            if (keywords != null || keywords != "") {
+                top.location = "/List/" + encodeURIComponent(keywords.replace(/(^\s*)|(\s*$)/g, ""));
+            }
+            return false;
+        }
+
+        function ShowAllySite() {
+            var prA1 = "\x77\x77\x77"; if (window["\x64\x6f\x63\x75\x6d\x65\x6e\x74"]["\x64\x6f\x6d\x61\x69\x6e"]["\x69\x6e\x64\x65\x78\x4f\x66"]("\x74\x77\x2e") > -1) { prA1 = "\x74\x77"; }
+            var r_NgCkJpY2 = "\x3c\x66\x6f\x6e\x74 \x63\x6f\x6c\x6f\x72\x3d\x27\x72\x65\x64\x27\x3e\u5f39\u7a97\u592a\u591a\x3f\u8bf7\u8bbf\u95ee\u65e0\u5f39\u7a97\u7ad9\u70b9\x3a\x26\x6e\x62\x73\x70\x3b\x3c\x61 \x68\x72\x65\x66\x3d\x27\x68\x74\x74\x70\x3a\x2f\x2f" + prA1 + "\x2e";
+            r_NgCkJpY2 += tempStr + "\x78\x78\x77\x78\x38\x2e\x63\x6f\x6d\x27 \x73\x74\x79\x6c\x65\x3d\x27\x63\x6f\x6c\x6f\x72\x3a \x52\x65\x64\x3b\x27 \x74\x61\x72\x67\x65\x74\x3d\x27\x5f\x62\x6c\x61\x6e\x6b\x27\x3e\u4f11\u95f2" + tempStr + "\u6587\u5b66\u5427";
+            r_NgCkJpY2 += tempStr + "\x3c\x2f\x61\x3e" + tempStr + "\x26\x6e\x62\x73\x70\x3b    \x3c\x2f\x66\x6f\x6e\x74\x3e";
+            $("\x23\x41\x6c\x6c\x79\x53\x69\x74\x65")["\x68\x74\x6d\x6c"](r_NgCkJpY2);
+        }
+    </script>
+
+
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/45801421/xiaoshuo/hjw-728x90-001', [728, 90], 'div-gpt-ad-1692671598618-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+</head>
+<body>
+    
+<table width="1000px" border="0" cellspacing="0" cellpadding="0" align="center">
+    <tr>
+        <td background="/images/hjw_01.jpg">&nbsp; </td>
+        <td width="1000px">
+            <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="11" height="28" background="/images/hjw_01.jpg">&nbsp;
+                    </td>
+                    <td width="709" background="/images/hjw_01.jpg"><span class="index1a">
+                        <a href="/">黃金屋首頁</a>| <a href="#">總點擊排行</a>| <a href="#">周點擊排行</a>| <a href="#">月點擊排行
+                        </a>| <a href="#">總搜藏排行</a></span></td>
+                    <td width="230" align="left" valign="middle" background="https://www.hjwzw.com/images/hjw_01.jpg"
+                        class="index1a"><a href="http://tw.hjwzw.com">繁體中文版</a>| <a href="#" onclick="addFavorite()"
+                            alt="收藏黃金屋">收藏黃金屋</a>| <a href="#" onclick="this.style.behavior
+							= 'url(#default#homepage)';
+	                              this.setHomePage('https://www.hjwzw.com');
+	                              return false;">設為首頁</a></td>
+                </tr>
+            </table>
+        </td>
+        <td background="/images/hjw_01.jpg">&nbsp; </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="15" colspan="4"></td>
+    </tr>
+    <tr>
+        <td width="157" height="52" align="left" valign="top"><a href="/"
+            title="點此返回黃金屋中文首頁">
+            <img src="/images/hjw_10.jpg" width="157" height="39" alt="黃金屋中文,黃金書屋" />
+        </a></td>
+        <td align="center">
+            <img src="/images/banner.jpg" width="700" height="60" alt="黃金屋中文,黃金書屋" />
+        </td>
+    </tr>
+    <tr>
+        <td height="10" colspan="4"></td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td width="6">
+            <img src="/images/hjw_15.jpg" width="6" height="28" alt="" />
+        </td>
+        <td background="/images/hjw_17.jpg">
+            <table width="977" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/" title="黃金書屋">首 頁</a></span></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="https://t.hjwzw.com" title="繁體移動手機版本">手機版</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a">最新章節</span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/玄幻">玄幻</a>·<a href="/Channel/奇幻">奇幻</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/武俠">武俠</a>·<a href="/Channel/仙俠">仙俠</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/都市">都市</a>·<a href="/Channel/言情">言情</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/歷史">歷史</a>·<a href="/Channel/軍事">軍事</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/游戲">游戲</a>·<a href="/Channel/競技">競技</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/科幻">科幻</a>·<a href="/Channel/靈異">靈異</a></span></td>
+                    <td width="80" align="center" valign="middle"><span class="index2a"><a href="/Channel/全本">全本</a>·<a href="/Channel/all">全部</a></span></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="https://m.hjwzw.com" title="簡體移動手機版本">移動版</a></span></td>
+                    <td width="80" align="center" valign="middle"></td>
+                    <td width="50" align="center" valign="middle"><span class="index2a"><a href="/BookMark.aspx" title="書架">書架</a></span></td>
+                    <td>&nbsp; </td>
+                </tr>
+            </table>
+        </td>
+        <td width="7">
+            <img src="/images/hjw_20.jpg" width="7" height="28" alt="" />
+        </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td style="height: 25px; background-color: #d5d5d5">
+            <table border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="28">&nbsp; </td>
+                    <td width="71"><span class="STYLE5">文章查詢：</span></td>
+                    <td width="171">
+                        <input id="Txt_Keywords" type="text" />
+                    </td>
+                    <td width="49">
+                        <input id="Button1" type="image" value="button" src="/images/hjw_26.jpg"
+                            onclick="Search('#Txt_Keywords'); return false;" />
+                    </td>
+                    <td width="500"><span class="index3a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 熱門關鍵字：
+                        <a href="/List/道君" title="道君 躍千愁">道君</a>&nbsp;<a href="/List/大王饒命" title="大王饒命 牧狐">大王饒命</a>&nbsp;
+                        <a href="/List/神話紀元" title="神話紀元 人勿玩人">神話紀元</a>&nbsp;
+                        <a href="/List/飛劍問道" title="飛劍問道 我吃西紅柿">飛劍問道</a>&nbsp;
+                        <a href="/List/重生似水青春" title="重生似水青春 魚人二代">重生似水青春</a>
+                    </span></td>
+                    <td>
+                        <select name="colorSetting" id="colorSetting" size="1" onchange="setUserStyle()">
+                            <option value="0">閱讀底色..</option>
+                            <option value="2" style='background-color: #E9FAFF'>淡藍海洋 </option>
+                            <option value="3" style='background-color: #FFFFED'>明黃清俊 </option>
+                            <option value="4" style='background-color: #eefaee'>綠意淡雅 </option>
+                            <option value="5" style='background-color: #FCEFFF'>紅粉世家 </option>
+                            <option value="6" style='background-color: #ffffff'>白雪天地 </option>
+                            <option value="7" style='background-color: #efefef'>灰色世界 </option>
+                        </select></td>
+                    <td>
+                        <input type="button" class="btn1" id="btnSetStyle" value="設置" onclick="setUserStyle();" />
+                    </td>
+                    <td width="28">&nbsp; </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<table width="1000px" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="5"></td>
+    </tr>
+</table>
+
+    <div style="margin: 0 auto; padding-top: 20px; padding-bottom: 20px; height: 90px; width: 800px;">
+        <div id="Pan_Ad3">
+	
+
+            <!-- /45801421/xiaoshuo/hjw-728x90-001 -->
+<div id='div-gpt-ad-1692671598618-0' style='min-width: 728px; min-height: 90px;'>
+  <script>
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1692671598618-0'); });
+  </script>
+</div>
+
+        
+</div>
+    </div>
+    <table style="width: 1000px;" align="center">
+        <tr>
+            <td align="left"><a href="/">黃金屋中文</a>&nbsp;>>&nbsp;<a href="/Book/36814">詭秘之主
+            </a>&nbsp;>>&nbsp; <a href="/Book/Chapter/36814">目錄</a>&nbsp;>>&nbsp;第一章 緋紅
+            </td>
+        </tr>
+    </table>
+    <table align="center" width="1000px">
+        <tr>
+            <td>
+                <h1>
+                    第一章 緋紅
+                </h1>
+                <div align="center">
+                    作者:<a href="/List/愛潛水的烏賊" title="作者: 愛潛水的烏賊 書名: 詭秘之主">愛潛水的烏賊</a>&nbsp;&nbsp;分類:&nbsp;<a href="/Channel/%e7%8e%84%e5%b9%bb" title="小說分類標簽: 玄幻  黃金屋">玄幻</a>&nbsp;|&nbsp;<a href="/Channel/%e5%bc%82%e4%b8%96%e5%a4%a7%e9%99%86" title="小說分類標簽: 異世大陸  黃金屋">異世大陸</a>&nbsp;|&nbsp;<a href="/Channel/%e8%af%a1%e5%af%86%e4%b9%8b%e4%b8%bb" title="小說分類標簽: 詭密之主  黃金屋">詭密之主</a>&nbsp;|&nbsp;<a href="/Channel/%e7%88%b1%e6%bd%9c%e6%b0%b4%e7%9a%84%e4%b9%8c%e8%b4%bc" title="小說分類標簽: 愛潛水的烏賊  黃金屋">愛潛水的烏賊</a>&nbsp;|&nbsp;<a href="/Channel/%e8%af%a1%e7%a7%98%e4%b9%8b%e4%b8%bb" title="小說分類標簽: 詭秘之主  黃金屋">詭秘之主</a>&nbsp;|&nbsp;<a href="/Tag/" title="更多標簽">更多標簽</a>...
+                </div>
+                <div style="height: 20px;">
+                </div>
+                <div id="Pan_Ad1">
+	
+                    <table width="100%" align="center">
+                        <tr>
+                            <td width="49%" align="right">
+                                <script src="/js/n336.js" type="text/javascript"></script>
+                            </td>
+                            <td width="2%" align="center">&nbsp;</td>
+                            <td width="49%" align="left">
+                                <script src="/js/n336_2.js" type="text/javascript"></script>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="height: 20px;">
+                    </div>
+                
+</div>
+                <div id="AllySite" style="margin: 0 auto; margin-bottom: 10px; width: 800px; text-align: center; font-size: 20px;">
+                </div>
+                <div style="font-size: 20px; line-height: 30px; word-wrap: break-word; table-layout: fixed; word-break: break-all; width: 750px; margin: 0 auto; text-indent: 2em;">
+                    請記住本站域名: <b>黃金屋</b><p />
+                    <a href="/Book/36814" title="詭秘之主">詭秘之主</a>&nbsp;第一章 緋紅<p/>
+ 痛！<p/>
+ 好痛！<p/>
+ 頭好痛！<p/>
+ 光怪陸離滿是低語的夢境迅速支離破碎，熟睡中的周明瑞只覺腦袋抽痛異常，仿佛被人用棒子狠狠掄了一下，不，更像是遭尖銳的物品刺入太陽穴并伴隨有攪動！<p/>
+ 嘶……迷迷糊糊間，周明瑞想要翻身，想要捂頭，想要坐起，可完全無法挪動手腳，身體似乎失去了控制。<p/>
+ 看來我還沒有真醒，還在夢里……等下說不定還會出現自以為已經醒了，實際依然在睡的情況……對類似遭遇不算陌生的周明瑞竭力集中意志，以徹底擺脫黑暗和迷幻的桎梏。<p/>
+ 然而，半睡半醒之時，意志總是飄忽如同煙霧，難以控制，難以收束，他再怎么努力，依舊忍不住思維發散，雜念浮現。<p/>
+ 好端端的，大半夜的，怎么會突然頭痛？<p/>
+ 還痛得這么厲害！<p/>
+ 不會是腦溢血什么的吧？<p/>
+ 我擦，我不會就這樣英年早逝了吧？<p/>
+ 趕緊醒！趕緊醒！<p/>
+ 咦，好像沒剛才那么痛了？但腦子里還是跟有把鈍刀子在慢慢割一樣……<p/>
+ 看來沒法繼續睡了，明天還怎么上班？<p/>
+ 還想什么上班？有貨真價實的頭痛，當然是請假啊！不用怕經理羅里吧嗦！<p/>
+ 這么一想，好像也不壞啊，嘿嘿，偷得浮生半日閑！<p/>
+ 一陣又一陣的抽痛讓周明瑞點滴積累起虛幻的力量，終于，他一鼓作氣地挺動腰背睜開眼睛，徹底擺脫了半睡半醒的狀態。<p/>
+ 視線先是模糊，繼而蒙上了淡淡的緋紅，目光所及，周明瑞看見面前是一張原木色澤的書桌，正中央放著一本攤開的筆記，紙張粗糙而泛黃，抬頭用奇怪的字母文字書寫著一句話語，墨跡深黑，醒目欲滴。<p/>
+ 筆記本左側靠桌子邊緣，有一疊整整齊齊的書冊，大概七八本的樣子，它們右手邊的墻上鑲嵌著灰白色的管道和與管道連通的壁燈。<p/>
+ 這盞燈很有西方古典風味，約成年人半個腦袋大小，內層是透明的玻璃，外面用黑色金屬圍出了柵格。<p/>
+ 熄滅的壁燈的斜下方，一個黑色墨水瓶籠罩著淡紅色的光華，表面的浮凸構成了模糊的天使圖案。<p/>
+ 墨水瓶之前，筆記本右側，一根肚腹圓潤的深色鋼筆靜靜安放，筆尖閃爍著微光，筆帽擱于一把泛著黃銅色澤的左輪手槍旁邊。<p/>
+ 手槍？左輪？周明瑞整個人都愣住了，眼前所見的事物是如此陌生，與自己房間沒半點相像之處！<p/>
+ 驚愕茫然的同時，他發現書桌、筆記本、墨水瓶、左輪手槍都蒙著一層緋紅的“輕紗”，那是窗外照進來的光輝。<p/>
+ 下意識間，他抬起腦袋，視線一點點上移：<p/>
+ 半空之中，黑色“天鵝絨幕布”之上，一輪赤紅色的滿月高高懸掛，寧靜照耀。<p/>
+ 這……周明瑞惶恐莫名，猛地站起，可雙腿還未完全打直，腦袋又是一陣抽痛，這讓他短暫失去力量，重心不由自主下墜，屁股狠狠地撞擊在了硬木所制的椅面上。<p/>
+ 啪！<p/>
+ 疼痛未能造成影響，周明瑞以手按桌，重又站起，慌亂地轉過身體，打量自身所處的環境。<p/>
+ 這是個不大的房間，左右兩側各有一扇棕門，緊挨對面墻壁的是張木制高低床。<p/>
+ 它與左門之間放著個櫥柜，上面對開，下方是五個抽屜。<p/>
+ 櫥柜邊緣，一人高的位置，同樣有灰白色管道鑲嵌于墻上，但它連通的是個奇怪的機械裝置，少許地方裸露著齒輪和軸承。<p/>
+ 近書桌的右墻角堆放著類似煤炭爐的事物，以及湯鍋、鐵鍋等廚房用具。<p/>
+ 越過右門是一扇有兩道裂紋的穿衣鏡，木制底座的花紋簡單而樸素。<p/>
+ 目光一掃，周明瑞隱隱約約看見了鏡中的自己，現在的自己：<p/>
+ 黑發，褐瞳，亞麻襯衣，體型單薄，五官普通，輪廓較深……<p/>
+ 這……周明瑞頓時倒吸了口涼氣，心頭涌現出諸多無助又凌亂的猜測。<p/>
+ 左輪手槍，歐美古典風味布置，以及那輪與地球迥異的緋紅之月，無一不在說明著某件事件！<p/>
+ 我，我不會穿越了吧？周明瑞嘴巴一點點張開。<p/>
+ 他看網文長大，對此常有幻想，可當真正遇到，一時卻難以接受。<p/>
+ 這大概就是所謂的葉公好龍吧？過了幾十秒，周明瑞苦中作樂地自我吐槽了一句。<p/>
+ 若非腦袋的疼痛依舊存在，讓思維變得緊繃而清晰，他肯定會懷疑自己在做夢。<p/>
+ 平靜，平靜，平靜……深呼吸了幾下，周明瑞努力讓自身不要那么慌亂。<p/>
+ 就在這時，隨著他身心的調和，一個個記憶片段突兀跳出，緩慢呈現于他的腦海之中！<p/>
+ 克萊恩.莫雷蒂，北大陸魯恩王國阿霍瓦郡廷根市人，霍伊大學歷史系剛畢業的學生……<p/>
+ 父親是皇家陸軍上士，犧牲于南大陸的殖民沖突，換來的撫恤金讓克萊恩有了進入私立文法學校讀書的機會，奠定了他考入大學的基礎……<p/>
+ 母親是黑夜女神信徒，在克萊恩通過霍伊大學入學考試那年過世……<p/>
+ 還有一個哥哥，一個妹妹，共同住在公寓的兩居室內……<p/>
+ 家庭并不富裕，甚至可以說不佳，目前全靠在進出口公司當文員的哥哥維持……<p/>
+ 作為歷史系畢業生，克萊恩掌握了號稱北大陸諸國文字源頭的古弗薩克語，以及古代陵寢里經常出現，與祭祀、祈禱相關的赫密斯文……<p/>
+ 赫密斯文？周明瑞心頭一動，伸手按住抽痛的太陽穴，將視線投向了書桌上攤開的那本筆記，只覺泛黃紙張上的那行文字從奇怪變得陌生，從陌生變得熟悉，從熟悉變得可以解讀。<p/>
+ 這是用赫密斯文書寫的話語！<p/>
+ 那深黑欲滴的墨跡如是說：<p/>
+ “所有人都會死，包括我。”<p/>
+ 嘶！周明瑞莫名驚恐，身體本能后仰，試圖與筆記本，與這行文字拉開距離。<p/>
+ 他很是虛弱，險些跌倒，慌忙伸手按住桌緣，只覺四周的空氣都變得躁動，耳畔隱約有細密的呢喃在回蕩，有種小時候聽長輩講恐怖故事的感受。<p/>
+ 搖了下頭，一切只是幻覺，周明瑞重新站穩，將目光從筆記本上移開，大口喘起了氣。<p/>
+ 這時，他的視線落在了那把閃爍黃銅光澤的左輪手槍處，心頭霍然冒出了一個疑問。<p/>
+ “以克萊恩的家境，哪有錢和渠道買手槍？”周明瑞不由皺起了眉頭。<p/>
+ 沉思之中，他忽然發現書桌邊緣多了半個紅色手印，色澤比月華更深，比“輕紗”更厚。<p/>
+ 那是血手印！<p/>
+ “血手印？”周明瑞下意識翻開了剛才按住桌緣的右手，低頭一瞧，只見掌心和手指滿是血污。<p/>
+ 與此同時，他腦袋的抽痛依舊傳來，略微減弱，連綿不絕。<p/>
+ “不會磕破頭了吧？”周明瑞邊猜想邊轉過身體，走向那面有裂紋的穿衣鏡。<p/>
+ 幾步之后，中等身材，黑發褐瞳，有著明顯書卷氣的身影清晰映入了他的眼簾。<p/>
+ 這就是現在的我，克萊恩.莫雷蒂？<p/>
+ 周明瑞怔了一下，因為大半夜光亮不夠，看不太清楚，于是又繼續往前，直到只差一步就能撞到鏡子。<p/>
+ 就著輕紗般的緋紅月光，他側過腦袋，查看額角的情況。<p/>
+ 清晰倒映的鏡子如實呈現，一個猙獰的傷口盤踞在他的太陽穴位置，邊緣是燒灼的痕跡，周圍沾滿了血污<br/><p />
+                </div>
+                <div style="font-size: 20px; line-height: 30px; word-wrap: break-word; table-layout: fixed; word-break: break-all; width: 750px; margin: 0 auto; text-indent: 2em;">
+                    請記住本站域名: <b>黃金屋</b><p />
+                </div>
+                <div id="Pan_Ad2">
+	
+                    <div style="margin: 0 auto; width: 730px; padding-top: 20px; padding-bottom: 20px;">
+                        <script src="/js/n728.js" type="text/javascript"></script>
+                    </div>
+                
+</div>
+                <div style="width: 750px; margin: 0 auto; text-align: center; padding-bottom: 10px;">
+                    快捷鍵: 上一章("←"或者"P")&nbsp;&nbsp;&nbsp;&nbsp;下一章("→"或者"N")&nbsp;&nbsp;&nbsp;&nbsp;回車鍵:返回書頁
+                </div>
+                
+            </td>
+        </tr>
+    </table>
+    <div style="margin: 0 auto; width: 1000px; text-align: center; font-size: 20px;">
+        <a href="/Book/Read/36814,0" title=" 詭秘之主">上一章</a> &nbsp;|&nbsp; <a href="/Book/Chapter/36814" title="詭秘之主目錄">詭秘之主目錄</a> &nbsp;|&nbsp; <a href="/Book/Read/36814,13825407" title="第二章 情況 詭秘之主">下一章</a>
+    </div>
+
+    <div style="width: 1000px; margin: 0 auto; text-align: center; padding-top: 20px; padding-bottom: 20px; min-height: 90px;">
+        <a href="https://m.hjwzw.com/Book/36814" title="詭秘之主 手機版">手機網頁版(簡體)</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="https://t.hjwzw.com/Book/36814" title="詭秘之主 手機版">手機網頁版(繁體)</a>
+    </div>
+    <div id="Pan_Ad4">
+	
+        
+    
+</div>
+    
+
+<div style="margin: 0 auto; width: 998px; min-height: 50px; border-style: solid; border-width: 1px; border-color: #CCCCCC; background-color: white;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="94" height="25" align="center" valign="middle" background="/images/hjw_47.jpg">
+                <span class="STYLE23">瀏覽記錄</span></td>
+            <td background="/images/hjw_32.jpg" style="width: 500px; text-align: right;"></td>
+            <td width="8">
+                <img src="/images/hjw_35.jpg" width="8" height="24" alt="" />
+            </td>
+        </tr>
+    </table>
+    <div id="BookMark" style="width: 988px; padding-left: 5px; padding-right: 5px; vertical-align: top; background-color: white; min-height: 50px;">
+    </div>
+</div>
+
+<div id="pagebottom" align="center">
+    <hr noshade size="1" />
+</div>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td height="5"></td>
+    </tr>
+</table>
+<table width="950" border="0" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+        <td align="center" valign="middle">
+            <div class="STYLE40">
+                <div>
+                    字母索引: <a href="/Pinyin/A">A</a>&nbsp;|&nbsp; <a href="/Pinyin/B">B</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/C">C</a>&nbsp;|&nbsp; <a href="/Pinyin/D">D</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/E">E</a>&nbsp;|&nbsp; <a href="/Pinyin/F">F</a>&nbsp;|&nbsp; <a href="/Pinyin/G">G</a>&nbsp;|&nbsp; <a href="/Pinyin/H">H</a>&nbsp;|&nbsp; <a href="/Pinyin/J">J</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/K">K</a>&nbsp;|&nbsp; <a href="/Pinyin/L">L</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/M">M</a>&nbsp;|&nbsp; <a href="/Pinyin/N">N</a>&nbsp;|&nbsp; <a href="/Pinyin/P">P</a>&nbsp;|&nbsp; <a href="/Pinyin/Q">Q</a>&nbsp;|&nbsp; <a href="/Pinyin/R">R</a>&nbsp;|&nbsp;
+                    <a href="/Pinyin/S">S</a>&nbsp;|&nbsp; <a href="/Pinyin/T">T</a>&nbsp;|&nbsp; <a
+                        href="/Pinyin/W">W</a>&nbsp;|&nbsp; <a href="/Pinyin/X">X</a>&nbsp;|&nbsp; <a href="/Pinyin/Y">Y</a>&nbsp;|&nbsp; <a href="/Pinyin/Z">Z</a>
+                </div>
+                <hr size="1" />
+                <br />
+
+                <div id="CopyRight">
+                    聯系我們: <a href="mailto:hjwzw@live.com">hjwzw@live.com</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+    <div style="margin: 0 auto; width: 960px;">
+        頁面執行時間: 0.0101822
+    </div>
+</body>
+</html>

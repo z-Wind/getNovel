@@ -20,20 +20,6 @@ func Test_getParseResult(t *testing.T) {
 	}{
 		// TODO: Add test cases.
 		{
-			"完本神站",
-			args{
-				novel: &WanbentxtNoveler{},
-				req: concurrencyengine.Request{
-					Item: NovelChapter{
-						URL:   "https://www.wanbentxt.com/8895/5687694.html",
-						Order: "0001",
-					}},
-				reqN: 1,
-			},
-			concurrencyengine.ParseResult{},
-			false,
-		},
-		{
 			"小說狂人",
 			args{novel: &CzbooksNoveler{},
 				req: concurrencyengine.Request{
