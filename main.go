@@ -4,7 +4,7 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	
+
 	"net/url"
 	"os"
 	"path"
@@ -13,6 +13,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/z-Wind/concurrencyengine"
 	"github.com/z-Wind/getNovel/noveler"
+	"github.com/z-Wind/getNovel/util"
 )
 
 var (
@@ -27,6 +28,8 @@ var (
 func init() {
 	flag.StringVar(&urlNovel, "url", "", "小說目錄網址")
 	flag.BoolVar(&version, "version", false, "程式版本")
+	flag.StringVar(&util.CloudClown, "cf", "", "cf_clearance cookie")
+	flag.StringVar(&util.CloudClown, "ua", "", "User Agent (need for cloudflare bypass)")
 }
 
 func main() {

@@ -1,5 +1,3 @@
-/// disabled because czbooks.net has cloudflare
-
 package noveler
 
 import (
@@ -143,7 +141,7 @@ func TestCzbooksNoveler_getNextPage(t *testing.T) {
 		{
 			"test",
 			&CzbooksNoveler{},
-			"https://www.wanbentxt.com/8895/5687694.html",
+			"https://czbooks.net/n/u5a6m/uj6h",
 			args{req: concurrencyengine.Request{Item: NovelChapter{Order: "0001"}}},
 			[]concurrencyengine.Request{},
 			false,
