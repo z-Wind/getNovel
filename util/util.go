@@ -23,6 +23,9 @@ import (
 	"golang.org/x/text/transform"
 )
 
+var CloudClown string
+var UserAgent string = "Mozilla/5.0 (Windows NT 10.0; rv:122.0) Gecko/20100101 Firefox/122.0"
+
 // URLHTMLToUTF8Encoding 將網頁編碼為 UTF8 並回傳 reader
 func URLHTMLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
 	var body io.Reader
@@ -36,9 +39,9 @@ func URLHTMLToUTF8Encoding(URL string) (io.Reader, string, bool, error) {
 		if strings.HasSuffix(urlAfter, "/") {
 			filename += "index.html"
 		} else {
-			fstat, err := os.Stat(filename)
-			if err != nil {
-				return nil, "", false, err
+			fstat, err1 := os.Stat(filename)
+			if err1 != nil {
+				return nil, "", false, err1
 			}
 			if fstat.IsDir() {
 				filename += "/index.html"
@@ -120,8 +123,20 @@ func HTTPGetwithContext(ctx context.Context, URL string) (*http.Response, error)
 	if err != nil {
 		return nil, errors.Wrap(err, "http.NewRequest")
 	}
+	if CloudClown != "" {
+		cookie := &http.Cookie{
+			Name:  "cf_clearance",
+			Value: CloudClown,
+			Secure: true,
+			HttpOnly: true,
+			Path: "/",
+			Domain: ".czbooks.net",
+			Expires: time.Now().AddDate(1, 0, 0),
+		}
+		req.AddCookie(cookie)
+	}
 
-	req.Header.Set("User-Agent", "Mozilla/5.0 (Windows NT 6.1; rv:57.0) Gecko/20100101 Firefox/57.0")
+	req.Header.Set("User-Agent", UserAgent)
 	req = req.WithContext(ctx)
 	// adding connection:close header hoping to get rid
 	// of too many files open error. Found this in http://craigwickesser.com/2015/01/golang-http-to-many-open-files/
