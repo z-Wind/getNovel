@@ -30,6 +30,9 @@ func NewPtwxzNoveler(url string) *PtwxzNoveler {
 
 // GetInfo 獲得小說基本資料
 func (n *PtwxzNoveler) GetInfo() error {
+	if strings.Contains(n.URL, "bookinfo") {
+		return errors.New("You are using the wrong URL. Please provide the chapter list, which should look like /html/9/9795/index.html")
+	}
 	r, name, certain, err := util.URLHTMLToUTF8Encoding(n.URL)
 	if err != nil {
 		fmt.Printf("URLHTMLToUTF8Encoding: name:%s, certain:%v err:%s\n", name, certain, err)
@@ -57,6 +60,10 @@ func (n *PtwxzNoveler) GetInfo() error {
 
 // GetChapterURLs 獲得所有章節的網址
 func (n *PtwxzNoveler) GetChapterURLs() ([]NovelChapter, error) {
+	if strings.Contains(n.URL, "bookinfo") {
+		return nil, errors.New("You are using the wrong URL. Please provide the chapter list, which should look like /html/9/9795/index.html")
+	}
+
 	r, name, certain, err := util.URLHTMLToUTF8Encoding(n.URL)
 	if err != nil {
 		fmt.Printf("URLHTMLToUTF8Encoding: name:%s, certain:%v err:%s\n", name, certain, err)
@@ -135,7 +142,7 @@ func (n *PtwxzNoveler) getText(html io.Reader) (string, error) {
 	text = regexp.MustCompile(`&gt;`).ReplaceAllString(text, "")
 	text = util.FormatText(text)
 
-	return util.MergeTitle(text,chapterTitle), nil
+	return util.MergeTitle(text, chapterTitle), nil
 }
 
 // MergeContent 合併章節
